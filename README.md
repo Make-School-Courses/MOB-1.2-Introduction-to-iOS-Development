@@ -1,6 +1,6 @@
-# Introduction to iOS App Development in Swift 
+# Introduction to iOS App Development in Swift
 
-## Course Description 
+## Course Description
 
 This course will introduce you to the basics of building an iOS app in Swift. We will cover topics like autolayout, uikit, etc.
 
@@ -12,7 +12,7 @@ Total Out-of-Class Hours: 75 hours <br>
 Total Hours: 112.5 hours <br>
 Units:  3 units <br>
 Delivery Method:  Residential <br>
-Class Sessions:  14 classes, 7 labs 
+Class Sessions:  14 classes, 7 labs
 
 ## Prerequisites:  
 
@@ -46,9 +46,9 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
 ## Tutorials & Projects
 
-- [Tip Calculator]()
-- [Simple iOS App 2 Tutorial]()
-- [Simple iOS App Tutorial]()
+- [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
+- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)\
+- [Simple iOS App Tutorial 3]()
 
 ## Evaluation
 
