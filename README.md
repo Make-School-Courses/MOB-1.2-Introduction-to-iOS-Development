@@ -22,9 +22,10 @@ MOB 1.1 <br>
 
 Students by the end of the course will be able to ...
 
-1. Build a simple app using autolayout
+1. Build a simple app using AutoLayout
 1. Recognize MVC in a basic iOS app
 1. Build an app using (UIKit)Views/ViewControllers/TableViews/Cells etc
+1. Describe passing information between ViewControllers and back using Segues and manual navigation
 
 ## Evaluation
 
