@@ -75,16 +75,6 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Using Unwind segues to pass information back from a dismissed/pop'd ViewController
       - Manually performing a segue vs inducing through storyboard
       - Creating ViewControllers and manual navigation without segues
-1. Memory Management in Swift
-    - **Memory Management**
-      - Automatic Reference Counting(ARC)
-      - Strong/Weak/Unowned reference
-      - Allocation/Deallocation of memory
-    - **In Class Activities**
-      - Pair and diagram a object's relationship with references
-      - Pair and diagram a retain cycle
-      - Complete ARC playground
-    - **After Class**
 1. Architecting an iOS App
     - **Single Responsibility Principle, Encapsulation**
       - Separating concerns
