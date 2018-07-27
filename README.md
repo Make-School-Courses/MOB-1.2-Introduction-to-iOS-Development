@@ -91,14 +91,14 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
     - **Essential AutoLayout**
       - Constraints
       - Content Hugging Priority
-      - Content Compression Resistance Priority)
+      - Content Compression Resistance Priority
       - Equality constraints
 UIStackViews
 ## Tutorials & Projects
 
 - [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
-- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)\
-- [Simple iOS App Tutorial 3]()
+- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+- [Simple iOS App Tutorial 3 with lots of AutoLayout and MVC]()
 
 
 ## Make School Course Policies
