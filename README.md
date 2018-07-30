@@ -48,6 +48,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Platform and ecosystem
     - **In Class Activities**
     - **After Class**
+      - Begin [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
 1. Intro to Xcode and AutoLayout
     - **Xcode**
       - Project structure
@@ -56,6 +57,8 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
     - **In Class Activities**
       - AutoLayout acting - pining views
       - Complete challenges
+    - **After Class**
+      - Begin [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 1. Introduction to Model View Controller(MVC)
     - **Model View Controller**
     - **In Class Activities**
@@ -90,7 +93,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
 - [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
 - [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-- [Simple iOS App Tutorial 3 with lots of AutoLayout and MVC]()
+- [Tutorial 3 - MVC, SRP, UIStackView, CHP/CCRP, UITableView with sections]()
 
 
 ## Make School Course Policies
