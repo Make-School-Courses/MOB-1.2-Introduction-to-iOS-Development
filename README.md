@@ -84,7 +84,8 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Content Hugging Priority
       - Content Compression Resistance Priority
       - Equality constraints
-UIStackViews
+      - UIStackViews
+
 ## Tutorials & Projects
 
 - [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
