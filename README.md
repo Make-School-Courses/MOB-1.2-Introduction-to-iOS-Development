@@ -94,6 +94,10 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Content Compression Resistance Priority
       - Equality constraints
       - UIStackViews
+1. Some Sample Clone App (2) - Part 3 - Collections
+    - **Essential AutoLayout**
+      - UICollectionView - datasource and delegate
+      - UICollectionView layouts
 
 ## Tutorials & Projects
 
