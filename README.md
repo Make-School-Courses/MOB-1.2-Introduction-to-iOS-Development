@@ -68,15 +68,15 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Displaying views
       - Connecting views as outlets
 1. Some Sample Clone App - Part 1 - Displaying Lists
-  - **Collections**
-    - Using UITableView to display a list of data
-    - What is a datasource and a delegate?
-    - Using the UITableView Delegate to receive actions
+    - **Collections**
+      - Using UITableView to display a list of data
+      - What is a datasource and a delegate?
+      - Using the UITableView Delegate to receive actions
 1. Some Sample Clone App - Part 2 - Segues
-  - **Segues**
-    - Using Interface Builder segues to pass information to the next view
-    - Using Unwind segues to pass information back from a dismissed/pop'd ViewController
-    - Manually performing a segue vs inducing through storyboard
+    - **Segues**
+      - Using Interface Builder segues to pass information to the next view
+      - Using Unwind segues to pass information back from a dismissed/pop'd ViewController
+      - Manually performing a segue vs inducing through storyboard
 1. Some Sample Clone App - Part 3 - Manual Navigation
     - **Manual Navigation**
       - Creating ViewControllers and manual navigation without segues
@@ -85,17 +85,15 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 1. Architecting an iOS App
     - **Single Responsibility Principle, Encapsulation**
       - Separating concerns
-
 1. Some Sample Clone App (2) - Part 1 - Modeling and Structure
-  - **Modeling and Structure**
-
+    - **Modeling and Structure**
 1. Some Sample Clone App (2) - Part 2 - Layout Essentials
-  - **Essential AutoLayout**
-    - Constraints
-    - Content Hugging Priority
-    - Content Compression Resistance Priority
-    - Equality constraints
-    - UIStackViews
+    - **Essential AutoLayout**
+      - Constraints
+      - Content Hugging Priority
+      - Content Compression Resistance Priority
+      - Equality constraints
+      - UIStackViews
 
 ## Tutorials & Projects
 
