@@ -1,6 +1,17 @@
 # Introduction to Xcode and Autolayout
 
-## Objectives
+## Lesson Overview
+
+- 5min Introduction & Review of Last Class
+- 5min TT - Introduction to AutoLayout
+- 35min Watch videos on AutoLayout and answer questions in class activity section
+- 10min Break
+- 40min Work on AutoLayout challenges
+- 5min Wrap up and Q&A
+-
+## Objectives & Competencies
+
+By the end of this lesson, students should be able to:
 
 - Position UI elements using autolayout
 - Describe autolayout's relational properties
@@ -21,20 +32,24 @@
 
 ![Constraints](assets/apple-constraint.png)
 
-## Class Material
+## Activity
 
-Watch:
+Watch the videos below and pair up (2's) to discuss the following:
+  - Why do we need AutoLayout? What problems does it solve.
+  - Can we layout views without using AutoLayout?
+  - Properties of AutoLayout.
 
-[UIViews](https://www.youtube.com/watch?v=t_lmUi_E-70&feature=youtu.be)
+Introduction to AutoLayout Videos:
 
-[Positioning UIViews](https://www.youtube.com/watch?v=3GPnG5jsKS8&feature=youtu.be)
+- [UIViews](https://www.youtube.com/watch?v=t_lmUi_E-70&feature=youtu.be)
 
-[Autolayout - Interface Builder](https://www.youtube.com/watch?v=PYqaVQlKT0A)
+- [Positioning UIViews](https://www.youtube.com/watch?v=3GPnG5jsKS8&feature=youtu.be)
 
-Read:
+- [Autolayout - Interface Builder](https://www.youtube.com/watch?v=PYqaVQlKT0A)
 
-[Apple Documentation](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
+## Resources
 
+[Apple Documentation - AutoLayout](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
 
 ## Challenges
 
