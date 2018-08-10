@@ -14,7 +14,7 @@ Units:  3 units <br>
 Delivery Method:  Residential <br>
 Class Sessions:  14 classes, 7 labs
 
-## Prerequisites:  
+## Prerequisites:
 
 MOB 1.1 <br>
 

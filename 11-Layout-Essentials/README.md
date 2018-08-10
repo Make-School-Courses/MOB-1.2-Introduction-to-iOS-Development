@@ -1,15 +1,18 @@
 # Layout Essentials
 
-## Objectives
+## Objectives & Competencies
+By the end of this lesson, students should be able to:
 
-In this lesson we will cover:
-- Intermediate AutoLayout (Constraints, Content Hugging Priority, Content Compression Resistence Priority)
-- UIStackViews
+- Identify and use UIStackViews for layout
+- Describe Content Hugging Priority and Content Compression Resistance Priority
+- Use CHP and CCRP to layout views in a UIStackView
+- Identify the parts of a constraint - (constant, priority, multiplier)
+- Describe the intrinsic content size of a view
 
 ## Vocabulary
 - Content Hugging Priority
-- Content Compression Resistence Priority
-- Equality contraints
+- Content Compression Resistance Priority
+- Equality constraints
 
 ## AutoLayout
 
