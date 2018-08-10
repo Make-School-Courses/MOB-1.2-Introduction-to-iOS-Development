@@ -8,7 +8,7 @@
 - 10min Break
 - 40min Work on AutoLayout challenges
 - 5min Wrap up and Q&A
--
+
 ## Objectives & Competencies
 
 By the end of this lesson, students should be able to:
