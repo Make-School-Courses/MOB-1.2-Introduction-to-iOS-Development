@@ -2,7 +2,7 @@
 
 ## Course Description
 
-This course will introduce you to the basics of building an iOS app in Swift. We will cover topics like autolayout, uikit, etc.
+This course covers mobile application development in iOS using Swift. We will learn how to build a simple application using iOS tools including AutoLayout, UIKit, Views, TableViews, ViewControllers and more. We will study how MVC architecture is implemented in iOS and how information is passed between ViewControllers using both Segues and manual navigation.
 
 ## Course Specifics
 
