@@ -101,9 +101,9 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 
 ## Tutorials & Projects
 
-- [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
+- [Magic 8 Ball Tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 - [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-- [Tutorial 3 - MVC, SRP, UIStackView, CHP/CCRP, UITableView with sections]()
+- [Habitual App Tutorial]()
 
 
 ## Make School Course Policies
