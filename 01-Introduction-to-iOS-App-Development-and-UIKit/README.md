@@ -32,4 +32,5 @@ Slides:
 ## Resources
 
 [iOS 12 Preview](https://www.apple.com/ios/ios-12-preview/)
+
 [Xcode 10 Preview](https://developer.apple.com/xcode/)

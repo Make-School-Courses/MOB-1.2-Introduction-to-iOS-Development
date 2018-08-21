@@ -13,8 +13,8 @@
 
 By the end of this lesson, students should be able to:
 
-- Position UI elements using autolayout
-- Describe autolayout's relational properties
+- Position UI elements using AutoLayout
+- Describe AutoLayout's relational properties
 - Inspect and use the visual debugging features of Xcode
 
 ## Vocabulary
@@ -46,6 +46,12 @@ Introduction to AutoLayout Videos:
 - [Positioning UIViews](https://www.youtube.com/watch?v=3GPnG5jsKS8&feature=youtu.be)
 
 - [Autolayout - Interface Builder](https://www.youtube.com/watch?v=PYqaVQlKT0A)
+
+## Class Materials
+
+Slides:
+
+[Xcode & AutoLayout](https://docs.google.com/presentation/d/1NPCWrzL29k2xn7b78ANqTy-MsXUliMxWwvSjySxI9jc/edit?usp=sharing)
 
 ## Resources
 
