@@ -2,16 +2,19 @@
 
 ## Lesson Overview
 
-- 5min Introduction to course
-- 5min TT - Intro Mobile App Development
-- 15min Think-Pair-Share - Pros & Cons Mobile Dev (4,4,7)
-- 15min Activity Featured App
-- 15min Activity - Native & Cross Platform
-- 10min Break
-- 15min TT iOS & Xcode + preview of new versions
-- 5min TT UIKit
-- 15min Walkthrough Xcode
-- 5min Wrap up and Q&A
+| **Time(min)** | **Activity**                              |
+| ------------- | ------------------------------------------|
+| 5             | Introduction to course                    |
+| 5             | Objectives & Intro Mobile App Development |
+| 10            | Think-Pair-Share Pros & Cons Mobile Dev   |
+| 10            | Activity Featured App                     |
+| 10            | Activity - Native & Cross Platform        |
+| 10            | Break                                     |
+| 15            | TT iOS & Xcode                            |
+| 10            | Walkthrough Xcode                         |
+| 10            | TT UIKit                                  |
+| 15            | TT Activity: Identify elements in apps    |
+| 5             |  Wrap up and Q&A                          |
 
 ## Objectives & Competencies
 
@@ -21,6 +24,7 @@ By the end of this lesson, students should be able to:
 - Identify pros and cons of mobile development
 - Discuss native development and cross platform frameworks
 - Identify current platform versions
+- Identify common elements in iOS apps
 - Familiarize with IDE & UIKit
 
 ## Class Materials
@@ -31,6 +35,10 @@ Slides:
 
 ## Resources
 
-[iOS 12 Preview](https://www.apple.com/ios/ios-12-preview/)
+[iOS 12](https://www.apple.com/ios/ios-12/)
 
-[Xcode 10 Preview](https://developer.apple.com/xcode/)
+[Xcode 10](https://developer.apple.com/xcode/)
+
+[Xcode 10 features](https://www.youtube.com/watch?v=RwO5HKuqLEg)
+
+[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/)
