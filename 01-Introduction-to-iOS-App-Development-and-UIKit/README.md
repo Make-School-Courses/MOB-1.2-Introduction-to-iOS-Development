@@ -13,8 +13,8 @@
 | 15            | TT iOS & Xcode                            |
 | 10            | Walkthrough Xcode                         |
 | 10            | TT UIKit                                  |
-| 15            | TT Activity: Identify elements in apps    |
-| 5             |  Wrap up and Q&A                          |
+| 15            | Activity: Identify elements in apps       |
+| 5             | Wrap up and Q&A                           |
 
 ## Objectives & Competencies
 
