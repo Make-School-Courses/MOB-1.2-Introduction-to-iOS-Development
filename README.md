@@ -68,6 +68,13 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - Other Architectural patterns
     - **After Class**
       - Begin [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+1. Layout Essentials
+    - **Essential AutoLayout**
+        - Constraints
+        - Content Hugging Priority
+        - Content Compression Resistance Priority
+        - Equality constraints
+        - UIStackViews
 1. Displaying Views, Connecting Interface Builder Elements & Size Classes
     - **UIKit**
       - Displaying views
@@ -124,6 +131,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 - [Magic 8 Ball Tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 - [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 - [Habitual App Tutorial]()
+- [Ray Wenderlich's Tutorial on Widgets](https://www.raywenderlich.com/697-today-extension-tutorial-getting-started)
 
 
 ## Make School Course Policies
