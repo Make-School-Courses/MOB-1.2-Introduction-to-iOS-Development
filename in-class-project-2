@@ -1,32 +1,29 @@
 # In Class Project 2 - Loaner Ledger App
 
-## Description 
+## Description
 
-Create an that takes a picture of things you have loaned 
-and a description, name and date of the borrower. 
+Create an that takes a picture of things you have loaned
+and a description, name and date of the borrower.
 
-Show a list of things loaded in a collection view. 
+Show a list of things loaded in a collection view.
 
 Adds new items loaded.
 
-Uses contact picker to keep track of borrowers
+Uses contact picker to keep track of borrowers.
 
-- Lönr - an items loaded tracker 
-- Ldgr - trackers things you have loaned to others
+## Objectives
 
-## Objectives 
-
-- Modeling and Structuring Data 
-- NSCoding 
-- Constraints 
-- Collection View 
+- Modeling and Structuring Data
+- NSCoding
+- Constraints
+- Collection View
 - Custom Cells
 - Collection View Layout 
-- UIImagePicker Controller 
+- UIImagePicker Controller
 
 ## Stretch Challenges
 
-Add a return date with a notification. 
+Add a return date with a notification.
 
-- Uses the camera 
-- Saves pictures 
+- Uses the camera
+- Saves pictures

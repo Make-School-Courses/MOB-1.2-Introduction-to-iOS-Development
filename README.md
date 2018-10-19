@@ -47,54 +47,74 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
       - General use cases and pro's and cons
       - Platform and ecosystem
     - **In Class Activities**
+      - Identifying common elements in featured apps
     - **After Class**
       - Begin [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
 1. Intro to Xcode and AutoLayout
-    - **Xcode**
+    - **Xcode & AutoLayout**
       - Project structure
-      - Useful Xcode tools tips
-      - Constraints, what are they?
+      - Useful AutoLayout tips
+      - Constraints, what are they? (Interface Builder & Programmatically)
     - **In Class Activities**
-      - AutoLayout acting - pining views
+      - AutoLayout demo
       - Complete challenges
     - **After Class**
-      - Begin [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+      - View MS Sessions on AutoLayout
 1. Introduction to Model View Controller(MVC)
     - **Model View Controller**
+      - What is MVC?
     - **In Class Activities**
+      - MVC Demo
+      - Other Architectural patterns
     - **After Class**
-1. Displaying Views, Connecting Interface Builder Elements
+      - Begin [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+1. Displaying Views, Connecting Interface Builder Elements & Size Classes
     - **UIKit**
       - Displaying views
       - Connecting views as outlets
-1. Some Sample Clone App - Part 1 - Displaying Lists
+    - **Size Classes**
+      - How do they work?
+    - **In Class Activities**
+      - Add size classes to Tip Calculator
+1. Mood Tracker - Part 1 - Displaying Lists
     - **Collections**
       - Using UITableView to display a list of data
       - What is a datasource and a delegate?
       - Using the UITableView Delegate to receive actions
-1. Some Sample Clone App - Part 2 - Segues
+1. Mood Tracker - Part 2 - Segues
     - **Segues**
       - Using Interface Builder segues to pass information to the next view
       - Using Unwind segues to pass information back from a dismissed/pop'd ViewController
       - Manually performing a segue vs inducing through storyboard
-1. Some Sample Clone App - Part 3 - Manual Navigation
+1. Mood Tracker - Part 3 - Manual Navigation
     - **Manual Navigation**
       - Creating ViewControllers and manual navigation without segues
-1. Some Sample Clone App - Part 4 - Refactor
-    - **Encapsulation**
+1. Mood Tracker - Part 4 - Apple Watch Extension
+    - **Extension for watch**
+      - Building app extension for watch
+      - Communication between devices
+      - Watch interface builder
+    - **After Class**
+      - Read about SOLID Principles to discuss and share next class.
 1. Architecting an iOS App
-    - **Single Responsibility Principle, Encapsulation**
-      - Separating concerns
-1. Some Sample Clone App (2) - Part 1 - Modeling and Structure
+    - **SOLID principles**
+      - Single Responsibility Principle
+      - Open/Closed principle
+      - Liskov substitution principle
+      - Interface segregation principle
+      - Dependency inversion principle
+    - **After Class**
+      - Look for inspiration to design the UI for the next app.
+1. Loaner App - Part 1 - Modeling and Structure
     - **Modeling and Structure**
-1. Some Sample Clone App (2) - Part 2 - Layout Essentials
+1. Loaner App - Part 2 - Layout Essentials
     - **Essential AutoLayout**
       - Constraints
       - Content Hugging Priority
       - Content Compression Resistance Priority
       - Equality constraints
       - UIStackViews
-1. Some Sample Clone App (2) - Part 3 - Collections
+1. Loaner App - Part 3 - Collections
     - **Essential AutoLayout**
       - UICollectionView - datasource and delegate
       - UICollectionView layouts
