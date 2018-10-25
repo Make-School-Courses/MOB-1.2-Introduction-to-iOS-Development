@@ -49,7 +49,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
     - **In Class Activities**
       - Identifying common elements in featured apps
     - **After Class**
-      - Begin [Magic 8 Ball Tutorial](https://www.makeschool.com/online-courses/tutorials/learn-how-to-build-apps-magic-8-ball/intro-magic8)
+      - Begin [Magic 8 Ball Tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 1. Intro to Xcode and AutoLayout
     - **Xcode & AutoLayout**
       - Project structure
@@ -82,7 +82,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
     - **Size Classes**
       - How do they work?
     - **In Class Activities**
-      - Add size classes to Tip Calculator
+      - Add size classes to Magic 8 ball
 1. Mood Tracker - Part 1 - Displaying Lists
     - **Collections**
       - Using UITableView to display a list of data
