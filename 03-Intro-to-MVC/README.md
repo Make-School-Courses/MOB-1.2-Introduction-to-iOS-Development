@@ -26,6 +26,12 @@ Slides:
 
 [MVC](https://drive.google.com/open?id=1_2znw9C0RFD1MUBcLTsk9kEsOMobVsZSwTbUuWSDvWw)
 
+## After Class
+
+Complete [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+
+In case you have completed this tutorial before. Build a "Today extension" following [this online tutorial](https://www.raywenderlich.com/697-today-extension-tutorial-getting-started). Feel free to follow the theme of the tutorial or make your own version.
+
 ## Activity
 
 MVC is just one of the many options available to choose for architecting your apps. 
