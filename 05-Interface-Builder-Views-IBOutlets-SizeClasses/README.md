@@ -29,6 +29,8 @@ Slides:
 
 ## Connecting UI elements with outlets - Activity
 
+[Starter project](https://github.com/amelinagzz/hello-starter)
+
 ![hello](assets/hello.gif) ![helloscreen](assets/helloscreen.png)
 
 ## Size Classes - Activity
@@ -44,6 +46,9 @@ Stretch Challenge: Use size classes for the Hello app as well.
 ## Resources
 
 [Stretchable buttons (programmatically)](https://www.natashatherobot.com/ios-stretchable-button-uiedgeinsetsmake/)
+
 [Stretchable buttons (using asset catalog)](https://krakendev.io/blog/4-xcode-asset-catalog-secrets-you-need-to-know)
+
 [Optionals and IB outlets](https://blog.curtisherbert.com/to-optional-or-not-to-optional-iboutlet/)
+
 [Optionals and IB outlets](https://cocoacasts.com/should-outlets-be-optionals-or-implicitly-unwrapped-optionals)
