@@ -33,7 +33,7 @@ Slides:
 
 [Introduction to iOS App Development](https://docs.google.com/presentation/d/1U0K65MGwAeD9m8TiNnXustSiM-cVK-_y-Frvi3jXQTA/edit?usp=sharing)
 
-## Class Materials
+## After Class
 
 Complete [Magic 8 Ball tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 
