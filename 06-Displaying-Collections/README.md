@@ -5,10 +5,9 @@
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
 | 10            | TT Tableviews                           |
-| 20            | MVC Demo                                |
+| 20            | UITableview Demo                        |
 | 10            | Break                                   |
-| 20            | Other architectural patterns            |
-| 35            | Share & Discuss patterns                |
+| 50            | Mood Tracker Pt. 1                      |
 | 5             | Wrap up                                 |
 
 ## Objectives & Competencies
@@ -21,14 +20,20 @@ By the end of this lesson, students should be able to:
 
 ## UITableView
 
-A view that presents data (a list of items) using rows arranged in a *single column*.
+A view that presents data (a list of items) using rows arranged in a **single column**.
 
 `UITableView` is a subclass of `UIScrollView`, this allows users to scroll through the elements in the table in vertical direction.
 
 Each individual item of the table is a `UITableViewCell` object. A cell object has various parts but most of it is reserved for its content: text, image, or any other kind of distinctive identifier.
+
 ![cell](assets/cell.jpg)
 
-When a cell object is reusable (the typical case) you assign it a *reuse identifier* in the storyboard. At runtime, the table view stores cell objects in an internal queue. When the table view asks the data source to configure a cell object for display, the data source can access the queued object by sending a `dequeueReusableCellWithIdentifier:` message to the table view, passing in a reuse identifier. The data source sets the content of the cell and any special properties before returning it. This reuse of cell objects is a performance enhancement because it eliminates the overhead of cell creation.
+When a cell object is reusable (the typical case) you assign it a **reuse identifier** in the storyboard.
+
+![cell](assets/cell.jpg)
+
+At runtime, the table view stores cell objects in an internal queue. When the table view asks the data source to configure a cell object for display (when we scroll the table), the data source can access the queued object by sending a `dequeueReusableCellWithIdentifier:` message to the table view, passing in a reuse identifier. Then the data source sets the content of the cell before returning it. This reuse of cell objects is a performance enhancement because it eliminates the overhead of cell creation that can cause a shortage in memory.
+
 
 When providing cells for the table view, there are three general approaches you can take.
 
@@ -36,18 +41,64 @@ When providing cells for the table view, there are three general approaches you 
 - You can add your own subviews to the cell object’s content view.
 - Use cell objects created from a custom subclass of UITableViewCell.
 
-A table view is made up of zero or more *sections*, each with its own *rows*. Sections are identified by their index number within the table view, and rows are identified by their index number within a section. Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
+A table view is made up of zero or more **sections**, each with its own **rows**. Sections are identified by their index number within the table view, and rows are identified by their index number within a section. Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
 
 Table views can have one of two styles, `UITableView.Style.plain` and `UITableView.Style.grouped`.
+
+```swift
+public enum Style : Int {
+
+       case plain
+
+       case grouped
+   }
+```
+
 ![tables](assets/tables.jpg)
 
-A `UITableView` object must have an object that acts as a *data source* and an object that acts as a *delegate*.  
+A `UITableView` object must have an object that acts as a **data source** and an object that acts as a **delegate**.  
 
 The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages how many sections the table has, how many rows per section and handles how cells are drawn.
 
+```swift
+  // How many sections the table has. Default is 1 if not implemented.
+ optional public func numberOfSections(in tableView: UITableView) -> Int
+
+  // How many rows are there per section.
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+
+  // If using headers or footers. These use a fixed view, to do something different you need a custom view.
+  optional public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+  optional public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String?
+
+  //Displays rows, preferably reusing cells.
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+```
+
 The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and selection, row reordering, highlighting, accessory views, and editing operations.
 
+```swift
+  // When selecting a cell
+  optional public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+
+  // When deselecting a cell
+  optional public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath)
+
+  // Changing the default header with a custom view
+  optional public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+
+  // Defining the height of the rows (different cells can have different heights)
+  optional public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+```
+
 Note: You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with code readability. But take into consideration that using too many extensions increases the project build time. It's a personal choice between clear and readable code vs improvement in build time.
+
+##Demo
+
+- Simple `UITableView` using storyboard.
+- 1000 rows.
+- Display "Hello world \(number of row)" in each row.
+- Include an image for the cell's image view.
 
 ## Baseline Challenges
 
