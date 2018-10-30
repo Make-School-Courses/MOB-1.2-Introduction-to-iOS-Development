@@ -32,7 +32,7 @@ Each individual item of the table is a `UITableViewCell` object. A cell object h
 
 When a cell object is reusable (the typical case) you assign it a **reuse identifier** in the storyboard.
 
-![cell](assets/cell.jpg)
+![cell](assets/identifier.png)
 
 At runtime, the table view stores cell objects in an internal queue. When the table view asks the data source to configure a cell object for display (when we scroll the table), the data source can access the queued object by sending a `dequeueReusableCellWithIdentifier:` message to the table view, passing in a reuse identifier. Then the data source sets the content of the cell before returning it. This reuse of cell objects is a performance enhancement because it eliminates the overhead of cell creation that can cause a shortage in memory.
 
