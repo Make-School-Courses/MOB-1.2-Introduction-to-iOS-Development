@@ -24,6 +24,8 @@ A view that presents data (a list of items) using rows arranged in a **single co
 
 `UITableView` is a subclass of `UIScrollView`, this allows users to scroll through the elements in the table in vertical direction.
 
+![tables](assets/tables.gif)
+
 Each individual item of the table is a `UITableViewCell` object. A cell object has various parts but most of it is reserved for its content: text, image, or any other kind of distinctive identifier.
 
 ![cell](assets/cell.jpg)
@@ -62,7 +64,7 @@ The data source must adopt the `UITableViewDataSource` protocol and provides inf
 
 ```swift
   // How many sections the table has. Default is 1 if not implemented.
- optional public func numberOfSections(in tableView: UITableView) -> Int
+  optional public func numberOfSections(in tableView: UITableView) -> Int
 
   // How many rows are there per section.
   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -75,7 +77,7 @@ The data source must adopt the `UITableViewDataSource` protocol and provides inf
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 
-The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and selection, row reordering, highlighting, accessory views, and editing operations.
+The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and selection, row reordering, highlighting, accessory views, and editing operations. It deals with how the table behaves and looks.
 
 ```swift
   // When selecting a cell
@@ -90,10 +92,20 @@ The delegate must adopt the `UITableViewDelegate protocol`. Manages table row co
   // Defining the height of the rows (different cells can have different heights)
   optional public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 ```
+Many methods of `UITableView` take `NSIndexPath` objects as parameters and return values. They have properties we can access to manipulate objects in the table.
 
-Note: You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with code readability. But take into consideration that using too many extensions increases the project build time. It's a personal choice between clear and readable code vs improvement in build time.
+```swift
+var section: Int
+```
+An index number identifying a section in a table view.
+```swift
+var row: Int
+```
+An index number identifying a row in a section of a table view.
 
-##Demo
+Note: You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with **code readability**. But take into consideration that using too many extensions increases the project **build time**. It's a personal choice between clear and readable code vs improvement in build time.
+
+## Demo
 
 - Simple `UITableView` using storyboard.
 - 1000 rows.
@@ -110,3 +122,9 @@ For the upcoming classes we'll be building an app to track the user's daily mood
 - Handling table events
 
 Create a new project and follow the implementation for this part here: [Mood Tracker Part 1](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/5.1-content.md)
+
+## Resources
+
+[UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)
+
+[Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
