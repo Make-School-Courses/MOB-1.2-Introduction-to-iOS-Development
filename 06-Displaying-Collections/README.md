@@ -105,6 +105,15 @@ An index number identifying a row in a section of a table view.
 
 Note: You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with **code readability**. But take into consideration that using too many extensions increases the project **build time**. It's a personal choice between clear and readable code vs improvement in build time.
 
+Here are some suggestions to ensure you are using `UITableView` the best way possible without affecting its performance:
+
+- Reuse cells.
+- Cache downloaded images.
+- Avoid using attributed labels.
+- If you are using different cell heights, be careful on how often the calculations are made.
+- If you can, make your views opaque, transparent objects make the system work much harder.
+- Avoid gradients (same idea as transparent objects).
+
 ## Demo
 
 - Simple `UITableView` using storyboard.
@@ -128,3 +137,5 @@ Create a new project and follow the implementation for this part here: [Mood Tra
 [UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)
 
 [Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
+
+[Improving performance](https://medium.com/capital-one-tech/smooth-scrolling-in-uitableview-and-uicollectionview-a012045d77f)
