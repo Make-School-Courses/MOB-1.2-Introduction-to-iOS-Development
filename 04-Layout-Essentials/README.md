@@ -16,6 +16,10 @@ By the end of this lesson, students should be able to:
 
 ## AutoLayout
 
+### Class Material
+
+[Slides](https://docs.google.com/presentation/d/1n6wXGMoHxHvYknGJjR8slyb4aISBCIX7jQab2pBhA_c/edit?usp=sharing)
+
 ### Constraints Revision
 They are a fomula that describe the relationship between objects in a view.
 
