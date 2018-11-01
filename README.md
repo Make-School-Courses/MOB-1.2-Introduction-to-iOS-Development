@@ -51,7 +51,7 @@ Students by the end of the course will be able to ...
 To pass this course you must meet the following requirements:
 
 - Complete all required tutorials 
-- Pass all projects according to the associated project rubric
+- Pass all projects according to the associated project rubrics
 - Pass the final summative assessment >=75%
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
@@ -151,6 +151,7 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 - [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 - [Habitual App Tutorial]()
 - [Ray Wenderlich's Tutorial on Widgets](https://www.raywenderlich.com/697-today-extension-tutorial-getting-started)
+- Independent project [Rubric](https://docs.google.com/document/d/14P-nohwJyNKHXxn-sRF6IMZJMpH5RLRJ3wdooIeKOrs/edit?usp=sharing)
 
 ## Attendance
 Just like any job, attendance at Make School is required and a key component of your success. Attendance is being onsite from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors and others, and is vital to your learning.
