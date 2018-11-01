@@ -27,15 +27,34 @@ Students by the end of the course will be able to ...
 1. Build an app using (UIKit)Views/ViewControllers/TableViews/Cells etc
 1. Describe passing information between ViewControllers and back using Segues and manual navigation
 
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  1  |  Tuesday, October 23    | Introduction to iOS App Development and UIKit |
+|  2   | Thursday, October 25    | Intro to Xcode and AutoLayout |
+|  3   |  Tuesday, October 30  | Introduction to Model View Controller (MVC) |
+|  4  | Thursday, November 1  | Layout Essentials |
+|   5   |  Tuesday, November 6 | Displaying Views, Connecting Interface Builder Elements & Size Classes |
+|   6   | Thursday, November 8 | Displaying Lists |
+|   7   |  Tuesday, November 13 | Segues |
+|   8   | Thursday, November 15 | Manual Navigation |
+|      |  Tuesday, November 20 | **Don Rags** |
+|     | Thursday, November 22 | **Fall Break** |
+|  9   |  Tuesday, November 27    | Apple Watch Extension |
+|  10   | Thursday, November 29    | Architecting an iOS App |
+|  11     |  Tuesday, December 4    | Modeling and Structure (Intermediate) |
+|  12   | Thursday, December 6   | Collecction Views |
+|  13   | Tuesday, December 11   | Final Exams |
+|  14   | Thursday, December 13   | Final Class (presentations for final project) |
+
 ## Evaluation
 
 To pass this course you must meet the following requirements:
 
-- No more than two no call no shows
-- No more than four excused absences
+- Complete all required tutorials 
+- Pass all projects according to the associated project rubric
+- Pass the final summative assessment >=75%
+- Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
-- Finish all required tutorials and projects
-- Pass the final exam (summative assessment) with >=80%
 
 ## Lessons
 
@@ -133,11 +152,20 @@ Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
 - [Habitual App Tutorial]()
 - [Ray Wenderlich's Tutorial on Widgets](https://www.raywenderlich.com/697-today-extension-tutorial-getting-started)
 
+## Attendance
+Just like any job, attendance at Make School is required and a key component of your success. Attendance is being onsite from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors and others, and is vital to your learning.
+
+Attendance requirements for scheduled sessions are:
+- No more than two no call no shows per term in any scheduled session.
+- No more than four excused absences per term in any scheduled session.
+
+Failure to meet these requirements will result in a PIP (Participation Improvement Plan).  Failure to improve after the PIP is cause for not being allowed to continue at Make School. 
 
 ## Make School Course Policies
 
 [Academic Honesty](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Academic-Honesty-and-Plagiarism.md)<br>
-[Accomodation Policy](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Accommodation-Policy.md)<br>
+[Accommodation Policy](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Accommodation-Policy.md)<br>
+[Attendance Policy]()  
 [Diversity Statement](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Diversity-Statement.md)<br>
 [Evaluation Methods](https://github.com/Product-College-Courses/Common-Syllabus-Sections/blob/master/Evaluation-Methods.md)
 <br>
