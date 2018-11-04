@@ -13,8 +13,8 @@
 ## Objectives & Competencies
 By the end of this lesson, students should be able to:
 
-- List options for passing information between view ViewControllers.
 - Identify and describe a segue.
+- Navigate between view ViewControllers using segues.
 - Setup and use a segue to pass information to a destination ViewController.
 - Pass information back to a ViewController with an unwind segue.
 - Manually navigate to a destination ViewController without segues.
@@ -87,6 +87,7 @@ Unwind segues let you dismiss view controllers. You create unwind segues in Inte
 NOTE: You must define an unwind action method in one of your view controllers **before** trying to create the corresponding unwind segue in Interface Builder. The presence of that method is required and tells Interface Builder that there is a valid target for the unwind segue.
 
 ### Navigating programmatically
+
 
 ## Baseline Challenges
 

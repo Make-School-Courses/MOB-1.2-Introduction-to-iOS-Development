@@ -27,123 +27,48 @@ Students by the end of the course will be able to ...
 1. Build an app using (UIKit)Views/ViewControllers/TableViews/Cells etc
 1. Describe passing information between ViewControllers and back using Segues and manual navigation
 
+## Schedule
+
+**Course Dates:** Tuesday, October 23 – Thursday, December 13, 2018 (7 weeks)
+
+**Class Times:** Tuesday and Thursday at 1:30–3:20pm (13 class sessions)
+
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1  |  Tuesday, October 23    | Introduction to iOS App Development and UIKit |
-|  2   | Thursday, October 25    | Intro to Xcode and AutoLayout |
-|  3   |  Tuesday, October 30  | Introduction to Model View Controller (MVC) |
-|  4  | Thursday, November 1  | Layout Essentials |
-|   5   |  Tuesday, November 6 | Displaying Views, Connecting Interface Builder Elements & Size Classes |
-|   6   | Thursday, November 8 | Displaying Lists |
-|   7   |  Tuesday, November 13 | Segues |
-|   8   | Thursday, November 15 | Manual Navigation |
+|  1  |  Tuesday, October 23    | [Introduction to iOS App Development and UIKit] |
+|  2   | Thursday, October 25    | [Intro to Xcode and AutoLayout] |
+|  3   |  Tuesday, October 30  | [Introduction to Model View Controller (MVC)] |
+|  4  | Thursday, November 1  | [Layout Essentials] |
+|   5   |  Tuesday, November 6 | [Displaying Views, Connecting Interface Builder Elements & Size Classes] |
+|   6   | Thursday, November 8 | [Displaying Lists] |
+|   7   |  Tuesday, November 13 | [Segues] |
+|   8   | Thursday, November 15 | [Manual Navigation] |
 |      |  Tuesday, November 20 | **Don Rags** |
 |     | Thursday, November 22 | **Fall Break** |
 |  9   |  Tuesday, November 27    | Apple Watch Extension |
 |  10   | Thursday, November 29    | Architecting an iOS App |
 |  11     |  Tuesday, December 4    | Modeling and Structure (Intermediate) |
-|  12   | Thursday, December 6   | Collecction Views |
+|  12   | Thursday, December 6   | Collection Views |
 |  13   | Tuesday, December 11   | Final Exams |
 |  14   | Thursday, December 13   | Final Class (presentations for final project) |
+
+[Introduction to iOS App Development and UIKit]: Lessons/01-Introduction-to-iOS-App-Development-and-UIKit
+[Intro to Xcode and AutoLayout]: Lessons/02-Xcode-&-AutoLayout
+[Introduction to Model View Controller (MVC)]: Lessons/03-Intro-to-MVC
+[Layout Essentials]: Lessons/04-Layout-Essentials
+[Displaying Views, Connecting Interface Builder Elements & Size Classes]: Lessons/05-Interface-Builder-Views-IBOutlets-SizeClasses
+[Displaying Lists]: Lessons/06-Displaying-Collections
+[Segues]:[Lessons/07-Passing-Information-Between-ViewControllers]
 
 ## Evaluation
 
 To pass this course you must meet the following requirements:
 
-- Complete all required tutorials 
+- Complete all required tutorials
 - Pass all projects according to the associated project rubrics
 - Pass the final summative assessment >=75%
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
-
-## Lessons
-
-Should be ~13 planned lessons (7 weeks x 2 meetings per week -~1 holiday)
-
-1. Introduction to iOS App Development and UIKit
-    - **Mobile Development & UIKit**
-      - What does mobile application development entail?
-      - General use cases and pro's and cons
-      - Platform and ecosystem
-    - **In Class Activities**
-      - Identifying common elements in featured apps
-    - **After Class**
-      - Begin [Magic 8 Ball Tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
-1. Intro to Xcode and AutoLayout
-    - **Xcode & AutoLayout**
-      - Project structure
-      - Useful AutoLayout tips
-      - Constraints, what are they? (Interface Builder & Programmatically)
-    - **In Class Activities**
-      - AutoLayout demo
-      - Complete challenges
-    - **After Class**
-      - View MS Sessions on AutoLayout
-1. Introduction to Model View Controller(MVC)
-    - **Model View Controller**
-      - What is MVC?
-    - **In Class Activities**
-      - MVC Demo
-      - Other Architectural patterns
-    - **After Class**
-      - Begin [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-1. Layout Essentials
-    - **Essential AutoLayout**
-        - Constraints
-        - Content Hugging Priority
-        - Content Compression Resistance Priority
-        - Equality constraints
-        - UIStackViews
-1. Displaying Views, Connecting Interface Builder Elements & Size Classes
-    - **UIKit**
-      - Displaying views
-      - Connecting views as outlets
-    - **Size Classes**
-      - How do they work?
-    - **In Class Activities**
-      - Add size classes to Magic 8 ball
-1. Mood Tracker - Part 1 - Displaying Lists
-    - **Collections**
-      - Using UITableView to display a list of data
-      - What is a datasource and a delegate?
-      - Using the UITableView Delegate to receive actions
-1. Mood Tracker - Part 2 - Segues
-    - **Segues**
-      - Using Interface Builder segues to pass information to the next view
-      - Using Unwind segues to pass information back from a dismissed/pop'd ViewController
-      - Manually performing a segue vs inducing through storyboard
-1. Mood Tracker - Part 3 - Manual Navigation
-    - **Manual Navigation**
-      - Creating ViewControllers and manual navigation without segues
-1. Mood Tracker - Part 4 - Apple Watch Extension
-    - **Extension for watch**
-      - Building app extension for watch
-      - Communication between devices
-      - Watch interface builder
-    - **After Class**
-      - Read about SOLID Principles to discuss and share next class.
-1. Architecting an iOS App
-    - **SOLID principles**
-      - Single Responsibility Principle
-      - Open/Closed principle
-      - Liskov substitution principle
-      - Interface segregation principle
-      - Dependency inversion principle
-    - **After Class**
-      - Look for inspiration to design the UI for the next app.
-1. Loaner App - Part 1 - Modeling and Structure
-    - **Modeling and Structure**
-1. Loaner App - Part 2 - Layout Essentials
-    - **Essential AutoLayout**
-      - Constraints
-      - Content Hugging Priority
-      - Content Compression Resistance Priority
-      - Equality constraints
-      - UIStackViews
-1. Loaner App - Part 3 - Collections
-    - **Essential AutoLayout**
-      - UICollectionView - datasource and delegate
-      - UICollectionView layouts
 
 ## Tutorials & Projects
 
@@ -160,7 +85,7 @@ Attendance requirements for scheduled sessions are:
 - No more than two no call no shows per term in any scheduled session.
 - No more than four excused absences per term in any scheduled session.
 
-Failure to meet these requirements will result in a PIP (Participation Improvement Plan).  Failure to improve after the PIP is cause for not being allowed to continue at Make School. 
+Failure to meet these requirements will result in a PIP (Participation Improvement Plan).  Failure to improve after the PIP is cause for not being allowed to continue at Make School.
 
 ## Make School Course Policies
 
