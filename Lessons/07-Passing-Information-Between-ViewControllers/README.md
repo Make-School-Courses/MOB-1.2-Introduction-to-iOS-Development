@@ -17,7 +17,7 @@ By the end of this lesson, students should be able to:
 - Navigate between view ViewControllers using segues.
 - Setup and use a segue to pass information to a destination ViewController.
 - Pass information back to a ViewController with an unwind segue.
-- Manually navigate to a destination ViewController without segues.
+- Manually perform a segue vs inducing through storyboard.
 
 ### How to navigate between view ViewControllers
 
@@ -50,6 +50,18 @@ At runtime, UIKit loads the segues associated with a view controller and connect
 | Present modally     | Shows View controllers with animations.    |
 | Present as popover  | The view controller appears in a popover.  |
 | Custom              | You may implement your own custom segue and have control over the behavior.    |
+
+### Show
+![show](assets/show.gif)
+
+### Show detail
+![show](assets/showdetail.gif)
+
+### Present modally
+![show](assets/modally.gif)
+
+### Present as popover
+![show](assets/pop.gif)
 
 **Step 3:** After creating a segue, select the segue object and assign an identifier to it using the attributes inspector. During a segue, you can use it to determine which segue was triggered, which is especially useful if your view controller supports multiple segues.
 
@@ -86,9 +98,24 @@ Unwind segues let you dismiss view controllers. You create unwind segues in Inte
 
 NOTE: You must define an unwind action method in one of your view controllers **before** trying to create the corresponding unwind segue in Interface Builder. The presence of that method is required and tells Interface Builder that there is a valid target for the unwind segue.
 
-### Navigating programmatically
+### Programmatic Segues
 
+```swift
+@IBAction func nextVC(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "nextVC", sender: nil)
+    }
+```
 
 ## Baseline Challenges
 
+Complete the [Segue Challenge](https://github.com/amelinagzz/segue-starter)
+
 Continue working on the Mood Tracker app with [part 2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+
+## Resources
+
+[Tutorial with custom transition](https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25)
+
+Custom transitions library [Hero](https://github.com/HeroTransitions/Hero)
+
+Segues - [Apple Docs](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html)
