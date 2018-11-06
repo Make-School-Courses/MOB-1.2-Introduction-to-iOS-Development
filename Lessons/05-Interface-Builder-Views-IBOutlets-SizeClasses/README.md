@@ -52,3 +52,5 @@ Stretch Challenge: Use size classes for the Hello app as well.
 [Optionals and IB outlets](https://blog.curtisherbert.com/to-optional-or-not-to-optional-iboutlet/)
 
 [Optionals and IB outlets](https://cocoacasts.com/should-outlets-be-optionals-or-implicitly-unwrapped-optionals)
+
+[Outlets weak or strong](https://cocoacasts.com/should-outlets-be-weak-or-strong)
