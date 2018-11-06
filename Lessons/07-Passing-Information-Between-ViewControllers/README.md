@@ -112,6 +112,10 @@ Complete the [Segue Challenge](https://github.com/amelinagzz/segue-starter)
 
 Continue working on the Mood Tracker app with [part 2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
 
+## After Class
+
+Complete [this project](https://www.hackingwithswift.com/read/19/1/setting-up) using MapKit (we will use it next class)
+
 ## Resources
 
 [Tutorial with custom transition](https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25)
