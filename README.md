@@ -42,7 +42,7 @@ Students by the end of the course will be able to ...
 |   5   |  Tuesday, November 6 | [Displaying Views, Connecting Interface Builder Elements & Size Classes] |
 |   6   | Thursday, November 8 | [Displaying Lists] |
 |   7   |  Tuesday, November 13 | [Segues] |
-|   8   | Thursday, November 15 | Manual Navigation |
+|   8   | Thursday, November 15 | [Manual Navigation] |
 |      |  Tuesday, November 20 | **Don Rags** |
 |     | Thursday, November 22 | **Fall Break** |
 |  9   |  Tuesday, November 27    | Apple Watch Extension |
@@ -59,6 +59,7 @@ Students by the end of the course will be able to ...
 [Displaying Views, Connecting Interface Builder Elements & Size Classes]: Lessons/05-Interface-Builder-Views-IBOutlets-SizeClasses
 [Displaying Lists]: Lessons/06-Displaying-Collections
 [Segues]:Lessons/07-Passing-Information-Between-ViewControllers
+[Manual Navigation]: Lessons/08-Manual-Navigation
 
 ## Evaluation
 
