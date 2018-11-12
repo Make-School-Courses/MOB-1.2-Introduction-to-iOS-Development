@@ -33,6 +33,8 @@ WatchOS apps can provide 4 different components for the user:
 | Notifications | Appear when the iOS app receives notifications. Can come from Apple Push Notification service or can be local notifications.|
 | Complications | Small elements embedded into certain watch faces. Not interactive, but can give more information in a quick manner.|
 
+![applewatch](assets/applewatch.jpg)
+
 ## How the Apple Watch works
 
 WatchOS apps are embedded inside iOS apps. Whenever users download and install an iOS app that contains a watchOS app, the app will automatically be available to install on the watch. watchOS apps are independent apps that run entirely on the watch.
