@@ -98,6 +98,20 @@ Unwind segues let you dismiss view controllers. You create unwind segues in Inte
 
 NOTE: You must define an unwind action method in one of your view controllers **before** trying to create the corresponding unwind segue in Interface Builder. The presence of that method is required and tells Interface Builder that there is a valid target for the unwind segue.
 
+Example
+
+```swift
+
+ @IBAction func myUnwindAction(_ sender: UIStoryboardSegue){
+        if sender.source is NextViewController{
+            if let senderVC = sender.source as? NextViewController{
+                //Sending back a property from the pevious View Controller
+                print(senderVC.receivedText)
+            }
+        }
+    }
+```
+
 ### Programmatic Segues
 
 ```swift
