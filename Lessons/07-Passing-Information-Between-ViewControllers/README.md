@@ -110,11 +110,20 @@ NOTE: You must define an unwind action method in one of your view controllers **
 
 Complete the [Segue Challenge](https://github.com/amelinagzz/segue-starter)
 
-Continue working on the Mood Tracker app with [part 2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+Continue working on the Mood Tracker app with 
+
+[part 2.1](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+
+[part 2.2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.2-content.md)
+
+[part 2.3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.3-content.md)
+
 
 ## After Class
 
 Complete [this project](https://www.hackingwithswift.com/read/19/1/setting-up) using MapKit (we will use it next class)
+
+Start [Habitual tutorial](https://github.com/MakeSchool-Tutorials/Habitual-Swift4)
 
 ## Resources
 
