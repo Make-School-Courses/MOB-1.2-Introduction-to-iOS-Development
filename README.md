@@ -75,7 +75,7 @@ To pass this course you must meet the following requirements:
 
 - [Magic 8 Ball Tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 - [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-- [Habitual App Tutorial]()
+- [Habitual App Tutorial](https://github.com/MakeSchool-Tutorials/Habitual-Swift4)
 - [Ray Wenderlich's Tutorial on Widgets](https://www.raywenderlich.com/697-today-extension-tutorial-getting-started)
 - Independent project [Rubric](https://docs.google.com/document/d/14P-nohwJyNKHXxn-sRF6IMZJMpH5RLRJ3wdooIeKOrs/edit?usp=sharing)
 
