@@ -137,7 +137,7 @@ Continue working on the Mood Tracker app with
 
 Complete [this project](https://www.hackingwithswift.com/read/19/1/setting-up) using MapKit (we will use it next class)
 
-Start [Habitual tutorial](https://github.com/MakeSchool-Tutorials/Habitual-Swift4)
+Start [Habitual tutorial](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
 ## Resources
 
