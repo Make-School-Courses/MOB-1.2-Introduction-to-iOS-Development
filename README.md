@@ -45,7 +45,7 @@ Students by the end of the course will be able to ...
 |   8   | Thursday, November 15 | [Manual Navigation] |
 |      |  Tuesday, November 20 | **Don Rags** |
 |     | Thursday, November 22 | **Fall Break** |
-|  9   |  Tuesday, November 27    | Apple Watch Extension |
+|  9   |  Tuesday, November 27    | [Apple Watch Extension] |
 |  10   | Thursday, November 29    | Architecting an iOS App |
 |  11     |  Tuesday, December 4    | Modeling and Structure (Intermediate) |
 |  12   | Thursday, December 6   | Collection Views |
@@ -60,6 +60,7 @@ Students by the end of the course will be able to ...
 [Displaying Lists]: Lessons/06-Displaying-Collections
 [Segues]:Lessons/07-Passing-Information-Between-ViewControllers
 [Manual Navigation]: Lessons/08-Manual-Navigation
+[Apple Watch Extension]: Lessons/09-Apple-Watch-Extension
 
 ## Evaluation
 
