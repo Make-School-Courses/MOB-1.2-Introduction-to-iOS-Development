@@ -98,6 +98,20 @@ Unwind segues let you dismiss view controllers. You create unwind segues in Inte
 
 NOTE: You must define an unwind action method in one of your view controllers **before** trying to create the corresponding unwind segue in Interface Builder. The presence of that method is required and tells Interface Builder that there is a valid target for the unwind segue.
 
+Example
+
+```swift
+
+ @IBAction func myUnwindAction(_ sender: UIStoryboardSegue){
+        if sender.source is NextViewController{
+            if let senderVC = sender.source as? NextViewController{
+                //Sending back a property from the pevious View Controller
+                print(senderVC.receivedText)
+            }
+        }
+    }
+```
+
 ### Programmatic Segues
 
 ```swift
@@ -110,11 +124,20 @@ NOTE: You must define an unwind action method in one of your view controllers **
 
 Complete the [Segue Challenge](https://github.com/amelinagzz/segue-starter)
 
-Continue working on the Mood Tracker app with [part 2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+Continue working on the Mood Tracker app with 
+
+[part 2.1](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+
+[part 2.2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.2-content.md)
+
+[part 2.3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.3-content.md)
+
 
 ## After Class
 
 Complete [this project](https://www.hackingwithswift.com/read/19/1/setting-up) using MapKit (we will use it next class)
+
+Start [Habitual tutorial](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
 ## Resources
 

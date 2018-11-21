@@ -152,7 +152,7 @@ Using the project for last class (segues), make the navigation programmatically 
   - You will need to instantiate the [MKMapView](https://developer.apple.com/documentation/mapkit/mkmapview) programmatically.
   - Add a [UIBarButtonItem](https://developer.apple.com/documentation/uikit/uibarbuttonitem) in the map screen to Logout and handle the action.<br>
 
-1. Continue working on the Mood Tracker app with [part 2](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
+1. Continue working on the Mood Tracker app with [part 3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/7.1-content.md) and [part 4](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/8.1-content.md)
 
 ## Resources
 
