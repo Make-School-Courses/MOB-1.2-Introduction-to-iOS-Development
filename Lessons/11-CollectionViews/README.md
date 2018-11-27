@@ -114,7 +114,7 @@ collectionView.register(Cell.self, forCellWithReuseIdentifier: Cell.identifier)
 3. Now instead of using the default flow layout. Use the subclass `CustomFlowLayout`.
 ```
 let flow = CustomFlowLayout()
-collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: flow)
+let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: flow)
 ```
 We won't be using the methods in the flow extension so we can comment that out for now.
 
@@ -128,7 +128,7 @@ let minColumnWidth = CGFloat(300)
 let maxNumColumns = Int(availableWidth/minColumnWidth)
 let cellWidth = (availableWidth / CGFloat(maxNumColumns)).rounded(.down)
 
-self.itemSize = CGSize(width: cv.bounds.inset(by: cv.layoutMargins).size.width, height: 70.0)
+self.itemSize = CGSize(width: cellWidth, height: 70.0)
 
 ```
 
