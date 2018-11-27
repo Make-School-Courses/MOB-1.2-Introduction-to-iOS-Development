@@ -32,14 +32,14 @@ Spotify - Items are genres, artists or songs
 
 ## Layout
 
-Just like UITableview, UICollectionView has a datasource and a delegate. What's different is another concept known as Layout.
+Just like `UITableview`, `UICollectionView` has a datasource and a delegate. What's different is another concept known as Layout.
 
 Layout is everything that deals with *where* the content is displayed.<br>
-Each individual item is specified by the UICollectionView layout attributes (bounds, center, frame...) These properties are used to define the items in the collection view.
+Each individual item is specified by the `UICollectionView` layout attributes (bounds, center, frame...) These properties are used to define the items in the collection view.
 
 Layout is immutable. If this needs to be changed (ex. change in orientation) we would use the invalidate layout method. The good thing of the layout being separated from the content in the UICollectionView is that we can have transitions between layouts with animations. The transitioning layouts don't need to know about each other, they just describe how the arrangement is going to be and then the transition occurs.
 
-UICollectionViewLayout is a class that is meant to be subclassed. There is one provided already called **UICollectionViewFlowLayout**.
+`UICollectionViewLayout` is a class that is meant to be subclassed. There is one provided already called **UICollectionViewFlowLayout**.
 
 ## Line based design
 
@@ -75,12 +75,12 @@ public func collectionView(_ collectionView: UICollectionView, cellForItemAt ind
 
 ```
 ## Delegate
-UICollectionView is a subclass of UIScrollView. We use the same delegate and we can also extend it.<br>
+`UICollectionView` is a subclass of `UIScrollView`. We use the same delegate and we can also extend it.<br>
 Handles user interaction with items in the collection view: highlighting, selecting, dragging, etc.
 
 ## Setup
 
-1. Instantiate a UICollectionView object on our view controller
+1. Instantiate a `UICollectionView` object on our view controller
 
 ```
 collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
@@ -106,7 +106,7 @@ collectionView.register(Cell.self, forCellWithReuseIdentifier: Cell.identifier)
 
 ## Baseline Challenges
 
-1. Download the [starter project](https://github.com/amelinagzz/collectionviews-starter) and finish the implementation of the UICollectionView.
+1. Download the [starter project](https://github.com/amelinagzz/collectionviews-starter) and finish the implementation of the `UICollectionView`.
 2. Experiment changing the values in the flow layout until you achieve something like this.
 
 ![collectionview](assets/collectionview.png)<br><br>
