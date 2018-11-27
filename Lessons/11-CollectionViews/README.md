@@ -35,9 +35,9 @@ Spotify - Items are genres, artists or songs
 Just like `UITableview`, `UICollectionView` has a datasource and a delegate. What's different is another concept known as Layout.
 
 Layout is everything that deals with *where* the content is displayed.<br>
-Each individual item is specified by the `UICollectionView` layout attributes (bounds, center, frame...) These properties are used to define the items in the collection view.
+Each individual item is specified by the `UICollectionView` layout attributes (bounds, center, frame...) These properties are used to define the **items** in the collection view.
 
-Layout is immutable. If this needs to be changed (ex. change in orientation) we would use the invalidate layout method. The good thing of the layout being separated from the content in the UICollectionView is that we can have transitions between layouts with animations. The transitioning layouts don't need to know about each other, they just describe how the arrangement is going to be and then the transition occurs.
+Layout is immutable. If this needs to be changed (ex. change in orientation) we would use the invalidate layout method. The good thing of the layout being separated from the content in the `UICollectionView` is that we can have transitions between layouts with animations. The transitioning layouts don't need to know about each other, they just describe how the arrangement is going to be and then the transition occurs.
 
 `UICollectionViewLayout` is a class that is meant to be subclassed. There is one provided already called **UICollectionViewFlowLayout**.
 
@@ -45,26 +45,26 @@ Layout is immutable. If this needs to be changed (ex. change in orientation) we 
 
 Flow - line based layout systems that adapts to many designs.
 
-Vertical Scrolling<br>
+**Vertical Scrolling**<br>
 Here we see what happens when the flow layout lays out the items in the collection view.
 ![vertical](assets/vertical.gif)<br><br>
-Line Spacing
+**Line Spacing**
 ![v1](assets/v1.png)<br><br>
-Inter item spacing
+**Inter item spacing**
 ![v2](assets/v2.png)<br><br>
-Horizontal Scrolling<br>
+**Horizontal Scrolling**<br>
 Here we see what happens when the flow layout lays out the items in the collection view.<br>
 ![horizontal](assets/horizontal.gif)<br><br>
-Line Spacing
+**Line Spacing**
 ![h1](assets/h1.png)<br><br>
-Inter item spacing
+**Inter item spacing**
 ![h2](assets/h2.png)<br><br>
 
 Layout provides 2 properties that let us specify the minimum value for both line spacing and inter item spacing.
 
 ## Data Source
 
-Deals with what goes as the content of the UICollectionView.
+Deals with what goes as the content of the `UICollectionView`.
 
 ```
 optional public func numberOfSections(in collectionView: UICollectionView) -> Int
