@@ -22,10 +22,11 @@ MOB 1.1 <br>
 
 Students by the end of the course will be able to ...
 
-1. Build a simple app using AutoLayout
-1. Recognize MVC in a basic iOS app
-1. Build an app using (UIKit)Views/ViewControllers/TableViews/Cells etc
-1. Describe passing information between ViewControllers and back using Segues and manual navigation
+1. Build an app using UIKit basic components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom cells.
+1.  Apply AutoLayout & Size Classes to achieve a good distribution of elements in different screen sizes and orientations.
+1. Implement MVC in a basic iOS app, understanding the separation of concerns for each component.
+1. Pass information between view controllers using segues and also using the manual approach.
+1. Apply different techniques to find and solve bugs within Xcode.
 
 ## Schedule
 
