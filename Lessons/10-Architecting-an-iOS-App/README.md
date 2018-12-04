@@ -8,6 +8,20 @@ By the end of this lesson, students should be able to:
 - Define all SOLID principles
 - Reflect when to use the principles
 - Identify areas for refactoring code
+- Add SwiftLint to a project
+
+## SwiftLint
+
+[SwiftLint repository](https://github.com/realm/SwiftLint) on Github.<br>
+
+Steps:<br>
+1. Install the pod `pod 'SwiftLint'`
+1. Add new Run Script `"${PODS_ROOT}/SwiftLint/swiftlint"`
+1. Create a `.swiftlint.yml` file to customize the rules
+1. You can use the rules available on github as a template
+
+
+Available [rules](https://github.com/realm/SwiftLint/blob/master/Rules.md) at the moment.
 
 ## SOLID principles
 
@@ -113,10 +127,10 @@ class DataBaseService {
 
 **Software entities (classes, modules, etc.) should be open for extension but closed for modification**
 
-###Open
+### Open
 The behavior of the module can be extended. We can make it behave in new and different ways as the requirements of the app change, or as new needs are added.
 
-###Closed
+### Closed
 When extending a class, we shouldn't change the implementation.
 
 Bottom line: Design modules that never change, when requirements change or are added, we add new code, not change code that already works.
@@ -225,7 +239,7 @@ class CalculateArea{
 ```
 ## Liskov Substitution Principle
 
-**Functions that use references to base classes must be able to use objects of derived classes without knowing it.**
+**Functions that use references to base classes must be able to use objects of derived classes.**
 
 We must make sure that the new subclass is extending the base class without changing their behavior. And we could in theory replace the subclass instance with an instance of the base class.
 
@@ -239,7 +253,7 @@ protocol Bird {
 }
 ```
 
-And we can create as many classes for birds as we need. But then if we are asked to include penguins, they can't fly, so they wont set an     `altitudeToFly`.
+And we can create as many classes for birds as we want. But if we are asked to include penguins, they can't fly, so they wont set an `altitudeToFly`.
 
 ```swift
 class Penguin: Bird {
@@ -286,6 +300,9 @@ struct Penguin: Bird {
     }
 }
 ```
+
+Another example: If we subclass UIButton (ex. MyButtonSubclass), wherever we use UIButton we could replace by MyButtonSubclass and the app won’t crash or misbehave in any way.
+
 ## Interface Segregation Principle
 
 **Clients should not be forced to depend upon interfaces that they do not use.**
@@ -347,6 +364,8 @@ protocol LongPressProtocol {
     func didLongPress()
 }
 ```
+
+Another example: When you use `UITableView`, just two methods are required, the rest are optional.
 
 ## Dependency Inversion Principle
 
@@ -421,9 +440,12 @@ class DatabaseManager: Storage {
 
 ## Baseline Challenges
 
-Download and clone this repo:
+Open your SPD or personal mobile project (choose the one you think you can get the most benefit from having someone else review it) and have a peer go over it with you using the code review rubric.
+- Identify areas of opportunity to make improvements.
+- Identify if there needs to be any code refactoring.
+- Discuss with your classmate your decisions when writing your code and be open to receive feedback.
 
-[Peter's Pancake Party]()
+After you are done, do the same process with their project.
 
 ## External Resources
 
