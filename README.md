@@ -48,8 +48,8 @@ Students by the end of the course will be able to ...
 |     | Thursday, November 22 | **Fall Break** |
 |  9   |  Tuesday, November 27    | [Collection Views] |
 |  10   | Thursday, November 29    | [Debugging] |
-|  11     |  Tuesday, December 4    | [Apple Watch Extension] |
-|  12   | Thursday, December 6   |  Architecting an iOS App|
+|  11     |  Tuesday, December 4    | [Architecting an iOS App] |
+|  12   | Thursday, December 6   |  [Apple Watch Extension] |
 |  13   | Tuesday, December 11   | Final Exams |
 |  14   | Thursday, December 13   | Final Class (presentations for final project) |
 
@@ -64,6 +64,8 @@ Students by the end of the course will be able to ...
 [Apple Watch Extension]: Lessons/09-Apple-Watch-Extension
 [Collection Views]: Lessons/11-CollectionViews
 [Debugging]: Lessons/12-Inspecting-and-Debugging-Code
+[Architecting an iOS App] : Lessons/10-Architecting-an-iOS-App
+
 ## Evaluation
 
 To pass this course you must meet the following requirements:
