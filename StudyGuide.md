@@ -60,11 +60,13 @@ Ways you can demonstrate your skill / knowledge level of this outcome
 - Creating unwind segues to pass back information.
 - Navigating programmatically, using different animations (present, push, dismiss, pop).
 
-**Outcome 4: Apply different techniques to find and solve bugs within Xcode.**
+**Outcome 4: Apply different techniques to find and solve bugs within Xcode & Best Practices.**
 
 Ways we learned about this in the course
 - Class No. 10 covered debugging.
+- Class on SOLID principles
 
 Ways you can demonstrate your skill / knowledge level of this outcome
 - Identify different methods to debug apps.
 - Knowing causes of errors & crashes.
+- Being able to explain at a basic level what each SOLID principle tries to solve.
