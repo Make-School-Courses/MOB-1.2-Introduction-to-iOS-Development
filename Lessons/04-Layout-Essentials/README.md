@@ -1,6 +1,6 @@
 # Layout Essentials
 
-## Minute-by-Minute
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Identify and use UIStackViews for layout
