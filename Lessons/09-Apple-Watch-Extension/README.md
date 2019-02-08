@@ -1,6 +1,6 @@
 # Apple Watch Extension
 
-## Lesson Overview
+## Minute-by-Minute
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
@@ -11,7 +11,7 @@
 | 25            | Setting up the connectivity             |
 | 5             | Wrap up                                 |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Add a watchOS target to an existing iOS app.
@@ -247,9 +247,9 @@ func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] =
 ## Result
 ![result](assets/result.gif)
 
-## Baseline Challenges
-TBD
+## Wrap Up
+Finish the watch implementation.
 
-## Resources
+## Additional Resources
 
 Book - [Swift Development for the Apple Watch](http://www.allitebooks.in/swift-development-apple-watch/)

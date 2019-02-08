@@ -1,6 +1,6 @@
 # Layout Essentials
 
-## Objectives & Competencies
+## Minute-by-Minute
 By the end of this lesson, students should be able to:
 
 - Identify and use UIStackViews for layout
@@ -8,11 +8,6 @@ By the end of this lesson, students should be able to:
 - Use CHP and CCRP to layout views in a UIStackView
 - Identify the parts of a constraint - (constant, priority, multiplier)
 - Describe the intrinsic content size of a view
-
-## Vocabulary
-- Content Hugging Priority
-- Content Compression Resistance Priority
-- Equality constraints
 
 ## AutoLayout
 
@@ -178,7 +173,7 @@ How does a stackview know how to size its components?
 
 1. What is the intrinsic content size for a UIView?
 
-## Challenges
+## In Class Activities
 
 Build the following in interface builder in Xcode. Clone the repo below to get started.
 
@@ -205,3 +200,6 @@ Build the following in interface builder in Xcode. Clone the repo below to get s
 6. Two UILabels stacked together. The top bold label is a multiline label, the bottom is only one line. When shrunk, the top label shrinks its text to accomodate.
 
 ![Resizable Labels](assets/ResizableLabels.gif)
+
+## Wrap Up
+Complete class activities.

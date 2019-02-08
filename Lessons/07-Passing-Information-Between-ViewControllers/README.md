@@ -1,6 +1,6 @@
 # Passing information between ViewControllers
 
-## Lesson Overview
+## Minute-by-Minute
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
@@ -10,7 +10,7 @@
 | 50            | Mood Tracker Pt. 2                      |
 | 5             | Wrap up                                 |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Identify and describe a segue.
@@ -120,11 +120,11 @@ Example
     }
 ```
 
-## Baseline Challenges
+## In Class Activities
 
 Complete the [Segue Challenge](https://github.com/amelinagzz/segue-starter)
 
-Continue working on the Mood Tracker app with 
+Continue working on the Mood Tracker app with
 
 [part 2.1](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.1-content.md)
 
@@ -133,16 +133,14 @@ Continue working on the Mood Tracker app with
 [part 2.3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/6.3-content.md)
 
 
-## After Class
+## Wrap Up
 
 Complete [this project](https://www.hackingwithswift.com/read/19/1/setting-up) using MapKit (we will use it next class)
 
 Start [Habitual tutorial](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
-## Resources
+## Additional Resources
 
-[Tutorial with custom transition](https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25)
-
-Custom transitions library [Hero](https://github.com/HeroTransitions/Hero)
-
+[Tutorial with custom transition](https://medium.com/@samstone/create-custom-uinavigationcontroller-transitions-in-ios-1acd6a0b6d25)<br>
+Custom transitions library [Hero](https://github.com/HeroTransitions/Hero)<br>
 Segues - [Apple Docs](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html)

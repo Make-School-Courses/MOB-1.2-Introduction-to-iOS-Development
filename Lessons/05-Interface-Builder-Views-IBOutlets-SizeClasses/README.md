@@ -1,6 +1,6 @@
 # Displaying Views, Connecting Interface Builder Elements
 
-## Lesson Overview
+## Minute-by-Minute
 
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
@@ -12,7 +12,7 @@
 | 40            | Activity on size classes                |
 | 5             | Wrap up                                 |
 
-# Objectives & Competencies
+# Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Position UI elements in the interface builder
@@ -21,7 +21,7 @@ By the end of this lesson, students should be able to:
 - Apply size classes in the interface builder
 - Test different devices with the preview feature
 
-## Class Materials
+## Overview
 
 Slides:
 
@@ -43,14 +43,10 @@ Your design should work for iPhones & iPads in portrait & landscape orientations
 
 Stretch Challenge: Use size classes for the Hello app as well.
 
-## Resources
+## Additional Resources
 
-[Stretchable buttons (programmatically)](https://www.natashatherobot.com/ios-stretchable-button-uiedgeinsetsmake/)
-
-[Stretchable buttons (using asset catalog)](https://krakendev.io/blog/4-xcode-asset-catalog-secrets-you-need-to-know)
-
-[Optionals and IB outlets](https://blog.curtisherbert.com/to-optional-or-not-to-optional-iboutlet/)
-
-[Optionals and IB outlets](https://cocoacasts.com/should-outlets-be-optionals-or-implicitly-unwrapped-optionals)
-
+[Stretchable buttons (programmatically)](https://www.natashatherobot.com/ios-stretchable-button-uiedgeinsetsmake/)<br>
+[Stretchable buttons (using asset catalog)](https://krakendev.io/blog/4-xcode-asset-catalog-secrets-you-need-to-know)<br>
+[Optionals and IB outlets](https://blog.curtisherbert.com/to-optional-or-not-to-optional-iboutlet/)<br>
+[Optionals and IB outlets](https://cocoacasts.com/should-outlets-be-optionals-or-implicitly-unwrapped-optionals)<br>
 [Outlets weak or strong](https://cocoacasts.com/should-outlets-be-weak-or-strong)

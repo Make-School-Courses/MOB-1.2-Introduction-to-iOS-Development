@@ -1,6 +1,6 @@
 # Displaying Collections in UIKit
 
-## Lesson Overview
+## Minute-by-Minute
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
@@ -10,7 +10,7 @@
 | 50            | Mood Tracker Pt. 1                      |
 | 5             | Wrap up                                 |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Setup and display a list of data in a UITableView
@@ -130,7 +130,7 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 - Display "Hello world \(number of row)" in each row.
 - Include an image for the cell's image view.
 
-## Baseline Challenges
+## In Class Activity
 
 For the upcoming classes we'll be building an app to track the user's daily mood. This first part will cover:
 
@@ -141,10 +141,8 @@ For the upcoming classes we'll be building an app to track the user's daily mood
 
 Create a new project and follow the implementation for this part here: [Mood Tracker Part 1](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/5.1-content.md)
 
-## Resources
+## Additional Resources
 
-[UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)
-
-[Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
-
+[UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)<br>
+[Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)<br>
 [Improving performance](https://medium.com/capital-one-tech/smooth-scrolling-in-uitableview-and-uicollectionview-a012045d77f)

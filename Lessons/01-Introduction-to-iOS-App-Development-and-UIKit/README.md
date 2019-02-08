@@ -1,6 +1,6 @@
 # Introduction to iOS App Development
 
-## Lesson Overview
+## Minute-by-Minute
 
 | **Time(min)** | **Activity**                              |
 | ------------- | ------------------------------------------|
@@ -16,7 +16,7 @@
 | 15            | Activity: Identify elements in apps       |
 | 5             | Wrap up and Q&A                           |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 
 By the end of this lesson, students should be able to:
 
@@ -27,22 +27,19 @@ By the end of this lesson, students should be able to:
 - Identify common elements in iOS apps
 - Familiarize with IDE & UIKit
 
-## Class Materials
+## Overview
 
 Slides:
 
 [Introduction to iOS App Development](https://docs.google.com/presentation/d/1U0K65MGwAeD9m8TiNnXustSiM-cVK-_y-Frvi3jXQTA/edit?usp=sharing)
 
-## After Class
+## Wrap Up
 
 Complete [Magic 8 Ball tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 
-## Resources
+## Additional Resources
 
-[iOS 12](https://www.apple.com/ios/ios-12/)
-
-[Xcode 10](https://developer.apple.com/xcode/)
-
-[Xcode 10 features](https://www.youtube.com/watch?v=RwO5HKuqLEg)
-
+[iOS 12](https://www.apple.com/ios/ios-12/)<br>
+[Xcode 10](https://developer.apple.com/xcode/)<br>
+[Xcode 10 features](https://www.youtube.com/watch?v=RwO5HKuqLEg)<br>
 [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/)

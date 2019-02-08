@@ -1,6 +1,6 @@
 # Manual Navigation
 
-## Lesson Overview
+## Minute-by-Minute
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
@@ -11,7 +11,7 @@
 | 25            | Mood Tracker Pt. 3 & 4                  |
 | 5             | Wrap up                                 |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Setup a project without storyboard.
@@ -143,17 +143,18 @@ extension UINavigationController {
 ## Demo/Activity
 Using the project for last class (segues), make the navigation programmatically and delete the segues and unwinds.
 
-## Baseline Challenges
+## In Class Activities
 
-1. Using the project you completed for this class using MapKit:
+Using the project you completed for this class using MapKit:
   - Delete the storyboard.
   - Create a new VC that will serve as a Login screen. This screen will only have a button to continue to the map. Add constraints to the button using the anchor approach.
   - Modify the AppDelegate to start with the Login screen.
   - You will need to instantiate the [MKMapView](https://developer.apple.com/documentation/mapkit/mkmapview) programmatically.
   - Add a [UIBarButtonItem](https://developer.apple.com/documentation/uikit/uibarbuttonitem) in the map screen to Logout and handle the action.<br>
 
-1. Continue working on the Mood Tracker app with [part 3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/7.1-content.md) and [part 4](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/8.1-content.md)
+## Wrap Up
+Continue working on the Mood Tracker app with [part 3](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/7.1-content.md) and [part 4](https://github.com/Product-College-Labs/mood-tracker/blob/master/content/8.1-content.md)
 
-## Resources
+## Additional Resources
 
 [Manual Navigation](https://medium.com/whoknows-swift/swift-the-hierarchy-of-uinavigationcontroller-programmatically-91631990f495)

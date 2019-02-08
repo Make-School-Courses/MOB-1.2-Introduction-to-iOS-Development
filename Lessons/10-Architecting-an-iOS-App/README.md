@@ -1,8 +1,6 @@
 # Architecting an iOS App
 
-## Lesson Overview
-
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Define all SOLID principles
@@ -10,7 +8,9 @@ By the end of this lesson, students should be able to:
 - Identify areas for refactoring code
 - Add SwiftLint to a project
 
-## SwiftLint
+## Initial Exercise
+
+SwiftLint
 
 [SwiftLint repository](https://github.com/realm/SwiftLint) on Github.<br>
 
@@ -438,7 +438,7 @@ class DatabaseManager: Storage {
 }
 ```
 
-## Baseline Challenges
+## In Class Activity
 
 Open your SPD or personal mobile project (choose the one you think you can get the most benefit from having someone else review it) and have a peer go over it with you using the code review rubric.
 - Identify areas of opportunity to make improvements.
@@ -447,7 +447,7 @@ Open your SPD or personal mobile project (choose the one you think you can get t
 
 After you are done, do the same process with their project.
 
-## External Resources
+## Additional Resources
 
 [SOLID article](https://marcosantadev.com/solid-principles-applied-swift/)<br>
 [Another article](https://codeburst.io/solid-design-principle-using-swift-fa67443672b8)<br>

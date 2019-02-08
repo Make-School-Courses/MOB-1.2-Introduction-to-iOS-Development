@@ -1,6 +1,6 @@
 # UICollectionViews
 
-## Lesson Overview
+## Minute-by-Minute
 | **Time(min)** | **Activity**                            |
 | ------------- | ----------------------------------------|
 | 5             | Review of Last Class & Objectives       |
@@ -12,7 +12,7 @@
 | 25            | Challenge updating datasource           |
 | 5             | Wrap up                                 |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Implement UICollectionViews in code
@@ -104,7 +104,7 @@ collectionView.register(Cell.self, forCellWithReuseIdentifier: Cell.identifier)
 6. Implement methods needed from dataSource and delegate.
 
 
-## Baseline Challenges
+## In Class Activities
 
 1. Download the [starter project](https://github.com/amelinagzz/collectionviews-starter) and finish the implementation of the `UICollectionView`.
 2. Experiment changing the values in the flow layout until you achieve something like this.
@@ -154,7 +154,7 @@ The order of the *updates* in the datasource **does** matter<br>
 - Process Delete updates first, in descending order
 - Process Insert updates last, in ascending order
 
-## Challenge - fixing the updates
+## In Class Activity
 
 The sample project has a nav bar button with the title "update".
 
@@ -170,7 +170,7 @@ Try it now and see what happens. Does it work? What's wrong?
 The last part of this challenge will be completing the rest of the options in the "Update" menu.
 Take into consideration the guidelines to avoid crashing the app.
 
-## External Resources
+## Additional Resources
 [WWDC Demo on UICollectionView](https://developer.apple.com/videos/play/wwdc2018/225/?time=514)<br>
 [UICollectionViews programmatically](https://theswiftdev.com/2018/06/26/uicollectionview-data-source-and-delegates-programmatically/)<br>
 [Starter project](https://github.com/amelinagzz/collectionviews-starter)

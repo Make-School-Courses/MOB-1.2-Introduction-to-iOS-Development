@@ -1,6 +1,6 @@
 # Inspecting and Debugging Your Code
 
-## Lesson Overview
+## Minute-by-Minute
 
 | **Time(min)** | **Activity**                              |
 | ------------- | ---------------------------               |
@@ -12,7 +12,7 @@
 | 25            | Work on challenge                         |
 | 5             | Wrap up & Q&A                             |
 
-## Objectives & Competencies
+## Class Learning Objectives/Competencies
 By the end of this lesson, students should be able to:
 
 - Identify and set breakpoints in code
@@ -22,7 +22,7 @@ By the end of this lesson, students should be able to:
 - Use the visual representation to look for solutions
 - Integrate Crashlytics to a project and get a symbolicated crash report
 
-# Lesson
+# Why you should know this
 
 When writing code, you will discover that as you write more code, the potential for bugs in your code increases. Bugs happen and it is expected we spend a lot of our time trying to find and fix bugs. It is just a normal part of being a programmer. Discovering and fixing bugs is a difficult task; it takes time, practice and a knowledge of a few tools to get good at it.
 
@@ -175,10 +175,10 @@ Ways to get the dSYM file:
 - If it is from a local simulator: `mdfind "com_apple_xcode_dsym_uuids == <UUID>"` <br>
 The UUID will be given to you in the Crashlytics console.
 
-## Baseline challenge
+## In Class Activity
 Add your app to Crashlytics and make it crash to get a report on the dashboard.
 
-## External resources
+## Additional resources
 [Udacity course on debugging](https://www.udacity.com/course/xcode-debugging--ud774)<br>
 [LLDB guide](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-basics.html#//apple_ref/doc/uid/TP40012917-CH2-SW1)<br>
 [Debugging with Xcode](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.html#//apple_ref/doc/uid/TP40015022-CH8-SW19)<br>
