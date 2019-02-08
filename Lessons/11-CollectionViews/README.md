@@ -12,7 +12,7 @@
 | 25            | Challenge updating datasource           |
 | 5             | Wrap up                                 |
 
-## Class Learning Objectives/Competencies
+## Class Learning Objectives
 By the end of this lesson, students should be able to:
 
 - Implement UICollectionViews in code

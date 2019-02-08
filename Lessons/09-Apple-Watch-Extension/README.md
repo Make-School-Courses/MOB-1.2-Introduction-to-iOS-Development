@@ -11,7 +11,7 @@
 | 25            | Setting up the connectivity             |
 | 5             | Wrap up                                 |
 
-## Class Learning Objectives/Competencies
+## Class Learning Objectives
 By the end of this lesson, students should be able to:
 
 - Add a watchOS target to an existing iOS app.

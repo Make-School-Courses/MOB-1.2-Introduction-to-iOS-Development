@@ -11,7 +11,7 @@
 | 25            | Mood Tracker Pt. 3 & 4                  |
 | 5             | Wrap up                                 |
 
-## Class Learning Objectives/Competencies
+## Class Learning Objectives
 By the end of this lesson, students should be able to:
 
 - Setup a project without storyboard.

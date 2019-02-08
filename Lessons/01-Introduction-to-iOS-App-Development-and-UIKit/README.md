@@ -16,7 +16,7 @@
 | 15            | Activity: Identify elements in apps       |
 | 5             | Wrap up and Q&A                           |
 
-## Class Learning Objectives/Competencies
+## Class Learning Objectives
 
 By the end of this lesson, students should be able to:
 
