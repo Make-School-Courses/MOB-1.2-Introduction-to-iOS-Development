@@ -6,7 +6,7 @@ This course covers mobile application development in iOS using Swift. You will l
 
 ## Prerequisites:
 
-MOB 1.1 <br>
+[MOB 1.1](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift)
 
 ## Learning Outcomes
 
