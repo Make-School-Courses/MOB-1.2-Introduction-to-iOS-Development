@@ -193,7 +193,7 @@ Build the following in interface builder in Xcode. Clone the repo below to get s
 4. Stack the lions vertially with the top lion bigger than the rest
 ![Magestic Lion 1](assets/magestic2.png)
 
-5.Stack an image on the left and two vertically stacked labels on the right. The top label should grow before the bottom one(gets clipped).
+5. Stack an image on the left and two vertically stacked labels on the right. The top label should grow before the bottom one(gets clipped).
 ![Lion Label Stack](assets/LionLabelStack.gif)
 
 
