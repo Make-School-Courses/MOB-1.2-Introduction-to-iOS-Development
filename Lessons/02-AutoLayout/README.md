@@ -72,7 +72,7 @@ Adhere to the safe area and layout margins defined by UIKit. The safe area also 
 
 ## Which option do you think is best?
 
-![ex1](ex1.png)
+![ex1](assets/ex1.png)
 
 <aside class="notes">
 Discuss with a partner.
@@ -82,7 +82,7 @@ Discuss with a partner.
 
 ## Which option do you think is best?
 
-![ex2](ex2.png)
+![ex2](assets/ex2.png)
 
 <aside class="notes">
 Discuss with a partner.
@@ -102,7 +102,7 @@ The system defines two size classes:
 
 A view may possess any combination of size classes:
 
-![sizeclasses](assets/sizeclasses.png)
+![sizeclass](assets/sizeclass.png)
 
 <aside class = "notes">
 
