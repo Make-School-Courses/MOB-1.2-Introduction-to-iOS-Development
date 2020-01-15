@@ -2,7 +2,7 @@
 <!-- reveal-md README.md -w -->
 
 <!-- .slide: class="header" -->
-# Autolayout
+# Autolayout Pt.1
 
 ## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/01-Autolayout/README.html ':ignore')
 
@@ -284,7 +284,13 @@ Defines the size and position of the arranged views. For example, if it's set to
 
 ## After Class
 
-- 
+Read about the type of errors you can encounter while working with constraints.
+
+- [Unsatisfiable Layouts](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ConflictingLayouts.html#//apple_ref/doc/uid/TP40010853-CH19-SW1)
+- [Ambiguous Layouts](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/AmbiguousLayouts.html#//apple_ref/doc/uid/TP40010853-CH18-SW1)
+- [Logical errors](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LogicalErrors.html#//apple_ref/doc/uid/TP40010853-CH20-SW1)
+
+Then read about how you can debug them with these [tips & tricks](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1). Identify the tip that you think will be the most useful to you. We'll share them during the next class.
 
 <!-- > -->
 
@@ -292,3 +298,14 @@ Defines the size and position of the arranged views. For example, if it's set to
 
 - [AutoLayout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH11-SW1)
 - [StackViews](https://www.appcoda.com/learnswift/stack-views.html)
+- [Apple Documentation - AutoLayout](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
+- [Tips for Autolayout](https://blog.supereasyapps.com/30-auto-layout-best-practices/)<br>
+- [MS Autolayout series Pt.1](https://www.youtube.com/watch?v=MEhDeQurPqg)
+- [MS Autolayout series Pt.2](https://www.youtube.com/watch?v=evILiMVw01E)
+- [MS Autolayout series Pt.3](https://www.youtube.com/watch?v=lsi68I_DwVQ&t=1082s)<br>
+- [MS Autolayout series Pt.4](https://www.youtube.com/watch?v=d-Ukb0MOfy8)
+- [MS Autolayout series Pt.5](https://www.youtube.com/watch?v=bunRUPlr83Y)
+- [MS Autolayout series Pt.6](https://www.youtube.com/watch?v=38o--ZMWqHc)
+- [MS Autolayout series Pt.7](https://www.youtube.com/watch?v=LvRln-abo0U)
+- [MS Autolayout series Pt.8](https://www.youtube.com/watch?v=lq19vkSJ03M&t=637s)
+- [MS Autolayout series Pt.9](https://www.youtube.com/watch?v=ORLd596Kz2k)
