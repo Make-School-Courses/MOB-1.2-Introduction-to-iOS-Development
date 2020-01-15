@@ -111,7 +111,7 @@ Now you try it, do the same as the example.
 
 ## In Class Activity
 
-- 20 minutes to finish the layout specified [here](assignments.assignment1.md)
+- 20 minutes to finish the layout specified [here](assignments/assignment1.md)
 - 5 minutes to go over questions
 
 <!-- > -->
@@ -277,7 +277,7 @@ Defines the size and position of the arranged views. For example, if it's set to
 
 ## In Class Activity
 
-- 30 minutes to finish the layout specified [here](assignments.assignment2.md)
+- 30 minutes to finish the layout specified [here](assignments/assignment2.md)
 - 10 minutes to go over questions
 
 <!-- > -->

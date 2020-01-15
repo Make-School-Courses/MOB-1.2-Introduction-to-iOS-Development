@@ -118,7 +118,7 @@ Full list of combinations [here](https://developer.apple.com/design/human-interf
 
 ## Using Size Classes
 
-- Follow the instructions [here](assignments.sizeclasses.md) to create a layout that works in portrait and landscape orientations.
+- Follow the instructions [here](assignments/sizeclasses.md) to create a layout that works in portrait and landscape orientations.
 - If you get stuck feel free to debug with a partner or raise your hand to ask questions.
 
 <!-- v -->
