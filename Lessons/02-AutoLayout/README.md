@@ -13,8 +13,8 @@
 - Learning Objectives
 - Review
 - Layout Guides & Safe Area
+- Scroll Views
 - Size Classes
-- UIPagerViewController
 
 <!-- > -->
 
@@ -90,6 +90,42 @@ Discuss with a partner.
 
 <!-- > -->
 
+## Scroll Views
+
+Sometimes designs need for content to be scrolled because it won't fit in the space of the screen. This is even harder to achieve given iPhones have different screen sizes.
+
+Setting a scroll view can be quite a headache, because there are guidelines, safeareas and content sizes we need to pay attention to.
+
+<!-- v -->
+
+Whiteboard explanation of how the scrollview works.
+
+<!-- v -->
+
+## Scrollview recipe
+
+1. Pin the top, bottom, trailing and leading of the scroll view to the Safe Area.
+1. If the content was a stack view you would pin the the the stack's top, bottom, trailing and leading to the Content Layout Guide. In reality it could be any view, but you should treat it the same, we call it the container view.
+1. Set the container view's width to match the Frame Layout Guide's width.
+1. Look for missing constraints inside the content view.
+1. If all is correct, the scroll view will set its content size automatically based on the components inside the content view.
+
+<!-- v -->
+
+## Activity
+
+20 min - Replicate the following layout.
+5 min - Instructor shows solution
+
+![scroll](assets/scroll.gif)
+
+<aside class="notes">
+You can change the size of the screen you see in the interface builder to be as long as you need to see the elements you are adding to the scroll view. And not having to be restricted to the real screen size.
+
+do this by selecting the view controller with the scroll view, then go to the attributes inspector and choose the ruler icon. Change the simulated size from Fixed to Freeform and make it as large as you need.
+
+<!-- v -->
+
 ## Size Classes
 
 Are traits that are automatically assigned to content areas based on their size.
@@ -139,3 +175,4 @@ Is it always required to use size classes? What is a good criteria to know if we
 - https://developer.apple.com/documentation/uikit/uiview/positioning_content_within_layout_margins
 - https://developer.apple.com/documentation/uikit/uiview/positioning_content_relative_to_the_safe_area
 - https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
+- https://www.raywenderlich.com/5758454-uiscrollview-tutorial-getting-started#toc-anchor-007
