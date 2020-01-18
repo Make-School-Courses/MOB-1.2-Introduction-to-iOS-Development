@@ -25,25 +25,25 @@ By the end of the course, you will be able to ...
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tue, January 21               | [Autolayout Pt.1]       |
-|  2 |  Thu, January 23               | [Autolayout Pt.2]       |
-|  3 |  Tue, January 28               | [Coding Constraints]    |
-|  4 |  Thu, January 30               | [Size Classes]          |
-|  5 |  Tue, February 4               | [MVC & Navigation]      |
-|  6 |  Thu, February 6               | [Table views]           |
-|  7 |  Tue, February 11              | [Custom views]          |
-|  8 |  Thu, February 13              | [Collection views]      |
-|  9 |  Tue, February 18              | [Diffable data sources] |
-| 10 |  Thu, February 20              | [UITabBarController]    |  
-| 11 |  Tue, February 25              | Lab                     |
-| 12 |  Thu, February 27              | [Using the camera]      |
-| 13 |  Tue, March 3                  | Final Exam              |
-| 14 |  Thu, March 5                  | Presentations           |
+|  1 |  Tue, January 21               | [Autolayout Pt.1]                  |
+|  2 |  Thu, January 23               | [Autolayout Pt.2]                  |
+|  3 |  Tue, January 28               | [Coding Constraints]               |
+|  4 |  Thu, January 30               | [Custom Views & Size Classes]      |
+|  5 |  Tue, February 4               | [MVC & Navigation]                 |
+|  6 |  Thu, February 6               | [Table views]                      |
+|  7 |  Tue, February 11              | [Custom views]                     |
+|  8 |  Thu, February 13              | [Collection views]                 |
+|  9 |  Tue, February 18              | [Compositional Layouts]            |
+| 10 |  Thu, February 20              | [UITabBarController]               |  
+| 11 |  Tue, February 25              | Lab                                |
+| 12 |  Thu, February 27              | [Using the camera]                 |
+| 13 |  Tue, March 3                  | Final Exam                         |
+| 14 |  Thu, March 5                  | Presentations                      |
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
-[Lesson 2]: Lessons/Lesson2.md
-[Lesson 3]: Lessons/Lesson3.md
-[Lesson 4]: Lessons/Lesson4.md
+[Autolayout Pt.1]: Lessons/02-Autolayout/README.md
+[Coding Constraints]: Lessons/03-CodingConstraints/README.md
+[Custom Views & Size Classes]: Lessons/04-CustomViews-&-SizeClasses/README.md
 [Lesson 5]: Lessons/Lesson5.md
 [Lesson 6]: Lessons/Lesson6.md
 [Lesson 7]: Lessons/Lesson7.md

@@ -94,7 +94,7 @@ Discuss with a partner.
 
 Sometimes designs need for content to be scrolled because it won't fit in the space of the screen. This is even harder to achieve given iPhones have different screen sizes.
 
-Setting a scroll view can be quite a headache, because there are guidelines, safeareas and content sizes we need to pay attention to.
+Setting a scroll view can be quite a headache, because there are guidelines, safe areas and content sizes we need to pay attention to.
 
 <!-- v -->
 
@@ -126,50 +126,11 @@ do this by selecting the view controller with the scroll view, then go to the at
 
 <!-- v -->
 
-## Size Classes
+## After Class
 
-Are traits that are automatically assigned to content areas based on their size.
-
-The system defines two size classes:
- - **regular** - denotes a bigger space
- - **compact** -  denotes constrained space
-
-<!-- > -->
-
-A view may possess any combination of size classes:
-
-![sizeclass](assets/sizeclass.png)
-
-<aside class = "notes">
-
-- Regular width, regular height
-- Compact width, compact height
-- Regular width, compact height
-- Compact width, regular height
-
-Full list of combinations [here](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
-</aside>
-
-<!-- > -->
-
-## Using Size Classes
-
-- Follow the instructions [here](assignments/sizeclasses.md) to create a layout that works in portrait and landscape orientations.
-- If you get stuck feel free to debug with a partner or raise your hand to ask questions.
+Install SwiftLint in a project.
 
 <!-- v -->
-
-Why do you think we needed to change our initial setup and add more stack views?
-
-<!-- v -->
-
-Why do we care to change the layout in landscape mode, when the original stack view changed by itself and we could still see the 4 colors?
-
-<!-- v -->
-
-Is it always required to use size classes? What is a good criteria to know if we should use them or not?
-
-<!-- > -->
 
 ## Additional Resources
 - https://developer.apple.com/documentation/uikit/uiview/positioning_content_within_layout_margins
