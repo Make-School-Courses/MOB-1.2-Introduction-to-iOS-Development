@@ -151,6 +151,10 @@ exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive 
 
 Using the anchors approach, code the following:
 
+- Square 2 is 50 pts below the square 1
+- Square 2 is twice the size of square 1
+- Square 2 to the right of square 1
+
 ![squares](assets/squares.png)
 
 <!-- > -->
