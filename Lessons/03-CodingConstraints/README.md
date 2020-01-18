@@ -21,7 +21,7 @@
 
 By the end of this lesson, students should be able to:
 
-1. Use the NSLayoutConstraint and NSLayoutAnchor classes
+1. Use the `NSLayoutConstraint` and `NSLayoutAnchor` classes
 1. Set up a scroll view using only code
 1. Create an onboarding flow with AutoLayout programmatically
 
@@ -85,7 +85,7 @@ In this example we have several common constraints we will need to use at some p
 
 Another common constraint that is not shown is setting a proportional width/height.
 
-`exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2),
+`exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2)
 `
 
 <!-- > -->
