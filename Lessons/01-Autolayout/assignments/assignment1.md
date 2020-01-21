@@ -1,6 +1,6 @@
 ## In Class Activity
 
-Build the following using the interface builder in Xcode
+Build the following using the interface builder in Xcode. For this activity avoid using StackViews, regardless if you are already familiar to them or not.
 
 1. Place 2 UIViews in interface builder that each take 50% of the view controllers space.
 

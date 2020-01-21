@@ -35,9 +35,9 @@ Is a constraint-based layout system. It dynamically calculates the **size** and 
 
 Allows us to create adaptive UI, that will look good in multiple screen sizes and device orientations.
 
-<!-- > -->
+<!-- v -->
 
-![screens](assets/screens.png)
+<img width="700" src="./assets/screens.png">
 
 <aside class = "notes">
 Take this example of an app with a label that was added to the center of the screen in the interface builder. When running the app in different simulators we notice that the label is not always in the center. If we rotate one of the devices the label might even go off screen.
@@ -65,7 +65,8 @@ Constraints are the rules that we apply to UI elements and determine their size 
 
 The layout of a view hierarchy is defined as a series of linear equations. Each constraint represents a single equation. The goal is to declare a series of equations that has only one possible solution.
 
-![constraint](assets/constraintAnatomy.png)
+<img width="650" src="./assets/constraintAnatomy.png">
+
 
 Can you describe verbally what the constraint states?
 
@@ -85,7 +86,7 @@ This constraint states that the red view’s leading edge must be 8.0 points aft
 
 ## Attributes
 
-![attributes](assets/attributes.png)
+<img width="450" src="./assets/attributes.png">
 
 Full list of attributes in the [Apple Docs](https://developer.apple.com/documentation/uikit/nslayoutattribute)
 
@@ -111,7 +112,7 @@ Now you try it, do the same as the example.
 
 ## In Class Activity
 
-- 20 minutes to finish the layout specified [here](assignments/assignment1.md)
+- 20 minutes to finish the layout specified [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/01-Autolayout/assignments/assignment1.md)
 - 5 minutes to go over questions
 
 <!-- > -->
@@ -133,7 +134,7 @@ Some views have a natural size given their current context. This is called **ins
 The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ### CH & CR
 
@@ -141,7 +142,7 @@ Auto Layout represents a view’s intrinsic content size using a pair of constra
 
 ![contentHugging](assets/contentHugging.png)
 
-<!-- v -->
+<!-- > -->
 
 ### Priorities
 
@@ -149,13 +150,13 @@ Each of these constraints can have its own priority. By default, views use a 250
 
 Therefore, it’s easier to stretch a view than it is to shrink it.
 
-![chcp](assets/chcp.png)
+<img width="400" src="./assets/chcp.png">
 
 <aside class = "notes">
 For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
 </aside>
 
-<!-- > -->
+<!-- v -->
 
 ## Constraint Priority
 
@@ -179,7 +180,7 @@ Interface Builder provides four Auto Layout tools in the bottom-right corner of 
 
 ## Align Tool
 
-![align](assets/align.png)
+<img width="450" src="./assets/align.png">
 
 <aside class = "notes">
 The Align tool lets you quickly align items in your layout. Select the items you want to align, and then click the Align tool. Interface Builder presents a popover view containing a number of possible alignments.
@@ -191,7 +192,7 @@ You typically select two or more views before using the Align tool. However, the
 
 ## Pin Tool
 
-![pin](assets/pin.png)
+<img width="400" src="./assets/pin.png">
 
 <aside class = "notes">
 The Pin tool lets you quickly define a view’s position relative to its neighbors or quickly define its size. Select the item whose position or size you want to pin, and click the Pin tool.
@@ -201,7 +202,7 @@ The Pin tool lets you quickly define a view’s position relative to its neighbo
 
 ## Resolve Tool
 
-![resolve](assets/resolve.png)
+<img width="400" src="./assets/resolve.png">
 
 <aside class = "notes">
 You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
@@ -277,7 +278,7 @@ Defines the size and position of the arranged views. For example, if it's set to
 
 ## In Class Activity
 
-- 30 minutes to finish the layout specified [here](assignments/assignment2.md)
+- 30 minutes to finish the layout specified [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/01-Autolayout/assignments/assignment2.md)
 - 10 minutes to go over questions
 
 <!-- > -->
@@ -303,6 +304,9 @@ Then read about how you can debug them with these [tips & tricks](https://develo
 - [MS Autolayout series Pt.1](https://www.youtube.com/watch?v=MEhDeQurPqg)
 - [MS Autolayout series Pt.2](https://www.youtube.com/watch?v=evILiMVw01E)
 - [MS Autolayout series Pt.3](https://www.youtube.com/watch?v=lsi68I_DwVQ&t=1082s)<br>
+
+<!-- v -->
+
 - [MS Autolayout series Pt.4](https://www.youtube.com/watch?v=d-Ukb0MOfy8)
 - [MS Autolayout series Pt.5](https://www.youtube.com/watch?v=bunRUPlr83Y)
 - [MS Autolayout series Pt.6](https://www.youtube.com/watch?v=38o--ZMWqHc)
