@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./../css/reveal.css" />
+    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- Run this slideshow via the following command: -->
+<!-- reveal-md README.md -w -->
+
+<!-- .slide: class="header" -->
+# Coding Constraints
+
+## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/03-CodingConstraints/README.html ':ignore')
+</script></section><section  data-markdown><script type="text/template">
+## Agenda
+
+- Learning Objectives
+- Constraints programmatically
+- Anchors and Layout Constraints
+- Onboarding activity
+</script></section><section  data-markdown><script type="text/template">
+## Learning Objectives
+
+By the end of this lesson, students should be able to:
+
+1. Use the `NSLayoutConstraint` and `NSLayoutAnchor` classes
+1. Set up a scroll view using only code
+1. Create an onboarding flow with AutoLayout programmatically
+</script></section><section ><section data-markdown><script type="text/template">
+## Constraints
+
+Layout anchors let us create constraints that are easy to read and in a compact format.
+
+`myView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true`
+</script></section><section data-markdown><script type="text/template">
+![components](assets/components.png)
+</script></section><section data-markdown><script type="text/template">
+Sample view
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    var exampleView: UIView!
+
+    override func loadView() {
+        super.loadView()
+
+        exampleView = UIView(frame: .zero)
+        exampleView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(exampleView)
+        NSLayoutConstraint.activate([
+            exampleView.widthAnchor.constraint(equalToConstant: 80),
+            exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1/1),
+            exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.exampleView.backgroundColor = .purple
+    }
+}
+```
+
+<aside class = "notes">
+In a mini whiteboard, draw the result of the code. What would be the graphical representation?
+</aside>
+</script></section><section data-markdown><script type="text/template">
+In this example we have several common constraints we will need to use at some point.
+
+- Setting a fixed width or height
+- Setting an aspect ratio
+- Centering horizontally and vertically
+</script></section><section data-markdown><script type="text/template">
+Another common constraint that is not shown is setting a proportional width/height.
+
+`exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2)
+`
+</script></section></section><section  data-markdown><script type="text/template">
+## Rect Zero
+
+If you noticed in the code snippet, we gave the view a frame with a zero rect.
+
+This is just saying that the rectangle will have its origin and size set to zero.
+
+`CGRect(x: 0, y: 0, width: 0, height: 0)`
+</script></section><section  data-markdown><script type="text/template">
+## translatesAutoresizingMaskIntoConstraints
+
+When using AutoLayout we need this property to be set to false.
+
+If you're using the interface builder, this is done for you.
+
+If you are setting constraints programmatically, you need to remember setting this to false or you'll get an error message of conflicting constraints.
+
+If you want to read more on **why** this conflicting error happens, you can find a very clear explanation [here](http://www.thecodedself.com/autoresizing-masks/).
+</script></section><section  data-markdown><script type="text/template">
+## Activating constraints in a group
+
+In the example, we used a method to activate many constraints at once.
+
+```swift
+NSLayoutConstraint.activate([
+  ...
+])
+```
+
+<aside class="notes">
+"Convenience method that activates each constraint in the contained array, in the same manner as setting active=YES. This is often more efficient than activating each constraint individually." - Apple Docs
+</aside>
+</script></section><section  data-markdown><script type="text/template">
+## Activating individually
+
+```swift
+exampleView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1/1).isActive = true
+exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+```
+<!-- > -->
+
+## Best Practices
+
+- As much as you can, never calculate frames manually
+- Set `translatesAutoresizingMaskIntoConstraints` to false
+- Add the view to the hierarchy with `addSubview`
+- Activate your constraints
+</script></section><section  data-markdown><script type="text/template">
+## In Class Activity
+
+Using the anchors approach, code the following:
+
+- Square 2 is 50 pts below the square 1
+- Square 2 is twice the size of square 1
+- Square 2 to the right of square 1
+
+![squares](assets/squares.png)
+</script></section><section  data-markdown><script type="text/template">
+## After Class
+
+Look up constraints with visual format. It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
+</script></section><section  data-markdown><script type="text/template">
+## Additional Resources
+
+Free Illustrations
+- [unDraw](https://undraw.co/illustrations)
+- [drawKit](https://www.drawkit.io)
+- [Mobile Design Patterns](https://mobbin.design)
+- [Common constraints](https://theswiftdev.com/2018/06/14/mastering-ios-auto-layout-anchors-programmatically-from-swift/)
+</script></section></div>
+    </div>
+
+    <script src="./../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../plugin/zoom-js/zoom.js', async: true },
+        { src: './../plugin/notes/notes.js', async: true },
+        { src: './../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

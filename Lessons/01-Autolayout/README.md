@@ -105,7 +105,7 @@ Now you try it, do the same as the example.
 
 <!-- v -->
 
-![selectedConstraints](selectedConstraints.png)
+![selectedConstraints](assets/selectedConstraints.png)
 
 <!-- > -->
 

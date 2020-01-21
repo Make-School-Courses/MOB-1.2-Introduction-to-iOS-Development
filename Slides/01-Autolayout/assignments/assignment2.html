@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Syllabus Template Slides</title>
+    <link rel="stylesheet" href="./../../css/reveal.css" />
+    <link rel="stylesheet" href="./../../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../../css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./../../css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./../../assets/Reveal/makeschool.css" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">## In Class Activity
+
+You can complete the following practice in a new Xcode project. Using the storyboard, have 2 different view controllers and just change the initial view controller each time to the one you are working on.
+
+### StackView Distribution Types
+
+In an empty ViewController, create a StackView with three views, assign them different colors. The examples will use images of fruits, but you don't need to.
+
+Then practice matching each of the distribution types.
+
+#### Fill
+
+This is the default distribution type.
+When you insert elements into a UIStackView with the distribution set to fill, it will keep all but one item at its intrinsic size and stretch it to fill the remaining space.
+It determines the view to fill by the Content Hugging Priority (CHP). The view with the **lowest** CHP is stretched to fill the space in the UIStackView.
+
+If all of your view in the UIStackView have the same CHP, Xcode will show an ambiguous layout error.
+
+![Fill Distribution](assets/fill-dist.png)
+
+StackView Control
+
+![Fill Distribution Control](assets/fill-dist-control.png)
+
+
+Banana Content Hugging Priority
+
+![Fill Distribution Priority](assets/fill-dist-priority.png)
+
+Banana has a CHP of 250, Apples and Oranges have 251
+
+#### Fill Equally
+
+Each view in the UIStackView will have the equal size. The CHP does not matter with this type of distribution, because the views are of equal size.
+
+![Fill Equally](assets/fill-equally-dist.png)
+
+#### Fill Proportionally
+
+This distribution type will try to fill a UIStackView with the intrinsic content size of the elements in the StackView.
+
+With Fill and Fill Equally, the StackView determines how large the elements are, with Fill Proportionally, the size of the elements are determined by the intrinsic size of its elements.
+
+
+#### Equal Spacing
+
+This distribution type will keep an equal spacing between each of the views but will not resize the views themselves.
+It uses the intrinsic size of its views.
+
+![Equal Spacing](assets/equal-spacing.png)
+
+- --
+
+![Equal Spacing Controls](assets/equal-spacing-controls.png)
+
+
+#### Equal Centering
+
+This type of distribution will divide the stackview according to the number of elements and place the elements
+
+**Benefits**
+
+- Layout is re-calculated when views are
+hidden or added! Try hiding an element in the stack and see what happens.
+- Try to build interface with UIStackView, add
+explicit constraints only when necessary
+
+
+## Practice building a Layout
+
+Using the interface builder and a new ViewController, recreate the following design. Take into consideration that since you are going to be using AutoLayout it should look good both in portrait and landscape mode. To change between orientation modes in the simulator app you can rotate right (command + right arrow) and rotate left (command + left arrow).
+
+![dogchallenge](assets/dogchallenge.png)
+</script></section></div>
+    </div>
+
+    <script src="./../../js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './../../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './../../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './../../plugin/zoom-js/zoom.js', async: true },
+        { src: './../../plugin/notes/notes.js', async: true },
+        { src: './../../plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
