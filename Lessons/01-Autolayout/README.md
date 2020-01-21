@@ -121,7 +121,7 @@ Now you try it, do the same as the example.
 
 In the previous example we applied constraints that defined width and height of the views.
 
-Some views have a natural size given their current context. This is called **instrinsic content size**. This is information that a view has about how big it should be based on what it displays.
+Some views have a natural size given their current context. This is called **intrinsic content size**. This is information that a view has about how big it should be based on what it displays.
 
 - A `UIImageView` knows how big it should be based on the image it contains.
 - A `UILabel` knows what size it should be based on the text it contains.

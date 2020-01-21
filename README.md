@@ -41,7 +41,7 @@ By the end of the course, you will be able to ...
 | 14 |  Thu, March 5                  | Presentations                      |
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
-[Autolayout Pt.1]: Lessons/02-Autolayout/README.md
+[Autolayout Pt.2]: Lessons/02-Autolayout/README.md
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
 [Custom Views & Size Classes]: Lessons/04-CustomViews-&-SizeClasses/README.md
 [Lesson 5]: Lessons/Lesson5.md
