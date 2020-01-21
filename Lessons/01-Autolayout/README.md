@@ -119,7 +119,7 @@ Now you try it, do the same as the example.
 
 ## Intrinsic Content Size
 
-In the previous example we applies constraints that defined with and height of the views.
+In the previous example we applied constraints that defined width and height of the views.
 
 Some views have a natural size given their current context. This is called **instrinsic content size**. This is information that a view has about how big it should be based on what it displays.
 
