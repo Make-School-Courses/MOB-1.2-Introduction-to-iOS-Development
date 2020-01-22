@@ -28,7 +28,7 @@ By the end of the course, you will be able to ...
 |  1 |  Tue, January 21               | [Autolayout Pt.1]                  |
 |  2 |  Thu, January 23               | [Autolayout Pt.2]                  |
 |  3 |  Tue, January 28               | [Coding Constraints]               |
-|  4 |  Thu, January 30               | [Custom Views & Size Classes]      |
+|  4 |  Thu, January 30               | [Custom Views]                      |
 |  5 |  Tue, February 4               | [MVC & Navigation]                 |
 |  6 |  Thu, February 6               | [Table views]                      |
 |  7 |  Tue, February 11              | [Custom views]                     |
@@ -36,14 +36,14 @@ By the end of the course, you will be able to ...
 |  9 |  Tue, February 18              | [Compositional Layouts]            |
 | 10 |  Thu, February 20              | [UITabBarController]               |  
 | 11 |  Tue, February 25              | Lab                                |
-| 12 |  Thu, February 27              | [Using the camera]                 |
+| 12 |  Thu, February 27              | [Exploring SwiftUI]                |
 | 13 |  Tue, March 3                  | Final Exam                         |
 | 14 |  Thu, March 5                  | Presentations                      |
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
 [Autolayout Pt.2]: Lessons/02-Autolayout/README.md
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
-[Custom Views & Size Classes]: Lessons/04-CustomViews-&-SizeClasses/README.md
+[Custom Views]: Lessons/04-CustomViews/README.md
 [Lesson 5]: Lessons/Lesson5.md
 [Lesson 6]: Lessons/Lesson6.md
 [Lesson 7]: Lessons/Lesson7.md
