@@ -42,7 +42,7 @@ Pair up to discuss the following:
 
 Layout guides define rectangular regions that don’t actually appear visibly onscreen, but help with the positioning, alignment, and spacing of content.
 
-![layoutguides](assets/layoutguides.png)
+<img width="600" src="./assets/layoutguides.png">
 
 <!-- v -->
 
@@ -50,11 +50,11 @@ Layout guides define rectangular regions that don’t actually appear visibly on
 
 We use margins to position views so that they are not crowded by other content.
 
-![margin](assets/margin.png))
-
-The layout margins consist of inset values for each edge (top, bottom, leading, and trailing) of the view. These inset values create a space between the edges of the view’s bounds rectangle and the content inside the view.
+![margin](assets/margin.png)
 
 <aside class = "notes">
+The layout margins consist of inset values for each edge (top, bottom, leading, and trailing) of the view. These inset values create a space between the edges of the view’s bounds rectangle and the content inside the view.
+
 Layout margins provide a space between a view’s content and any content outside of the view’s bounds.
 </aside>
 
@@ -64,7 +64,7 @@ Layout margins provide a space between a view’s content and any content outsid
 
 We use it to position views so that they are not obstructed by other content.
 
-![safearea](assets/safearea.png)
+<img width="600" src="./assets/safearea.png">
 
 <aside class="notes">
 Adhere to the safe area and layout margins defined by UIKit. The safe area also prevents content from underlapping the status bar, navigation bar, toolbar, and tab bar.
@@ -98,17 +98,17 @@ Sometimes designs need for content to be scrolled because it won't fit in the sp
 
 Setting a scroll view can be quite a headache, because there are guidelines, safe areas and content sizes we need to pay attention to.
 
-<!-- v -->
-
+<aside class = "notes">
 Whiteboard explanation of how the scrollview works.
+</aside>
 
 <!-- v -->
 
 ## Scrollview recipe
 
 1. Pin the top, bottom, trailing and leading of the scroll view to the Safe Area.
-1. If the content was a stack view you would pin the the the stack's top, bottom, trailing and leading to the Content Layout Guide. In reality it could be any view, but you should treat it the same, we call it the container view.
-1. Set the container view's width to match the Frame Layout Guide's width.
+1. If the content was a stack view you would pin the the the stack's top, bottom, trailing and leading to the Content Layout Guide.
+1. Set the content view's width to match the Frame Layout Guide's width.
 1. Look for missing constraints inside the content view.
 1. If all is correct, the scroll view will set its content size automatically based on the components inside the content view.
 
@@ -116,7 +116,7 @@ Whiteboard explanation of how the scrollview works.
 
 ## Activity
 
-20 min - Replicate the following layout.
+20 min - Replicate the following layout.<br>
 5 min - Instructor shows solution
 
 ![scroll](assets/scroll.gif)
@@ -157,7 +157,7 @@ Full list of combinations [here](https://developer.apple.com/design/human-interf
 
 ## Using Size Classes
 
-- Follow the instructions [here](assignments/sizeclasses.md) to create a layout that works in portrait and landscape orientations.
+- Follow the instructions [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/02-AutoLayout/assignments/sizeclasses.md) to create a layout that works in portrait and landscape orientations.
 - If you get stuck feel free to debug with a partner or raise your hand to ask questions.
 
 <!-- v -->
@@ -176,12 +176,15 @@ Is it always required to use size classes? What is a good criteria to know if we
 
 ## After Class
 
-Install SwiftLint in a project.
+Install [SwiftLint](https://github.com/realm/SwiftLint) in a project.
+
+For this activity you will need to have [Cocoapods](https://cocoapods.org). If you are not familiar with it. Go to their site to read about what it is and follow the instructions to install it.
 
 <!-- > -->
 
 ## Additional Resources
-- https://developer.apple.com/documentation/uikit/uiview/positioning_content_within_layout_margins
-- https://developer.apple.com/documentation/uikit/uiview/positioning_content_relative_to_the_safe_area
-- https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
-- https://www.raywenderlich.com/5758454-uiscrollview-tutorial-getting-started#toc-anchor-007
+- [Using layout margins](https://developer.apple.com/documentation/uikit/uiview/positioning_content_within_layout_margins)
+- [Using the safe area](https://developer.apple.com/documentation/uikit/uiview/positioning_content_relative_to_the_safe_area)
+- [Apple Docs on autolayout](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
+- [A scrollview tutorial](https://www.raywenderlich.com/5758454-uiscrollview-tutorial-getting-started#toc-anchor-007)
+- [A very very detailed explanation on how scrollviews work (you don't need to know this level of details, but in case you are curious)](https://www.objc.io/issues/3-views/scroll-view/)
