@@ -1,2 +1,4 @@
 - **[MOB 1.2](README.md)**
 - **[Day 1](Lessons/01-Autolayout/README.md)**
+- **[Day 2](Lessons/02-AutoLayout/README.md)**
+- **[Day 3](Lessons/03-CodingConstraints/README.md)**

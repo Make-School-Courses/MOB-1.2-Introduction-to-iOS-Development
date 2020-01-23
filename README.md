@@ -59,10 +59,10 @@ By the end of the course, you will be able to ...
 
 |                        Assignment                         | Date Assigned |   Due Date   |            Submission Form           |
 |:---------------------------------------------------------:|:-------------:|:------------:|:------------------------------------:|
-| [Link to Assignment](makeschool.com)                      |  Tue, Oct 15  |  Tue, Oct 22 | [Submit Assignment](makeschool.com)  |
-| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
-| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
-| [Link to Assignment](makeschool.com)                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+| [Size Classes assignment]()                               |  Thu, Jan 23  |  Tue, Jan 27 | In class  |
+| [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)                      |  Tue, Jan 27   |  Fri, Jan 31   | Github link  |
+| Onboarding assignment                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+| Habitual app                    |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
 
 ## Class Assignments
 
