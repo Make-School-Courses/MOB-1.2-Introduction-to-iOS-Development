@@ -148,8 +148,9 @@ All of these are **events** we can track from the scrollview. UIKit has made it 
 <!-- v -->
 
 1. Create an outlet for the scrollview in your current view Controller.
-2. In `viewDidLoad` set the delegate of the scrollview: `scrollView.delegate = self`
-3. Add this new method to the class:
+2. Add `UIScrollViewDelegate` to the end of the class declaration (as you would add any other protocol)
+3. In `viewDidLoad` set the delegate of the scrollview: `scrollView.delegate = self`
+4. Add this new method to the class:
 
 ```swift
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -157,7 +158,7 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 }
 ```
 
-4. Run the app, scroll and see the console log 🙌🏼
+5. Run the app, scroll and see the console log 🙌🏼
 
 <!-- v -->
 
@@ -181,15 +182,14 @@ A view may possess any combination of size classes:
 
 ![sizeclass](assets/sizeclass.png)
 
-<aside class = "notes">
-
 - Regular width, regular height
 - Compact width, compact height
 - Regular width, compact height
 - Compact width, regular height
 
+<!-- > -->
+
 Full list of combinations [here](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
-</aside>
 
 <!-- > -->
 

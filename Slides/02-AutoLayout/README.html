@@ -135,8 +135,9 @@ For example: showing them a message while they scroll, revealing buttons, animat
 All of these are **events** we can track from the scrollview. UIKit has made it really easy for us to work with all of these events. We just need to tell our program that we want access to these helper methods. To do that, we set up something called a **delegate**.
 </script></section><section data-markdown><script type="text/template">
 1. Create an outlet for the scrollview in your current view Controller.
-2. In `viewDidLoad` set the delegate of the scrollview: `scrollView.delegate = self`
-3. Add this new method to the class:
+2. Add `UIScrollViewDelegate` to the end of the class declaration (as you would add any other protocol)
+3. In `viewDidLoad` set the delegate of the scrollview: `scrollView.delegate = self`
+4. Add this new method to the class:
 
 ```swift
 func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -144,7 +145,7 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 }
 ```
 
-4. Run the app, scroll and see the console log 🙌🏼
+5. Run the app, scroll and see the console log 🙌🏼
 </script></section><section data-markdown><script type="text/template">
 5. Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are. Can you figure out a way to print out the message "You've reached the end" when you scroll to the bottom of the content?
 
@@ -162,15 +163,12 @@ A view may possess any combination of size classes:
 
 ![sizeclass](assets/sizeclass.png)
 
-<aside class = "notes">
-
 - Regular width, regular height
 - Compact width, compact height
 - Regular width, compact height
 - Compact width, regular height
-
+</script></section><section  data-markdown><script type="text/template">
 Full list of combinations [here](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
-</aside>
 </script></section><section ><section data-markdown><script type="text/template">
 ## Using Size Classes
 
