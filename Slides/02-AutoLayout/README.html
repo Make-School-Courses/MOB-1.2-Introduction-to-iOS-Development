@@ -123,6 +123,32 @@ You can change the size of the screen you see in the interface builder to be as 
 
 do this by selecting the view controller with the scroll view, then go to the attributes inspector and choose the ruler icon. Change the simulated size from Fixed to Freeform and make it as large as you need.
 </aside>
+</script></section><section data-markdown><script type="text/template">
+You now have a working scrollview. And it works great to show content to your users. Many times we'll need to make our apps react according to what a user does with the scrollview
+
+For example: showing them a message while they scroll, revealing buttons, animating views, detecting when they reach the end of the content, etc.
+</script></section><section data-markdown><script type="text/template">
+![airbnb](assets/airbnb.gif)
+</script></section><section data-markdown><script type="text/template">
+![store](assets/store.gif)
+</script></section><section data-markdown><script type="text/template">
+All of these are **events** we can track from the scrollview. UIKit has made it really easy for us to work with all of these events. We just need to tell our program that we want access to these helper methods. To do that, we set up something called a **delegate**.
+</script></section><section data-markdown><script type="text/template">
+1. Create an outlet for the scrollview in your current view Controller.
+2. In `viewDidLoad` set the delegate of the scrollview: `scrollView.delegate = self`
+3. Add this new method to the class:
+
+```swift
+func scrollViewDidScroll(_ scrollView: UIScrollView) {
+  print("I'm scrolling 😎")
+}
+```
+
+4. Run the app, scroll and see the console log 🙌🏼
+</script></section><section data-markdown><script type="text/template">
+5. Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are. Can you figure out a way to print out the message "You've reached the end" when you scroll to the bottom of the content?
+
+6. At the end of the same article you used above, you can find more methods available, experiment with them while you think how you could find them useful in your projects.
 </script></section></section><section  data-markdown><script type="text/template">
 ## Size Classes
 
