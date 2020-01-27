@@ -159,6 +159,73 @@ Using the anchors approach, code the following:
 
 <!-- > -->
 
+## NSLayoutConstraint class
+
+![init](assets/init.png)
+
+This method explicitly converts the constraint equation into code. Each parameter corresponds to a part of the equation.
+
+<aside class ="notes">
+Unlike the approach taken by the layout anchor API, you must specify a value for each parameter, even if it doesn’t affect the layout. The end result is a considerable amount of boilerplate code, which is usually harder to read.
+</aside>
+
+<!-- > -->
+
+## Example
+
+Examine how this code works and then place a new view to the right of the exampleView.
+
+```Swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    var exampleView: UIView!
+    var redView: UIView!
+
+    override func loadView() {
+        super.loadView()
+
+        exampleView = UIView()
+        exampleView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(exampleView)
+
+        NSLayoutConstraint (item: exampleView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 20.0).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 20.0).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute:.notAnAttribute, multiplier: 1.0, constant:80.0).isActive = true
+
+        redView = UIView()
+        redView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(redView)
+
+        NSLayoutConstraint (item: redView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
+        NSLayoutConstraint(item: redView!, attribute: .leadingMargin, relatedBy: .equal, toItem: exampleView, attribute: .trailingMargin, multiplier: 1.0, constant: 20.0).isActive = true
+        NSLayoutConstraint(item: redView!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 20.0).isActive = true
+        NSLayoutConstraint(item: redView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute:.notAnAttribute, multiplier: 1.0, constant:80.0).isActive = true
+
+        // Place a red view 20 pts apart from the exampleView (to the right).
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.exampleView.backgroundColor = .purple
+        self.redView.backgroundColor = .red
+
+    }
+}
+
+```
+
+<!-- > -->
+
+## In Class Activity
+
+[The Subscription box](assignments/onboarding.md)
+
+
+<!-- > -->
+
 ## After Class
 
 Look up constraints with visual format. It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
@@ -172,3 +239,5 @@ Free Illustrations
 - [drawKit](https://www.drawkit.io)
 - [Mobile Design Patterns](https://mobbin.design)
 - [Common constraints](https://theswiftdev.com/2018/06/14/mastering-ios-auto-layout-anchors-programmatically-from-swift/)
+- [Programmatically creating constraints - Apple Docs](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ProgrammaticallyCreatingConstraints.html)
+- [NSLayoutConstraint Class](https://developer.apple.com/documentation/appkit/nslayoutconstraint/1526954-init)
