@@ -31,7 +31,9 @@ By the end of this lesson, students should be able to:
 
 Layout anchors let us create constraints that are easy to read and in a compact format.
 
-`myView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true`
+```swift
+myView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+```
 
 <!-- v -->
 
@@ -85,8 +87,9 @@ In this example we have several common constraints we will need to use at some p
 
 Another common constraint that is not shown is setting a proportional width/height.
 
-`exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2)
-`
+```swift
+exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2)
+```
 
 <!-- > -->
 
@@ -136,6 +139,7 @@ exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier
 exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
 exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
 ```
+
 <!-- > -->
 
 ## Best Practices
@@ -155,7 +159,7 @@ Using the anchors approach, code the following:
 - Square 2 is twice the size of square 1
 - Square 2 to the right of square 1
 
-![squares](assets/squares.png)
+<img width="400" src="./assets/squares.png">
 
 <!-- > -->
 
@@ -226,9 +230,11 @@ class ViewController: UIViewController {
 
 <!-- > -->
 
-## After Class
+## After Class or Stretch Challenge
 
 Look up constraints with visual format. It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
+
+Repeat the first in class activity using the visual format language.
 
 <!-- > -->
 
