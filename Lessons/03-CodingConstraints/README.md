@@ -225,7 +225,7 @@ class ViewController: UIViewController {
 
 ## In Class Activity
 
-[The Subscription box](assignments/onboarding.md)
+[The Subscription box](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md)
 
 
 <!-- > -->
