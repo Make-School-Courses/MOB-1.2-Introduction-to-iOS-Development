@@ -155,11 +155,13 @@ exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive 
 
 Using the anchors approach, code the following:
 
+![squares](assets/squares.png)
+
+<aside class="notes">
 - Square 2 is 50 pts below the square 1
 - Square 2 is twice the size of square 1
 - Square 2 to the right of square 1
-
-<img width="400" src="./assets/squares.png">
+</aside>
 
 <!-- > -->
 
