@@ -28,7 +28,7 @@ By the end of the course, you will be able to ...
 |  1 |  Tue, January 21               | [Autolayout Pt.1]                  |
 |  2 |  Thu, January 23               | [Autolayout Pt.2]                  |
 |  3 |  Tue, January 28               | [Coding Constraints]               |
-|  4 |  Thu, January 30               | [Custom views]                     |
+|  4 |  Thu, January 30               | [Custom Views]                     |
 |  5 |  Tue, February 4               | [MVC & Navigation]                 |
 |  6 |  Thu, February 6               | [Table views]                      |
 |  7 |  Tue, February 11              | [Collection views]                 |
