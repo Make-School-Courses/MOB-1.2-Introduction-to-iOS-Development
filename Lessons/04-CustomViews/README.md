@@ -213,11 +213,29 @@ We can design in the interface builder and then use the view in a storyboard or 
 
 xib files reduce the need of having storyboards and because of this, reduce the amount of bugs too.
 
+<!-- v -->
+
+## xibs or nibs?
+
+Both terms mean a custom view that you can reuse in your project.
+
+XIBs (XML Interface Builder) are just a previous representation before the compiler turns them into NIBs (NeXTSTEP Interface Builder). XIBs are easier for us to read while NIBs are easier for the computer to process.
+
 <!-- > -->
+
+## xib files
 
 Demo Creating a xib file and using it in the storyboard.
 
 [Tutorial](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
+
+<!-- v -->
+
+## IBDesignable
+
+@IBDesignable can be applied to UIViews and the lets Interface Builder know that it should render the view directly in the canvas.
+
+In this way we can see our custom views, for example in a storyboard without having to run the app each time we make a change.
 
 <!-- > -->
 
@@ -236,3 +254,4 @@ Recreate the example of the square view, this time using a xib file. Up to you t
 ## Additional Resources
 
 - [Using xib files](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
+- [IBDesignable & IBInspectable](https://nshipster.com/ibinspectable-ibdesignable/)
