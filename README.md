@@ -28,13 +28,13 @@ By the end of the course, you will be able to ...
 |  1 |  Tue, January 21               | [Autolayout Pt.1]                  |
 |  2 |  Thu, January 23               | [Autolayout Pt.2]                  |
 |  3 |  Tue, January 28               | [Coding Constraints]               |
-|  4 |  Thu, January 30               | [Custom Views]                     |
+|  4 |  Thu, January 30               | [Custom views]                     |
 |  5 |  Tue, February 4               | [MVC & Navigation]                 |
 |  6 |  Thu, February 6               | [Table views]                      |
-|  7 |  Tue, February 11              | [Custom views]                     |
-|  8 |  Thu, February 13              | [Collection views]                 |
-|  9 |  Tue, February 18              | [Compositional Layouts]            |
-| 10 |  Thu, February 20              | [UITabBarController]               |  
+|  7 |  Tue, February 11              | [Collection views]                 |
+|  8 |  Thu, February 13              | [Compositional Layouts]            |
+|  9 |  Tue, February 18              | [UITabBarController]               |
+| 10 |  Thu, February 20              | [Animations]                       |  
 | 11 |  Tue, February 25              | Lab                                |
 | 12 |  Thu, February 27              | [Exploring SwiftUI]                |
 | 13 |  Tue, March 3                  | Final Exam                         |
@@ -60,8 +60,8 @@ By the end of the course, you will be able to ...
 |                        Assignment                         | Date Assigned |   Due Date   |            Submission Form           |
 |:---------------------------------------------------------:|:-------------:|:------------:|:------------------------------------:|
 | [Size Classes assignment]()                               |  Thu, Jan 23  |  Tue, Jan 27 | In class  |
-| [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)                      |  Tue, Jan 27   |  Fri, Jan 31   | Github link  |
-| Onboarding assignment                      |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+| [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)                      |  Thu, Jan 30   |  Thu, Feb 6   | Github link  |
+| Onboarding assignment (refactored)                      |  Tue, Jan 27    |  Tue, Feb 3   | [Github link  |
 | Habitual app                    |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
 
 ## Class Assignments
