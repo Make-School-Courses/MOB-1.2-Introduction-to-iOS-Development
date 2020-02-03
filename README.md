@@ -44,7 +44,7 @@ By the end of the course, you will be able to ...
 [Autolayout Pt.2]: Lessons/02-AutoLayout/README.md
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
 [Custom Views]: Lessons/04-CustomViews/README.md
-[Lesson 5]: Lessons/Lesson5.md
+[MVC & Navigation]: Lessons/05-Intro-to-MVC
 [Lesson 6]: Lessons/Lesson6.md
 [Lesson 7]: Lessons/Lesson7.md
 [Lesson 8]: Lessons/Lesson8.md
@@ -64,7 +64,6 @@ By the end of the course, you will be able to ...
 | Onboarding assignment (refactored)                      |  Tue, Jan 27    |  Tue, Feb 3   | [Github link  |
 | Habitual app                    |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
 
-## Class Assignments
 
 ### Tutorials
 
