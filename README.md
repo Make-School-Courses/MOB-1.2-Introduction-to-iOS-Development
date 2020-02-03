@@ -44,7 +44,7 @@ By the end of the course, you will be able to ...
 [Autolayout Pt.2]: Lessons/02-AutoLayout/README.md
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
 [Custom Views]: Lessons/04-CustomViews/README.md
-[MVC & Navigation]: Lessons/05-Intro-to-MVC
+[MVC & Navigation]: Lessons/05-Intro-to-MVC/README.md
 [Lesson 6]: Lessons/Lesson6.md
 [Lesson 7]: Lessons/Lesson7.md
 [Lesson 8]: Lessons/Lesson8.md
