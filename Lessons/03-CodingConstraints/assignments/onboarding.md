@@ -32,6 +32,8 @@ Use a `ScrollView` to scroll horizontally between the views.
 
 Use a `UIPageControl` to make the indicator at the bottom.
 
+Watch [this video](https://youtu.be/CXxQLstg-Q8) to see the suggested layout.
+
 ##### An Example
 
 ![design](assets/design.png)

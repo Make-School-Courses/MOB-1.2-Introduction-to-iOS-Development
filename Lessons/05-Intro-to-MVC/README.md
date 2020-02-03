@@ -317,7 +317,11 @@ Using your project:
 
 1. Redesign your Login screen to include fields for user and password.
 1. Practice sending data over by displaying the username in the main view.
-1. Continue working on the [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+1. Create three buttons in the main view with the following options (we'll use them in upcoming classes): New Box, Past Boxes, Profile.
+
+<!-- > -->
+
+![login](assets/login.png)
 
 <!-- > -->
 

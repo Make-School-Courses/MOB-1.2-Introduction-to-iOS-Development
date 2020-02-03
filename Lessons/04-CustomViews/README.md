@@ -247,7 +247,9 @@ Recreate the example of the square view, this time using a xib file. Up to you t
 
 ## Lab & After Class
 
-[Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+- Review a possible solution to the onboarding flow and how to use custom views with [this video](https://youtu.be/CXxQLstg-Q8). 
+
+- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 
 <!-- > -->
 
