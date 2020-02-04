@@ -170,39 +170,23 @@ Steps to setup a project with a navigation controller without a Storyboard.
 
 1. First we need to delete the storyboard file.
 2. Then remove the storyboard name on Project Navigator > Select Project > General > Deployment Info > Main Interface
-3.  Now we need to change the AppDelegate, to tell our app what to use as the initial ViewController.
+3. Remove the Storyboard name from the .plist (you can command+F "main")
+3. Now we need to change the SceneDelegate to tell our app what to use as the initial ViewController.
 
 <!-- > -->
 
 ```swift
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-    var navigationController: UINavigationController?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-
-        if let window = window {
-            let mainVC = ViewController()
-            navigationController = UINavigationController(rootViewController: mainVC)
-            window.rootViewController = navigationController
-            window.makeKeyAndVisible()
-        }
-
-        return true
+        let viewController = //An instance of your view controller goes here
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
     }
-
-}
 ```
 <aside class="notes">
-Programmatically we defined a UINavigationController.
-Then we created an instance of ViewController to set it as the root view controller of UINavigationController.
-
-Then we need to tell the main window what to show at the start. In this case we assign our navigationController as the root of the main window.
+Programmatically we defined an instance of the view controller and set it as the root view controller of the main window.
 </aside>
 
 <!-- > -->
