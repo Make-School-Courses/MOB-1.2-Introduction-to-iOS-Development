@@ -45,7 +45,7 @@ By the end of the course, you will be able to ...
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
 [Custom Views]: Lessons/04-CustomViews/README.md
 [MVC & Navigation]: Lessons/05-Intro-to-MVC/README.md
-[Lesson 6]: Lessons/Lesson6.md
+[Table views]: Lessons/06-TableViews/README.md
 [Lesson 7]: Lessons/Lesson7.md
 [Lesson 8]: Lessons/Lesson8.md
 [Lesson 9]: Lessons/Lesson9.md
