@@ -4,3 +4,4 @@
 - **[Day 3](Lessons/03-CodingConstraints/README.md)**
 - **[Day 4](Lessons/04-CustomViews/README.md)**
 - **[Day 5](Lessons/05-Intro-to-MVC/README.md)**
+- **[Day 6](Lessons/06-TableViews/README.md)**
