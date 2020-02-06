@@ -202,6 +202,19 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 
 <!-- > -->
 
+## Use a method from the delegate
+
+```swift
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let alertController = UIAlertController(title: "Hello", message: "You've tapped in the \(indexPath.row) row, from section \(indexPath.section)", preferredStyle: .alert)
+    let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+            UIAlertAction in
+    }
+    alertController.addAction(okAction)
+    self.present(alertController, animated: true, completion: nil)
+}
+```
+
 ## Checkpoint
 
 In pairs, answer the following questions?
