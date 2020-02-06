@@ -22,7 +22,7 @@ All onboarding flows rely heavily in a great design and key information being di
 - Each screen must have an image and some text about the app.
 - Make all of the UI programmatically. Don't use the interface builder this time.
 
-##### Suggestions
+##### Resources & Suggestions
 
 Use free Illustrations
 - [unDraw](https://undraw.co/illustrations)

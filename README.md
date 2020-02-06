@@ -57,13 +57,16 @@ By the end of the course, you will be able to ...
 
 ## Assignment Schedule
 
-|                        Assignment                         | Date Assigned |   Due Date   |            Submission Form           |
-|:---------------------------------------------------------:|:-------------:|:------------:|:------------------------------------:|
-| [Size Classes assignment]()                               |  Thu, Jan 23  |  Tue, Jan 27 | In class  |
-| [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)                      |  Thu, Jan 30   |  Thu, Feb 6   | Github link  |
-| Onboarding assignment (refactored)                      |  Tue, Jan 27    |  Tue, Feb 3   | [Github link  |
-| Habitual app                    |  day, Date    |  day, Date   | [Submit Assignment](makeschool.com)  |
+|    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
+|:-------------------------:|:-------------:|:------------:|:-----------------------:|
+| [Size Classes assignment] |  Thu, Jan 23  |  Tue, Jan 27 | In class                |
+| [Tip Calculator Tutorial] |  Thu, Jan 30  |  Thu, Feb 6  | Github link in tracker  |
+| Onboarding assignment     |  Tue, Jan 27  |  Tue, Feb 3  | Github link in tracker  |
+| [Habitual app]            |  day, Date    |  day, Date   | Github link in tracker  |
 
+[Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
+[Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
+[Habitual App](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
 ### Tutorials
 
@@ -72,7 +75,8 @@ By the end of the course, you will be able to ...
 
 ### Projects
 
-- Independent project [Rubric](https://docs.google.com/document/d/14P-nohwJyNKHXxn-sRF6IMZJMpH5RLRJ3wdooIeKOrs/edit?usp=sharing)
+- Subscription Box Project (In-Class iterations) - complete design [here](https://scene.zeplin.io/project/5e3b505d29276dd08ba41cc1)
+- [NPS for your subscription box app]()
 
 ## Evaluation
 
@@ -90,7 +94,7 @@ To pass this course you must meet the following requirements:
 - [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
 - [Grading System](https://make.sc/grading-system) - How grading is done at Make School
 - [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement) - Learn about Diversity and Inclusion at Make School
-- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct
+- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagiarism, cheating, and other forms of academic misconduct
 - [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
 - [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
 - [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students

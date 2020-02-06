@@ -31,7 +31,7 @@ By the end of this lesson, students should be able to:
 
 ### UITableView
 
-A view that presents data (a list of items) using rows arranged in a **single column**.
+A view that presents data (a list of items) using **rows** arranged in a **single column**.
 
 `UITableView` is a subclass of `UIScrollView`, this allows users to scroll through the elements in the table in vertical direction.
 
@@ -51,7 +51,7 @@ Each individual item of the table is a `UITableViewCell` object. A cell object h
 
 ### How is a cell created?
 
-Let's say we need a table with 1000 rows.
+Let's say we need a table with 1000 rows. We use the the following method `cellForRowAtindexPath` to generate cells.
 
 ```swift
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,13 +61,19 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 ```
 
-Every time the method gets called we are creating a new instance of a `UITableViewCell`. If these cells had text and images, loading 1000 of them and allocating memory as we scroll, will make the app very laggy.
+Every time the method gets called we are creating a new instance of a `UITableViewCell`. If these cells had text and images, loading 1000 of them and allocating memory as we scroll, will make the app very laggy. 😰
 
 <!-- v -->
 
 To solve this problem we can reuse cells with the `dequeueReusableCell(withIdentifier:for:)` method. For this we will need a reuse identifier.
 
-![cell](assets/identifier.png)
+```swift
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+    cell.textLabel?.text = "Cell with index: \(indexPath.row)"
+    return cell
+}
+```
 
 <!-- v -->
 
@@ -86,7 +92,13 @@ At runtime, the table view stores cell objects in an internal queue. When the ta
 
 ### Sections & Rows
 
-A table view is made up of **sections**, each with its own **rows**. Sections are identified by their index number within the table view, and rows are identified by their index number within a section. Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
+![anatomy](assets/anatomyTable.png)
+
+<aside class="notes">
+A table view is made up of sections, each with its own rows. Sections are identified by their index number within the table view, and rows are identified by their index number within a section.
+
+Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
+</aside>
 
 <!-- v -->
 
@@ -100,11 +112,11 @@ A table view is made up of **sections**, each with its own **rows**. Sections ar
 
 <!-- > -->
 
-### DataSource & Delegate
+### DataSource
 
 A `UITableView` object must have an object that acts as a **data source** and an object that acts as a **delegate**.  
 
-The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages how many sections the table has, how many rows per section and handles how cells are drawn.
+The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages **how many sections** the table has, **how many rows per section** and handles **how cells are created**.
 
 <!-- v -->
 
@@ -125,7 +137,9 @@ public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPat
 
 <!-- > -->
 
-The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and selection, row reordering, highlighting, accessory views, and editing operations. It deals with how the table behaves and looks.
+### Delegate
+
+The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and **selection, row reordering, highlighting, accessory views, and editing operations**. It deals with how the table behaves and looks.
 
 <!-- v -->
 
@@ -144,6 +158,8 @@ optional public func tableView(_ tableView: UITableView, heightForRowAt indexPat
 ```
 
 <!-- > -->
+
+## IndexPath
 
 Many methods of `UITableView` take `NSIndexPath` objects as parameters and return values. They have properties we can access to manipulate objects in the table.
 
@@ -178,12 +194,11 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 
 <!-- > -->
 
-## Demo
+## TableViews Three Ways 🎈🌳👽
 
-- `UITableView` using storyboard.
-- 1000 rows.
-- Display "Hello world \(number of row)" in each row.
-- Include an image for the cell's image view.
+- [TableView + Storyboard](assignments/tableStoryboard.md)
+- [TableView + xib file](assignments/tableXib.md)
+- [TableView programmatically](assignments/tableCode.md)
 
 <!-- > -->
 
@@ -200,30 +215,6 @@ In pairs, answer the following questions?
 
 <!-- > -->
 
-## Demo & mini activity
-
-- `UITableView` using xib file.
--  Use multiple sections
--  Adding a section header
-
-[Apple docs - how to add headers & footers](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections)
-
-<!-- > -->
-
-## Demo & mini activity
-
-- `UITableView` using programmatic cell.
-- Add a table header.
-
-<!-- > -->
-
-## Self sizing cells
-
-TODO:
-https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells
-
-<!-- > -->
-
 ## In Class Activity
 
 To our subscription box app:
@@ -231,18 +222,23 @@ To our subscription box app:
 - Add a screen where users can see previous boxes they've received.
 - When they tap on one of the boxes they will see the contents for that month.
 
-Stretch challenge
+You can use dummy data until now.
+
+<!-- v -->
+
+### Stretch challenge
 
 - Users can rate previous items received (just functionality, we don't care about persisting this data)
-- Include a description in the item's cell and use a self sizing cell to show the entire text.
+- Include a description in the item's cell and use a self sizing cell to show the entire text. [Self Sizing cell documentation](https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells)
 
-<!-- v-->
+<!-- v -->
 
 ![activity](assets/activity.png)
 
-- You might have done all the above with dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
+- We've worked all the way until now using dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
 
 Here is an example, tailor it to your own app:
+
 ```swift
 
 ```
@@ -254,4 +250,5 @@ Here is an example, tailor it to your own app:
 [UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)<br>
 [Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)<br>
 [Improving performance](https://medium.com/capital-one-tech/smooth-scrolling-in-uitableview-and-uicollectionview-a012045d77f)<br>
-[Performance tricks](https://www.smashingmagazine.com/2019/02/ios-performance-tricks-apps/)
+[Performance tricks](https://www.smashingmagazine.com/2019/02/ios-performance-tricks-apps/)<br>
+[Apple docs - how to add headers & footers](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections)
