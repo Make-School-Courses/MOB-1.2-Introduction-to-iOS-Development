@@ -44,7 +44,7 @@ By the end of this lesson, students should be able to:
 </script></section><section ><section data-markdown><script type="text/template">
 ### UITableView
 
-A view that presents data (a list of items) using rows arranged in a **single column**.
+A view that presents data (a list of items) using **rows** arranged in a **single column**.
 
 `UITableView` is a subclass of `UIScrollView`, this allows users to scroll through the elements in the table in vertical direction.
 </script></section><section data-markdown><script type="text/template">
@@ -58,7 +58,7 @@ Each individual item of the table is a `UITableViewCell` object. A cell object h
 </script></section><section data-markdown><script type="text/template">
 ### How is a cell created?
 
-Let's say we need a table with 1000 rows.
+Let's say we need a table with 1000 rows. We use the the following method `cellForRowAtindexPath` to generate cells.
 
 ```swift
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,11 +68,17 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 ```
 
-Every time the method gets called we are creating a new instance of a `UITableViewCell`. If these cells had text and images, loading 1000 of them and allocating memory as we scroll, will make the app very laggy.
+Every time the method gets called we are creating a new instance of a `UITableViewCell`. If these cells had text and images, loading 1000 of them and allocating memory as we scroll, will make the app very laggy. 😰
 </script></section><section data-markdown><script type="text/template">
 To solve this problem we can reuse cells with the `dequeueReusableCell(withIdentifier:for:)` method. For this we will need a reuse identifier.
 
-![cell](assets/identifier.png)
+```swift
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+    cell.textLabel?.text = "Cell with index: \(indexPath.row)"
+    return cell
+}
+```
 </script></section><section data-markdown><script type="text/template">
 ### How does it work?
 
@@ -87,7 +93,13 @@ At runtime, the table view stores cell objects in an internal queue. When the ta
 </script></section></section><section ><section data-markdown><script type="text/template">
 ### Sections & Rows
 
-A table view is made up of **sections**, each with its own **rows**. Sections are identified by their index number within the table view, and rows are identified by their index number within a section. Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
+![anatomy](assets/anatomyTable.png)
+
+<aside class="notes">
+A table view is made up of sections, each with its own rows. Sections are identified by their index number within the table view, and rows are identified by their index number within a section.
+
+Sections have headers that appear at the top of each group and include a title. The footer appears below each group and also has a title. The entire table can also have its own header and footer.
+</aside>
 </script></section><section data-markdown><script type="text/template">
 ## Try this
 
@@ -97,11 +109,11 @@ A table view is made up of **sections**, each with its own **rows**. Sections ar
 
 [UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)
 </script></section></section><section ><section data-markdown><script type="text/template">
-### DataSource & Delegate
+### DataSource
 
 A `UITableView` object must have an object that acts as a **data source** and an object that acts as a **delegate**.  
 
-The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages how many sections the table has, how many rows per section and handles how cells are drawn.
+The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages **how many sections** the table has, **how many rows per section** and handles **how cells are created**.
 </script></section><section data-markdown><script type="text/template">
 ```swift
 // How many sections the table has. Default is 1 if not implemented.
@@ -118,7 +130,9 @@ optional public func tableView(_ tableView: UITableView, titleForFooterInSection
 public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 </script></section></section><section ><section data-markdown><script type="text/template">
-The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and selection, row reordering, highlighting, accessory views, and editing operations. It deals with how the table behaves and looks.
+### Delegate
+
+The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and **selection, row reordering, highlighting, accessory views, and editing operations**. It deals with how the table behaves and looks.
 </script></section><section data-markdown><script type="text/template">
 ```swift
 // When selecting a cell
@@ -134,6 +148,8 @@ optional public func tableView(_ tableView: UITableView, viewForHeaderInSection 
 optional public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 </script></section></section><section  data-markdown><script type="text/template">
+## IndexPath
+
 Many methods of `UITableView` take `NSIndexPath` objects as parameters and return values. They have properties we can access to manipulate objects in the table.
 
 ```swift
@@ -161,12 +177,11 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 - If you can, make your views opaque, transparent objects make the system work much harder.
 - Avoid gradients (same idea as transparent objects).
 </script></section><section  data-markdown><script type="text/template">
-## Demo
+## TableViews Three Ways 🎈🌳👽
 
-- `UITableView` using storyboard.
-- 1000 rows.
-- Display "Hello world \(number of row)" in each row.
-- Include an image for the cell's image view.
+- [TableView + Storyboard](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableStoryboard.md)
+- [TableView + xib file](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableXib.md)
+- [TableView programmatically](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableCode.md)
 </script></section><section  data-markdown><script type="text/template">
 ## Checkpoint
 
@@ -178,25 +193,7 @@ In pairs, answer the following questions?
 1. Why do we reuse cells?
 1. Mention a technique you can use to improve performance when using tables.
 1. Can we use custom classes instead of `UITableViewCell`?
-</script></section><section  data-markdown><script type="text/template">
-## Demo & mini activity
-
-- `UITableView` using xib file.
--  Use multiple sections
--  Adding a section header
-
-[Apple docs - how to add headers & footers](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections)
-</script></section><section  data-markdown><script type="text/template">
-## Demo & mini activity
-
-- `UITableView` using programmatic cell.
-- Add a table header.
-</script></section><section  data-markdown><script type="text/template">
-## Self sizing cells
-
-TODO:
-https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## In Class Activity
 
 To our subscription box app:
@@ -204,28 +201,30 @@ To our subscription box app:
 - Add a screen where users can see previous boxes they've received.
 - When they tap on one of the boxes they will see the contents for that month.
 
-Stretch challenge
+You can use dummy data until now.
+</script></section><section data-markdown><script type="text/template">
+### Stretch challenge
 
 - Users can rate previous items received (just functionality, we don't care about persisting this data)
-- Include a description in the item's cell and use a self sizing cell to show the entire text.
-
-<!-- v-->
-
+- Include a description in the item's cell and use a self sizing cell to show the entire text. [Self Sizing cell documentation](https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells)
+</script></section><section data-markdown><script type="text/template">
 ![activity](assets/activity.png)
 
-- You might have done all the above with dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
+- We've worked all the way until now using dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
 
 Here is an example, tailor it to your own app:
+
 ```swift
 
 ```
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## Additional Resources
 
 [UITableView in Apple Docs](https://developer.apple.com/documentation/uikit/uitableview)<br>
 [Why use reusable cells?](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)<br>
 [Improving performance](https://medium.com/capital-one-tech/smooth-scrolling-in-uitableview-and-uicollectionview-a012045d77f)<br>
-[Performance tricks](https://www.smashingmagazine.com/2019/02/ios-performance-tricks-apps/)
+[Performance tricks](https://www.smashingmagazine.com/2019/02/ios-performance-tricks-apps/)<br>
+[Apple docs - how to add headers & footers](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/adding_headers_and_footers_to_table_sections)
 </script></section></div>
     </div>
 
