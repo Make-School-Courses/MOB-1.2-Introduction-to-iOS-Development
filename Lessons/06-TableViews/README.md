@@ -235,6 +235,11 @@ You can use dummy data until now.
 
 ![activity](assets/activity.png)
 
+
+<!-- > -->
+
+## After Class + Lab
+
 - We've worked all the way until now using dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
 
 Here is an example, tailor it to your own app:
