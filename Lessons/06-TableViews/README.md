@@ -215,6 +215,8 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ```
 
+<!-- > -->
+
 ## Checkpoint
 
 In pairs, answer the following questions?
