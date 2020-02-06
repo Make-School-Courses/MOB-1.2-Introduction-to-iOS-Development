@@ -196,9 +196,9 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 
 ## TableViews Three Ways 🎈🌳👽
 
-- [TableView + Storyboard](assignments/tableStoryboard.md)
-- [TableView + xib file](assignments/tableXib.md)
-- [TableView programmatically](assignments/tableCode.md)
+- [TableView + Storyboard](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableStoryboard.md)
+- [TableView + xib file](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableXib.md)
+- [TableView programmatically](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableCode.md)
 
 <!-- > -->
 
