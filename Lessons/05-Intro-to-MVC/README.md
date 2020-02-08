@@ -1,4 +1,4 @@
-<!-- Run this slideshow via the following command: -->
+builder<!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
 
 <!-- .slide: class="header" -->
@@ -191,7 +191,14 @@ Programmatically we defined an instance of the view controller and set it as the
 
 <!-- > -->
 
-### Presenting
+Changing the `rootViewController` from another View Controller:
+
+```swift
+self.view.window!.rootViewController = //Instance of the VC you want to go to
+```
+<!-- > -->
+
+### Presenting a VC with the sliding left animation
 
 ```swift
 let nextVC = ViewController()
@@ -211,26 +218,88 @@ present(nextVC, animated: true, completion: nil)
 
 <!-- > -->
 
-### Dismissing
+### Dismissing a View Controller to go back to a previous screen
 
-If presented using modal.
+If you used the present method:
 
 ```swift
 self.dismiss(animated: true, completion: nil)
 ```
-If using push.
+
+If you used the push method:
 
 ```swift
 self.navigationController?.popViewController(animated: true)
 ```
-Return to root
+
+Return to root:
 ```swift
 self.navigationController?.popToRootViewController(animated: true)
 ```
 
 <!-- > -->
 
-### Changing rootViewController
+## Creating a Navigation Controller
+
+When using the storyboard, we would embed view controllers in navigation controllers in the interface builder.
+
+We can also do it programmatically:
+
+```swift
+let navigationController = UINavigationController(rootViewController: //some VC)
+self.view.window!.rootViewController = navigationController //you can set it as root
+
+//or
+
+present(navigationController, animated: true, completion: nil) present it on top of an existing VC
+
+```
+
+Having a navigation controller gives us a navigation bar and the stack to show and dismiss view controllers.
+
+## Passing Information
+
+Sending values over to a new view controller looks very similar to how we did it with segues.
+
+The difference is that we assign the value of properties right after creating the instance of the second view controller.
+
+```swift
+let nextVC = ViewController()
+nextVC.color = UIColor.red //The instance of ViewController has a property called `color` and we are sending over the value `UIColor.red` to use it later in the next VC.
+```
+
+<!-- > -->
+
+## In Class Activity
+
+Using your project:
+  - Delete the storyboard.
+  - Create a new VC file that will serve as the home of the app (where the main content is).
+  - Create a new VC file that will serve as a Login screen. For now, this screen will only have a button to continue to the home screen. Add constraints to the button using the anchor approach.
+  - Modify the AppDelegate to start with the Onboarding flow.
+  - Have the onboarding flow direct you to the Login screen. Use the method to change the rootViewController here.
+  - From the login navigate to the home screen of the app. Make sure the Home screen is embedded in a navigation controller. So that we can show new view controllers and dismiss them as we need.
+
+<!-- > -->
+
+![sketch](assets/sketch.png)
+
+<!-- > -->
+
+## After Class/Lab
+
+1. Redesign your Login screen to include fields for user and password.
+1. Practice sending data over by displaying the username in the main view.
+1. Create three buttons in the main view with the following options (we'll use them in upcoming classes): New Box, Past Boxes, Profile.
+
+<!-- > -->
+
+![login](assets/login.png)
+
+
+<!-- > -->
+
+### Changing rootViewController with an animation (cool thing to know)
 
 Scenarios: <br>
 The end of an onboarding flow.<br>
@@ -266,46 +335,6 @@ extension UINavigationController {
     }
 }
 ```
-
-<!-- > -->
-
-## Passing Information
-
-Sending values over to a new view controller looks very similar to how we did it with segues.
-
-The difference is that we assign the value of properties right after creating the instance of the second view controller.
-
-```swift
-let nextVC = ViewController()
-nextVC.someProperty = "valueSent"
-```
-
-<!-- > -->
-
-## In Class Activity
-
-Using your project:
-  - Delete the storyboard.
-  - Create a new VC file that will serve as the main content of the app.
-  - Create a new VC file that will serve as a Login screen. For now, this screen will only have a button to continue to the main content. Add constraints to the button using the anchor approach.
-  - Modify the AppDelegate to start with the Onboarding flow.
-  - Have the onboarding flow direct you to the Login screen. Use the method to change the rootViewController here.
-
-<!-- > -->
-
-![sketch](assets/sketch.png)
-
-<!-- > -->
-
-## After Class/Lab
-
-1. Redesign your Login screen to include fields for user and password.
-1. Practice sending data over by displaying the username in the main view.
-1. Create three buttons in the main view with the following options (we'll use them in upcoming classes): New Box, Past Boxes, Profile.
-
-<!-- > -->
-
-![login](assets/login.png)
 
 <!-- > -->
 
