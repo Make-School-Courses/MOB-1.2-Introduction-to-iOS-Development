@@ -6,7 +6,7 @@ In pairs, get the following collection view working as indicated.
 1. Download the [starter project](https://github.com/amelinagzz/collectionView-starter) and finish the implementation of the `UICollectionView`. First 2 *TODOs*.
 2. Experiment changing the values in the flow layout until you achieve something like this. You can find the methods in an extension at the end of the file.
 
-![collectionview](assets/collectionview.png)<br><br>
+![collectionview](collectionview.png)<br><br>
 
 3. Now instead of using the default flow layout. Use the subclass `CustomFlowLayout`. You will need to comment out the extension for  `UICollectionViewDelegateFlowLayout` to use the custom one.
 
