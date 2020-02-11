@@ -1,23 +1,45 @@
 # UICollectionViews
 
-## Minute-by-Minute
-| **Time(min)** | **Activity**                            |
-| ------------- | ----------------------------------------|
-| 5             | Review of Last Class & Objectives       |
-| 15            | TT UICollectionView                     |
-| 10            | Demo                                    |
-| 20            | Challenge completing the collection view|
-| 10            | Break                                   |
-| 15            | TT performBatchUpdates                  |
-| 25            | Challenge updating datasource           |
-| 5             | Wrap up                                 |
+<!-- > -->
 
-## Class Learning Objectives
+## Creating Models
+
+- We've worked all the way until now using dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
+
+Here is a basic example, tailor it to your own app:
+
+```swift
+struct Item{
+    let name: String
+    let image: String
+}
+
+struct Box{
+    let date: String
+    let items: [Item]
+}
+
+struct Category{
+    let name: String
+}
+
+struct User{
+
+}
+```
+
+Create the models for you app.
+
+<!-- > -->
+
+## Learning Objectives
 By the end of this lesson, students should be able to:
 
 - Implement UICollectionViews in code
-- Handle UICollectionViews datasource and delegate
+- Handle UICollectionView's datasource and delegate
 - Manage update animations
+
+<!-- > -->
 
 ## UICollectionView
 
@@ -30,129 +52,189 @@ Spotify - Items are genres, artists or songs
 
 ![collectionviews](assets/collectionviewexample.png)
 
+<!-- > -->
+
 ## Layout
 
-Just like `UITableview`, `UICollectionView` has a datasource and a delegate. What's different is another concept known as Layout.
+Layout in a collection view is everything that deals with *where* the content is displayed.<br>
+Each individual item is specified by the UICollectionView's layout attributes (bounds, center, frame...). These properties are used to define the **items** in the collection view.
 
-Layout is everything that deals with *where* the content is displayed.<br>
-Each individual item is specified by the `UICollectionView` layout attributes (bounds, center, frame...) These properties are used to define the **items** in the collection view.
+`UICollectionViewLayout` is a class that is meant to be subclassed, to let you customize it.
 
-Layout is immutable. If this needs to be changed (ex. change in orientation) we would use the invalidate layout method. The good thing of the layout being separated from the content in the `UICollectionView` is that we can have transitions between layouts with animations. The transitioning layouts don't need to know about each other, they just describe how the arrangement is going to be and then the transition occurs.
+But just in case, there is one already called **UICollectionViewFlowLayout** that you can use right away.
 
-`UICollectionViewLayout` is a class that is meant to be subclassed. There is one provided already called **UICollectionViewFlowLayout**.
+<!-- > -->
 
 ## Line based design
 
-Flow - line based layout systems that adapts to many designs.
+Line based layout systems can adapts to many designs.
 
 **Vertical Scrolling**<br>
 Here we see what happens when the flow layout lays out the items in the collection view.
-![vertical](assets/vertical.gif)<br><br>
+![vertical](assets/vertical.gif)
+
+<!-- > -->
+
 **Line Spacing**
 ![v1](assets/v1.png)<br><br>
+
+<!-- > -->
+
 **Inter item spacing**
 ![v2](assets/v2.png)<br><br>
+
+<!-- > -->
+
 **Horizontal Scrolling**<br>
 Here we see what happens when the flow layout lays out the items in the collection view.<br>
 ![horizontal](assets/horizontal.gif)<br><br>
+
+<!-- > -->
+
 **Line Spacing**
 ![h1](assets/h1.png)<br><br>
+
+<!-- > -->
+
 **Inter item spacing**
 ![h2](assets/h2.png)<br><br>
 
-Layout provides 2 properties that let us specify the minimum value for both line spacing and inter item spacing.
+<!-- > -->
 
 ## Data Source
 
 Deals with what goes as the content of the `UICollectionView`.
 
 ```
-optional public func numberOfSections(in collectionView: UICollectionView) -> Int
-
-public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-
-public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+func numberOfSections(in collectionView: UICollectionView) -> Int
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
 
 ```
+
+<!-- > -->
+
 ## Delegate
-`UICollectionView` is a subclass of `UIScrollView`. We use the same delegate and we can also extend it.<br>
+
 Handles user interaction with items in the collection view: highlighting, selecting, dragging, etc.
+
+```swift
+func collectionView(UICollectionView, shouldSelectItemAt: IndexPath) -> Bool
+func collectionView(UICollectionView, didSelectItemAt: IndexPath)
+func collectionView(UICollectionView, shouldDeselectItemAt: IndexPath) -> Bool
+func collectionView(UICollectionView, didDeselectItemAt: IndexPath)
+
+```
+
+<!-- > -->
 
 ## Setup
 
-1. Instantiate a `UICollectionView` object on our view controller
+1. Instantiate a `UICollectionView` object in a view controller
 
-```
+```swift
+var collectionView : UICollectionView!
+var emojis: [String] = Array(repeating: "😎", count: 100)
+...
 collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
 ```
-3. Set dataSource and delegate of the collection view
 
-```
+<!-- > -->
+
+2. Set dataSource and delegate of the collection view
+
+```swift
 collectionView.dataSource = self
 collectionView.delegate = self
 ```
-4. Create a cell and layout the contents inside
-5. Register cell & reuse identifier
 
-```
-// Inside cell
-static var identifier: String = "Cell"
-// Inside view controller
-collectionView.register(Cell.self, forCellWithReuseIdentifier: Cell.identifier)
+<!-- > -->
 
-```
-6. Implement methods needed from dataSource and delegate.
+3. Create a cell and layout the contents inside
 
+```swift
+//Example with xib file
 
-## In Class Activities
+class CustomCell: UICollectionViewCell {
+    static var identifier: String = "CustomCell"
 
-1. Download the [starter project](https://github.com/amelinagzz/collectionviews-starter) and finish the implementation of the `UICollectionView`.
-2. Experiment changing the values in the flow layout until you achieve something like this.
+    @IBOutlet weak var label: UILabel!
 
-![collectionview](assets/collectionview.png)<br><br>
-
-3. Now instead of using the default flow layout. Use the subclass `CustomFlowLayout`.
-```
-let flow = CustomFlowLayout()
-let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: flow)
-```
-We won't be using the methods in the flow extension so we can comment that out for now.
-
-4. The new layout displays one column only. Run it and see how it looks in both portrait and landscape mode. Run the project to see if you get the single column in both orientations.
-
-5. This works ok but we can make better use of the space when it's on landscape mode by having more columns.
-
-```
-let availableWidth = cv.bounds.inset(by: cv.layoutMargins).size.width
-let minColumnWidth = CGFloat(300)
-let maxNumColumns = Int(availableWidth/minColumnWidth)
-let cellWidth = (availableWidth / CGFloat(maxNumColumns)).rounded(.down)
-
-self.itemSize = CGSize(width: cellWidth, height: 70.0)
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        backgroundColor = UIColor.lightGray
+        layer.cornerRadius = 5
+        layer.masksToBounds = true
+    }
+}
 ```
 
-Try the code above and see how we can optimize the space. Every time our device rotates, the previous layout invalidates and the new one recalculates the item size.
+<!-- > -->
+
+4. Register cell & reuse identifier
+
+```swift
+collectionView.register(CustomCell.self, forCellWithReuseIdentifier: CustomCell.identifier)
+```
+
+<!-- > -->
+
+5. Implement methods needed from data source and delegate.
+
+```swift
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+       return emojis.count
+   }
+
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell.identifier, for: indexPath as IndexPath) as! CustomCell
+       cell.label.text = self.emojis[indexPath.item]
+       return cell
+}
+
+func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       print("You selected item in row \(indexPath.row)")
+}
+```
+
+<!-- > -->
+
+## In Class activity
+
+[Activity in pairs](assignments/assignment.md)
+
+<!-- > -->
 
 ## Using performBatchUpdates
 
-It is a common situation when a collection view needs to update the arrangement of its items. Deleting, adding and moving items can be done using animations instead of calling `reloadData()` this will result in a better user experience.
+A common situation when a collection view needs to update the arrangement of its items. Deleting, adding and moving items can be done using animations instead of calling `reloadData()` this will result in a better user experience.
 
-We can use the performBatchUpdates API to trigger several updates on the collectionView at the same time.
+<!-- > -->
+
+We can use the performBatchUpdates method to trigger several updates on the collectionView at the same time.
 
 ```
 func performBatchUpdates(_ updates: (() -> Void)?, completion: ((Bool) -> Void)? = nil)
 // allows multiple insert/delete/reload/move calls to be animated simultaneously. Nestable.
 ```
+
+<!-- > -->
+
 When doing this operations we need to be careful with the order of handling the datasource and triggering the animations. <br><br>
 The order of *collection view updates* **won't** matter.<br>
 The order of the *updates* in the datasource **does** matter<br>
+
+Example: Delete 0 -> Insert 1 vs Insert 1 -> Delete 0
+
+<!-- > -->
 
 ### Guidelines for updates
 - Decompose Move into Delete and Insert updates
 - Combine all Delete and Insert updates
 - Process Delete updates first, in descending order
 - Process Insert updates last, in ascending order
+
+<!-- > -->
 
 ## In Class Activity
 
@@ -161,14 +243,38 @@ The sample project has a nav bar button with the title "update".
 When we tap the "Example" option, these are the things that should happen:
 
 - Update the value of the item at position 3
-- Delete the item at position 2
 - Move the item at position 3 to position 0
 
-Try it now and see what happens. Does it work? What's wrong?
+<!-- > -->
 
-## Challenge - more updates
-The last part of this challenge will be completing the rest of the options in the "Update" menu.
+## reloadData
+
+- No updates required
+- Resync data source to collection view
+- Not animated
+- The brute force that works
+
+<!-- > -->
+
+### Challenge - more updates
+You will be completing the rest of the options in the "Update" menu.
 Take into consideration the guidelines to avoid crashing the app.
+
+<!-- > -->
+
+## Lab + After Class
+
+Extend the subscription box app to display a gallery of categories available in the box.
+
+For example:
+
+- Pet box: Grooming, Toys, Treats, Clothing
+- Food box: Vegetables, Dairy, Meat, Cereal, Fruits
+- Clothing box: Tops, Bottoms, Shoes, Outerwear
+
+Look for the example VC in [the design online](https://zpl.io/bejlAMq). It's the "New box" screen, where users select/deselect what items they would like to receive.
+
+<!-- > -->
 
 ## Additional Resources
 [WWDC Demo on UICollectionView](https://developer.apple.com/videos/play/wwdc2018/225/?time=514)<br>
