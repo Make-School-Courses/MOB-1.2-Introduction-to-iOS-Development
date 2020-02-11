@@ -46,7 +46,7 @@ By the end of the course, you will be able to ...
 [Custom Views]: Lessons/04-CustomViews/README.md
 [MVC & Navigation]: Lessons/05-Intro-to-MVC/README.md
 [Table views]: Lessons/06-TableViews/README.md
-[Lesson 7]: Lessons/Lesson7.md
+[Collection views]: Lessons/07-CollectionViews/README.md
 [Lesson 8]: Lessons/Lesson8.md
 [Lesson 9]: Lessons/Lesson9.md
 [Lesson 10]: Lessons/Lesson10.md
