@@ -6,3 +6,4 @@
 - **[Day 5](Lessons/05-Intro-to-MVC/README.md)**
 - **[Day 6](Lessons/06-TableViews/README.md)**
 - **[Day 7](Lessons/07-CollectionViews/README.md)**
+- **[Day 8](Lessons/08-CompositionalLayouts/README.md)**
