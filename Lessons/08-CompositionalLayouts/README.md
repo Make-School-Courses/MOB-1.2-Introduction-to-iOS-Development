@@ -232,7 +232,7 @@ The sections array along with indexPath.section is used to access the correct co
 
 Complete the sections for `FavoriteSection` and `FeaturedSection`.
 
-![final](assets/final.png)
+![final](assets/final.gif)
 
 <!-- v -->
 
