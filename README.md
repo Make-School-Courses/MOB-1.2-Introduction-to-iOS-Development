@@ -33,9 +33,9 @@ By the end of the course, you will be able to ...
 |  6 |  Thu, February 6               | [Table views]                      |
 |  7 |  Tue, February 11              | [Collection views]                 |
 |  8 |  Thu, February 13              | [Compositional Layouts]            |
-|  9 |  Tue, February 18              | [UITabBarController]               |
-| 10 |  Thu, February 20              | [Animations]                       |  
-| 11 |  Tue, February 25              | Lab                                |
+|  9 |  Tue, February 18              | Lab - Breakout sessions            |
+| 10 |  Thu, February 20              | [UITabBarController]               |  
+| 11 |  Tue, February 25              | [Animations]                       |
 | 12 |  Thu, February 27              | [Exploring SwiftUI]                |
 | 13 |  Tue, March 3                  | Final Exam                         |
 | 14 |  Thu, March 5                  | Presentations                      |
@@ -48,12 +48,9 @@ By the end of the course, you will be able to ...
 [Table views]: Lessons/06-TableViews/README.md
 [Collection views]: Lessons/07-CollectionViews/README.md
 [Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
-[Lesson 9]: Lessons/Lesson9.md
-[Lesson 10]: Lessons/Lesson10.md
+[UITabBarController]: Lessons/09-TabBarController/README.md
 [Lesson 11]: Lessons/Lesson11.md
 [Lesson 12]: Lessons/Lesson12.md
-[Lesson 13]: Lessons/Lesson13.md
-[Lesson 14]: Lessons/Lesson14.md
 
 ## Assignment Schedule
 
