@@ -244,3 +244,4 @@ You can see how it should look like in [the online design](https://zpl.io/bejlAM
 - [Tutorial using the storyboard](https://code.tutsplus.com/tutorials/ios-from-scratch-with-swift-exploring-tab-bar-controllers--cms-25470)
 - [TabBar + NavController Image source](https://learnappmaking.com/tab-bar-controller-uitabbarcontroller-swift-ios/)
 - [Tab Bar programmatically](https://medium.com/@ITZDERR/uinavigationcontroller-and-uitabbarcontroller-programmatically-swift-3-d85a885a5fd0)
+- [Video tutorial with storyboard](https://www.youtube.com/watch?v=n7NNAdaIDKQ)
