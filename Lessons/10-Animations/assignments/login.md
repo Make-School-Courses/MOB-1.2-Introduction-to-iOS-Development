@@ -2,7 +2,7 @@
 
 #### Downloading the starter code
 
-Download and open [this project](https://github.com/amelinagzz/animations-starter/tree/master/LoginAnimated) to explore the contents. If you run the app you'll see a login screen.
+Download and open [this project](https://github.com/amelinagzz/animations-starter) to explore the contents. If you run the app you'll see a login screen.
 
 We want to animate it as soon as the user gets to this screen.
 
