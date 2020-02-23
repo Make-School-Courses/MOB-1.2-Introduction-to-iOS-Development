@@ -49,7 +49,7 @@ By the end of the course, you will be able to ...
 [Collection views]: Lessons/07-CollectionViews/README.md
 [Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
 [UITabBarController]: Lessons/09-TabBarController/README.md
-[Lesson 11]: Lessons/Lesson11.md
+[Animations]: Lessons/10-Animations/README.md
 [Lesson 12]: Lessons/Lesson12.md
 
 ## Assignment Schedule
