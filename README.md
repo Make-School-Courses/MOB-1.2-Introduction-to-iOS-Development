@@ -50,7 +50,7 @@ By the end of the course, you will be able to ...
 [Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
 [UITabBarController]: Lessons/09-TabBarController/README.md
 [Animations]: Lessons/10-Animations/README.md
-[Lesson 12]: Lessons/Lesson12.md
+[Exploring SwiftUI]: Lessons/11-SwiftUI/README.md
 
 ## Assignment Schedule
 
@@ -59,7 +59,7 @@ By the end of the course, you will be able to ...
 | [Size Classes assignment] |  Thu, Jan 23  |  Tue, Jan 27 | In class                |
 | [Tip Calculator Tutorial] |  Thu, Jan 30  |  Thu, Feb 6  | Github link in tracker  |
 | Onboarding assignment     |  Tue, Jan 27  |  Tue, Feb 3  | Github link in tracker  |
-| [Habitual app]            |  day, Date    |  day, Date   | Github link in tracker  |
+| [Habitual app]            |  Thu, Feb 20  |  Thu, Mar 5   | Github link in tracker  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
