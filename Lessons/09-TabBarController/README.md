@@ -41,7 +41,11 @@ When the user selects a specific tab, the tab bar controller **displays the root
 
 <!-- v -->
 
-![views](assets/views.png)
+<div>
+  <img src="assets/views.png" width="400" height="auto">
+</div>
+
+<!-- ![views](assets/views.png) -->
 
 You can use navigation controllers or custom view controllers as the root view controller for a tab.
 
