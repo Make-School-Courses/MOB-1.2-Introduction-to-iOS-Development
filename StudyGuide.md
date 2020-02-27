@@ -2,7 +2,7 @@
 
 *Overview:* Your final exam will focus on the learning outcomes for this course.  Review each outcome thoroughly and ask questions if you are unclear about the outcome or your level of understanding.
 
-*Final Exam Format:* It will consist of two parts: one will be answered in your computer using an Xcode project, and the second one, will be written on paper. The exam will take 2 hours to complete.  If you have a disability that requires any accommodation for the final exam, please reach out to Jen or Anne to make sure this is documented according to the Make School Accommodations Policy and clarify with your instructor what accommodations will be made. 
+*Final Exam Format:* It will consist of two parts: one will be answered in your computer using an Xcode project, and the second one, will be written on paper. The exam will take 2 hours to complete.  If you have a disability that requires any accommodation for the final exam, please reach out to Jen or Anne to make sure this is documented according to the Make School Accommodations Policy and clarify with your instructor what accommodations will be made.
 
 Build an app using UIKit components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom classes.
 Apply AutoLayout & Size Classes to achieve a good distribution of elements in different screen sizes and orientations.
@@ -10,7 +10,7 @@ Implement MVC and understand the separation of concerns for each component.
 Pass information between view controllers using segues and also using the manual approach.
 
 
-**Outcome 1:Build an app using UIKit components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom classes.**
+**Outcome 1: Build an app using UIKit components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom classes.**
 
 Ways we learned about this in the course
 - All of the course tutorials used UIKit for their graphical components either using storyboards or having them programmatically.

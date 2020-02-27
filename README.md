@@ -15,7 +15,7 @@ By the end of the course, you will be able to ...
 1. Build an app using UIKit components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom classes.
 1.  Apply AutoLayout & Size Classes to achieve a good distribution of elements in different screen sizes and orientations.
 1. Implement MVC and understand the separation of concerns for each component.
-1. Pass information between view controllers using segues and also using the manual approach.
+1. Pass information between view controllers & handling navigation.
 
 ## Schedule
 
@@ -73,7 +73,6 @@ By the end of the course, you will be able to ...
 ### Projects
 
 - Subscription Box Project (In-Class iterations) - complete design [here](https://scene.zeplin.io/project/5e3b505d29276dd08ba41cc1)
-- [NPS for your subscription box app]()
 
 ## Evaluation
 
@@ -82,7 +81,7 @@ To pass this course you must meet the following requirements:
 - Complete 80% of all required assignments
 - Pass all projects according to the associated project rubric
 - Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
+    - This will be further explained in the [study guide](StudyGuide.md)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
