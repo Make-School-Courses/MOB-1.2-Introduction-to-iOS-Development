@@ -1,6 +1,6 @@
 # Exploring SwiftUI
 
-## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/11-SwfitUI/README.html ':ignore')
+## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/11-SwiftUI/README.html ':ignore')
 
 <!-- > -->
 
