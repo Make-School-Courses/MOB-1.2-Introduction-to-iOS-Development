@@ -59,7 +59,7 @@ By the end of the course, you will be able to ...
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
 | [Tip Calculator Tutorial] |  Tue, Mar 31  |  Fri, Apr 3  | Github link in tracker  |
 | Onboarding assignment     |  -  |  -  | Github link in tracker  |
-| [Habitual app]            | -   |  -   | Github link in tracker  |
+| [Habitual App]            | -   |  -   | Github link in tracker  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
