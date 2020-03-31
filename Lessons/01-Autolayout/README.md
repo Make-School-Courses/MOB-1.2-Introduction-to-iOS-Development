@@ -37,7 +37,7 @@ Allows us to create adaptive UI, that will look good in multiple screen sizes an
 
 <!-- v -->
 
-<img width="700" src="./assets/screens.png">
+![screens](assets/screens.png)
 
 <aside class = "notes">
 Take this example of an app with a label that was added to the center of the screen in the interface builder. When running the app in different simulators we notice that the label is not always in the center. If we rotate one of the devices the label might even go off screen.
