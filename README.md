@@ -19,26 +19,27 @@ By the end of the course, you will be able to ...
 
 ## Schedule
 
-**Course Dates:** Tuesday, January 21 – Thursday, March 5, 2020 (7 weeks)
+**Course Dates:** Tuesday, March 31 – Thursday, May 14, 2020 (7 weeks)
 
-**Class Times:** Tuesday and Thursday at 9:30–12:20pm (14 class sessions)
+**Class Times:** Tuesday and Thursday at 2:30–5:20pm (14 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tue, January 21               | [Autolayout Pt.1]                  |
-|  2 |  Thu, January 23               | [Autolayout Pt.2]                  |
-|  3 |  Tue, January 28               | [Coding Constraints]               |
-|  4 |  Thu, January 30               | [Custom Views]                     |
-|  5 |  Tue, February 4               | [MVC & Navigation]                 |
-|  6 |  Thu, February 6               | [Table views]                      |
-|  7 |  Tue, February 11              | [Collection views]                 |
-|  8 |  Thu, February 13              | [Compositional Layouts]            |
-|  9 |  Tue, February 18              | Lab - Breakout sessions            |
-| 10 |  Thu, February 20              | [UITabBarController]               |  
-| 11 |  Tue, February 25              | [Animations]                       |
-| 12 |  Thu, February 27              | [Exploring SwiftUI]                |
-| 13 |  Tue, March 3                  | Final Exam                         |
-| 14 |  Thu, March 5                  | Presentations                      |
+|  1 |  Tue, March 31             | [Autolayout Pt.1]                  |
+|  2 |  Thu, April 2              | [Autolayout Pt.2]                  |
+|  3 |  Tue, April 7              | [Coding Constraints]               |
+|  4 |  Thu, April 9              | [Custom Views]                     |
+|  5 |  Tue, April 14             | [MVC & Navigation]                 |
+|  6 |  Thu, April 16             | [Table views]                      |
+|  7 |  Tue, April 21             | [Collection views]                 |
+|  8 |  Thu, April 23             | [Compositional Layouts]            |
+|  9 |  Tue, April 28             | Lab - Breakout sessions            |
+| 10 |  Thu, April 30             | [UITabBarController]               
+| 11 |  Tue, May 5                | [Animations]                       |
+| 12 |  Thu, May 7                | [Exploring SwiftUI]                |
+| 13 |  Tue, May 12               | Final Exam|
+| 14 |  Thu, May 14               | Presentations |
+
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
 [Autolayout Pt.2]: Lessons/02-AutoLayout/README.md
@@ -56,10 +57,9 @@ By the end of the course, you will be able to ...
 
 |    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| [Size Classes assignment] |  Thu, Jan 23  |  Tue, Jan 27 | In class                |
-| [Tip Calculator Tutorial] |  Thu, Jan 30  |  Thu, Feb 6  | Github link in tracker  |
-| Onboarding assignment     |  Tue, Jan 27  |  Tue, Feb 3  | Github link in tracker  |
-| [Habitual app]            |  Thu, Feb 20  |  Thu, Mar 5   | Github link in tracker  |
+| [Tip Calculator Tutorial] |  Tue, Mar 31  |  Fri, Apr 3  | Github link in tracker  |
+| Onboarding assignment     |  -  |  -  | Github link in tracker  |
+| [Habitual app]            | -   |  -   | Github link in tracker  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
