@@ -65,7 +65,7 @@ Constraints are the rules that we apply to UI elements and determine their size 
 
 The layout of a view hierarchy is defined as a series of linear equations. Each constraint represents a single equation. The goal is to declare a series of equations that has only one possible solution.
 
-<img width="650" src="./assets/constraintAnatomy.png">
+![anatomy](assets/constraintAnatomy.png)
 
 
 Can you describe verbally what the constraint states?
@@ -86,7 +86,7 @@ This constraint states that the red view’s leading edge must be 8.0 points aft
 
 ## Attributes
 
-<img width="450" src="./assets/attributes.png">
+![attributes](assets/attributes.png)
 
 Full list of attributes in the [Apple Docs](https://developer.apple.com/documentation/uikit/nslayoutattribute)
 
@@ -150,7 +150,7 @@ Each of these constraints can have its own priority. By default, views use a 250
 
 Therefore, it’s easier to stretch a view than it is to shrink it.
 
-<img width="400" src="./assets/chcp.png">
+![chcp](assets/chcp.png)
 
 <aside class = "notes">
 For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
@@ -180,7 +180,7 @@ Interface Builder provides four Auto Layout tools in the bottom-right corner of 
 
 ## Align Tool
 
-<img width="450" src="./assets/align.png">
+![align](assets/align.png)
 
 <aside class = "notes">
 The Align tool lets you quickly align items in your layout. Select the items you want to align, and then click the Align tool. Interface Builder presents a popover view containing a number of possible alignments.
@@ -192,7 +192,7 @@ You typically select two or more views before using the Align tool. However, the
 
 ## Pin Tool
 
-<img width="400" src="./assets/pin.png">
+![pin](assets/pin.png)
 
 <aside class = "notes">
 The Pin tool lets you quickly define a view’s position relative to its neighbors or quickly define its size. Select the item whose position or size you want to pin, and click the Pin tool.
@@ -202,7 +202,7 @@ The Pin tool lets you quickly define a view’s position relative to its neighbo
 
 ## Resolve Tool
 
-<img width="400" src="./assets/resolve.png">
+![resolve](assets/resolve.png)
 
 <aside class = "notes">
 You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
