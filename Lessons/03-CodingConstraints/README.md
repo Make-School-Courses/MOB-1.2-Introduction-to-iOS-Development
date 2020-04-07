@@ -44,6 +44,7 @@ myView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
 Sample view
 
 ```swift
+import PlaygroundSupport
 import UIKit
 
 class ViewController: UIViewController {
@@ -53,12 +54,13 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
 
+        self.view.backgroundColor = UIColor.white
         exampleView = UIView(frame: .zero)
         exampleView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(exampleView)
         NSLayoutConstraint.activate([
             exampleView.widthAnchor.constraint(equalToConstant: 80),
-            exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1/1),
+            exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1),
             exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
         ])
@@ -69,6 +71,8 @@ class ViewController: UIViewController {
         self.exampleView.backgroundColor = .purple
     }
 }
+
+PlaygroundPage.current.liveView = ViewController()
 ```
 
 <aside class = "notes">
@@ -227,7 +231,7 @@ class ViewController: UIViewController {
 
 ## In Class Activity
 
-[The Subscription box](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md)
+[Onboarding](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md)
 
 
 <!-- > -->
