@@ -175,6 +175,7 @@ Unlike the approach taken by the layout anchor API, you must specify a value for
 Examine how this code works and then place a new view to the right of the exampleView.
 
 ```Swift
+import PlaygroundSupport
 import UIKit
 
 class ViewController: UIViewController {
@@ -189,21 +190,23 @@ class ViewController: UIViewController {
         exampleView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(exampleView)
 
-        NSLayoutConstraint (item: exampleView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
-        NSLayoutConstraint(item: exampleView!, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 20.0).isActive = true
-        NSLayoutConstraint(item: exampleView!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 20.0).isActive = true
-        NSLayoutConstraint(item: exampleView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute:.notAnAttribute, multiplier: 1.0, constant:80.0).isActive = true
-
         redView = UIView()
         redView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(redView)
 
+        NSLayoutConstraint (item: exampleView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute:.notAnAttribute, multiplier: 1.0, constant:80.0).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1.0, constant: 60.0).isActive = true
+        NSLayoutConstraint(item: exampleView!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 20.0).isActive = true
+
         NSLayoutConstraint (item: redView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 80).isActive = true
-        NSLayoutConstraint(item: redView!, attribute: .leadingMargin, relatedBy: .equal, toItem: exampleView, attribute: .trailingMargin, multiplier: 1.0, constant: 20.0).isActive = true
-        NSLayoutConstraint(item: redView!, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 20.0).isActive = true
         NSLayoutConstraint(item: redView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute:.notAnAttribute, multiplier: 1.0, constant:80.0).isActive = true
 
-        // Place a red view 20 pts apart from the exampleView (to the right).
+        NSLayoutConstraint(item: redView!, attribute: .leading, relatedBy: .equal, toItem: exampleView, attribute: .trailing, multiplier: 1.0, constant: 20).isActive = true
+
+        NSLayoutConstraint(item: redView!, attribute: .top, relatedBy: .equal, toItem: exampleView, attribute: .top, multiplier: 1.0, constant: 0.0).isActive = true
+
+
     }
 
     override func viewDidLoad() {
@@ -212,7 +215,11 @@ class ViewController: UIViewController {
         self.redView.backgroundColor = .red
 
     }
+
 }
+
+PlaygroundPage.current.liveView = ViewController()
+
 
 ```
 </script></section><section  data-markdown><script type="text/template">
@@ -223,7 +230,7 @@ class ViewController: UIViewController {
 </script></section><section  data-markdown><script type="text/template">
 ## After Class or Stretch Challenge
 
-Look up constraints with visual format. It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
+Look up [constraints with visual format](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html). It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
 
 Repeat the first in class activity using the visual format language.
 </script></section><section  data-markdown><script type="text/template">

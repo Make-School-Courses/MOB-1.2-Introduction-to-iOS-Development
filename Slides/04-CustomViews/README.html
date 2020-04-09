@@ -22,6 +22,7 @@
 <!-- reveal-md README.md -w -->
 
 <!-- .slide: class="header" -->
+
 # Creating Custom Views
 
 ## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/04-CustomViews/README.html ':ignore')
@@ -32,7 +33,6 @@
 - Creating custom views
 - Refactor session
 - xib files
-- Tutorial
 </script></section><section  data-markdown><script type="text/template">
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ By the end of this lesson, students should be able to:
 
 - Create custom views programmatically
 - Refactor an Xcode project
-- Implement views with xib files programmatically and with storyboards
+- Implement views with xib files
 </script></section><section ><section data-markdown><script type="text/template">
 ## Onboarding assignment
 
@@ -48,7 +48,7 @@ By the end of this lesson, students should be able to:
 - 🕵🏻 Review each other's code.
 - 🙌🏼 See if you can get unblocked with tips from your classmates.
 - 💭 Remember what you said was the most challenging thing about constraints? Were you able to improve to some extent with the practice?
-- 📝 Make a list of the things you are still missing or would like to change after reviewing your code in groups.
+- 📝 Keep a list of the things you are still missing or would like to change after reviewing your code in groups.
 </script></section><section data-markdown><script type="text/template">
 **Demo of a possible solution.**
 
@@ -70,11 +70,11 @@ Facts:
 
 Creating custom views will help with:
 
-- Making code *reusable*.
-- Making code more *readable*.
-- Sometimes *reduce* the amount of code.
-- *Separation* of concerns.
-- Help with the *structure* of files in the project.
+- Making code **reusable**.
+- Making code more **readable**.
+- Sometimes **reduce** the amount of code.
+- **Separation** of concerns.
+- Help with the **structure** of files in the project.
 
 We can create them 2 ways: **programmatically** & **xib** files.
 </script></section><section ><section data-markdown><script type="text/template">
@@ -170,7 +170,44 @@ func setup() {
     self.layer.masksToBounds = true
 }
 ```
+</script></section></section><section  data-markdown><script type="text/template">
+## In Class Activity
+
+Recreate the example to make a custom view.
+
+Choose any color you want and give the view rounded corners.
+</script></section><section ><section data-markdown><script type="text/template">
+
+## xib files
+
+xib files are a great way to create custom views with all the benefits from the storyboard (regarding customization and setting constraints).
+
+We can design in the interface builder and then use the view in a storyboard or programmatically.
+
+xib files reduce the need of having storyboards and because of this, reduce the amount of bugs too.
+</script></section><section data-markdown><script type="text/template">
+## xibs or nibs?
+
+Both terms mean a custom view that you can reuse in your project.
+
+**XIB**  (XML Interface Builder) is a representation before the compiler turns it into **NIB** (NeXTSTEP Interface Builder). XIBs are easier for us to read while NIBs are easier for the computer to process.
 </script></section></section><section ><section data-markdown><script type="text/template">
+## xib files
+
+Demo Creating a xib file and using it in the storyboard.
+
+[Tutorial](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
+</script></section><section data-markdown><script type="text/template">
+## IBDesignable
+
+@IBDesignable can be applied to UIViews and the lets Interface Builder know that it should render the view directly in the canvas.
+
+In this way we can see our custom views, for example in a storyboard without having to run the app each time we make a change.
+</script></section></section><section  data-markdown><script type="text/template">
+## In Class Activity
+
+Recreate the example of the square view, this time using a xib file. Up to you to then use the view programmatically or in the storyboard or both! 😀
+</script></section><section ><section data-markdown><script type="text/template">
 ## Refactoring our code
 
 - To make our code more readable.
@@ -191,43 +228,11 @@ Then it's time for you to try it out.
 Take the list of things you wanted to improve from earlier and refactor your code to achieve those goals.
 
 This assignment will be graded by the instructor using [this code review rubric](https://docs.google.com/document/d/1SF9xCDK9qPnpu_Eu6DsgSgZl6D0InMvYG68k2-buUEQ/edit?usp=sharing).
-</script></section></section><section ><section data-markdown><script type="text/template">
-## xib files
-
-xib files are a great way to create custom views with all the benefits from the storyboard (regarding customization and setting constraints).
-
-We can design in the interface builder and then use the view in a storyboard or programmatically.
-
-xib files reduce the need of having storyboards and because of this, reduce the amount of bugs too.
 </script></section><section data-markdown><script type="text/template">
-## xibs or nibs?
-
-Both terms mean a custom view that you can reuse in your project.
-
-XIBs (XML Interface Builder) are just a previous representation before the compiler turns them into NIBs (NeXTSTEP Interface Builder). XIBs are easier for us to read while NIBs are easier for the computer to process.
-</script></section></section><section ><section data-markdown><script type="text/template">
-## xib files
-
-Demo Creating a xib file and using it in the storyboard.
-
-[Tutorial](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
-</script></section><section data-markdown><script type="text/template">
-## IBDesignable
-
-@IBDesignable can be applied to UIViews and the lets Interface Builder know that it should render the view directly in the canvas.
-
-In this way we can see our custom views, for example in a storyboard without having to run the app each time we make a change.
-</script></section></section><section  data-markdown><script type="text/template">
-## In Class Activity
-
-Recreate the example of the square view, this time using a xib file. Up to you to then use the view programmatically or in the storyboard or both! 😀
-</script></section><section  data-markdown><script type="text/template">
 ## Lab & After Class
 
-- Review a possible solution to the onboarding flow and how to use custom views with [this video](https://youtu.be/kJQcn06uIiI). 
-
-- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-</script></section><section  data-markdown><script type="text/template">
+- Review a possible solution to the onboarding flow and how to use custom views with [this video](https://youtu.be/kJQcn06uIiI).
+</script></section></section><section  data-markdown><script type="text/template">
 ## Additional Resources
 
 - [Xcode project without the main storyboard](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=2ahUKEwjFgpDr66vnAhX2CzQIHXEDDIoQwqsBMAV6BAgHEAQ&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHtn4h51BQsk&usg=AOvVaw0pv5o1FniYa4BdXjKqT8yT)
