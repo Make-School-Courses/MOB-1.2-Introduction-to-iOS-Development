@@ -42,6 +42,16 @@ Note how this code on the left creates a fully working table on the right. And j
 
 <!-- > -->
 
+## Storyboard and SwiftUI
+
+Side by Side
+
+**Analogy on SwiftUI vs Storyboard**
+
+<!-- home cook needs all instructions and steps vs professional cook who can make a dish with just the name -->
+
+<!-- > -->
+
 ## Design Tools
 
 With Xcode 11 came a lot of new tools to work with SwiftUI.
@@ -77,12 +87,22 @@ In the template contents we have `body` that behaves like a view.
 
 <!-- > -->
 
+## Examples - Code snippets + Live demo
+
+1. Finding the preview
+1. Hello world
+1. Hello world in an HStack
+1. Hello world in a VStack
+1. Grid with text
+1. Make a view
+
+<!-- > -->
+
 ## Warmup
 
 Initial activity can be:
 
-- Adding multiple views and arranging them in a grid.
-- Adding a few views and turning them into circles of different colors.
+- Adding multiple views and arranging them in a grid, each view with a different color.
 - Stretch: Adding an action when tapping on the elements (can be a print statement)
 
 <!-- > -->
