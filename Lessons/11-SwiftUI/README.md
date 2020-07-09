@@ -34,11 +34,11 @@ Telling SwiftUI **what** we want the UI to look like and work, then it figures o
 
 <!-- > -->
 
-![codeExample](assets/codeExample.png)
-
-<!-- > -->
-
 ![table](assets/table.png)
+
+<aside class ="notes">
+Note how this code on the left creates a fully working table on the right. And just in a few lines of code.
+</aside>
 
 <!-- > -->
 
@@ -46,9 +46,9 @@ Telling SwiftUI **what** we want the UI to look like and work, then it figures o
 
 With Xcode 11 came a lot of new tools to work with SwiftUI.
 
-As we work in the code edit, we get to see a live preview of the app.
+As we work in the code editor, we get to see a live preview of the app.
 
-As we work in the design canvas, everything we edit is completely in sync with the code in the editor.
+As we work in the design canvas, everything we edit is in sync with the code editor.
 
 In any case, Xcode recompiles the changes instantly and inserts them into a running version of your app, visible, and editable at all times.
 
@@ -64,15 +64,32 @@ In any case, Xcode recompiles the changes instantly and inserts them into a runn
 
 <!-- > -->
 
-## In Class Activity
+## Template contents
 
-Complete the section ["Creating and Combining Views"](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) from the SwiftUI tutorials by Apple.
+![template](assets/template.png)
+
+<aside class = "notes">
+A view is a rectangular area on the screen where we can display content and interact with it.
+
+In the template contents we have `body` that behaves like a view.
+
+</aside>
 
 <!-- > -->
 
-## Template contents
+## Warmup
 
+Initial activity can be:
 
+- Adding multiple views and arranging them in a grid.
+- Adding a few views and turning them into circles of different colors.
+- Stretch: Adding an action when tapping on the elements (can be a print statement)
+
+<!-- > -->
+
+## In Class Activity
+
+Complete the section ["Creating and Combining Views"](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) from the SwiftUI tutorials by Apple.
 
 <!-- > -->
 
@@ -88,17 +105,19 @@ The best option is to learn SwiftUI on the side as well once you feel comfortabl
 
 ## In Class Activity
 
-Using SwiftUI create the following layout for the Profile view in your subscription box app. (Do this in a new project)
+Using SwiftUI create the following layout for a Profile view.
 
 ![profile](assets/profile.png)
 
 <!-- > -->
 
-## Adding it to our existing project.
+## Adding it to an existing project.
 
-You will need to add the files from the profile into the subscription box project.
+If you need to add the ViewController you created with SwiftUI, you can use it as a regular view in a project that mostly uses UIKit, using the class [UIHostingController](https://developer.apple.com/documentation/swiftui/uihostingcontroller).
 
-Then just use it as a regular view with the help of the class [UIHostingController](https://developer.apple.com/documentation/swiftui/uihostingcontroller).
+You will need to add the SwiftUI file to the project.
+
+Then just use it as a regular view with the help of the class
 
 ```swift
 let swiftUIView = ContentView()
