@@ -20,7 +20,7 @@ We want the title of the app to appear from within the box image. This is an upw
 
 We can only modify the constant property of a constraint. So we will do a new constraint instead.
 
-Add the following constraint declarations as global variables.
+Add the following constraint declarations as global variables to the class.
 
 ```swift
 var titleConstraintStart: NSLayoutConstraint!
