@@ -10,7 +10,7 @@ This course covers mobile application development in iOS using Swift. You will l
 
 ## Course Specifics
 
-**Course Delivery**: online | 7 weeks | 14 sessions
+**Course Delivery**: online | 7 weeks | 13 sessions
 
 **Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
 
@@ -25,26 +25,26 @@ By the end of the course, you will be able to ...
 
 ## Schedule
 
-**Course Dates:** Tuesday, March 31 – Thursday, May 14, 2020 (7 weeks)
+**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2020 (7 weeks)
 
-**Class Times:** Tuesday and Thursday at 2:30–5:20pm (14 class sessions)
+**Class Times:** Monday, Wednesday at 2:45pm–5:30pm (13 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tue, March 31             | [Autolayout Pt.1]                  |
-|  2 |  Thu, April 2              | [Autolayout Pt.2]                  |
-|  3 |  Tue, April 7              | [Coding Constraints]               |
-|  4 |  Thu, April 9              | [Custom Views]                     |
-|  5 |  Tue, April 14             | [MVC & Navigation]                 |
-|  6 |  Thu, April 16             | [Table views]                      |
-|  7 |  Tue, April 21             | [Collection views]                 |
-|  8 |  Thu, April 23             | [Compositional Layouts]            |
-|  9 |  Tue, April 28             | Lab - Breakout sessions            |
-| 10 |  Thu, April 30             | [UITabBarController]               
-| 11 |  Tue, May 5                | [Animations]                       |
-| 12 |  Thu, May 7                | [Exploring SwiftUI]                |
-| 13 |  Tue, May 12               | Final Exam|
-| 14 |  Thu, May 14               | Presentations |
+|  - |  Mon, Jan 18              | No Class - MLK Day                 |
+|  1 |  Wed, Jan 20	             | [Autolayout Pt.1]                  |
+|  2 |  Mon, Jan 25              | [Autolayout Pt.2]                  |
+|  3 |  Wed, Jan 27              | [Coding Constraints]               |
+|  4 |  Mon, Feb 1               | [Custom Views]                     |
+|  5 |  Wed, Feb 3               | [MVC & Navigation]                 |
+|  6 |  Mon, Feb 8               | [Table views]                      |
+|  7 |  Wed, Feb 10	             | [Collection views]                 |
+|  8 |  Mon, Feb 15              | [Compositional Layouts]            |
+|  9 |  Wed, Feb 17              | Lab - Breakout sessions            |
+| 10 |  Mon, Feb 22              | [UITabBarController]               |
+| 11 |  Wed, Feb 24              | [Animations]                       |
+| 12 |  Mon, Mar 1               | [Exploring SwiftUI]                |
+| 13 |  Wed, Mar 3               | Final Exam                         |
 
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
@@ -63,12 +63,14 @@ By the end of the course, you will be able to ...
 
 |    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| [Tip Calculator Tutorial] |  Tue, Mar 31  |  Mon, Apr 6  | Github link in tracker  |
-| Onboarding assignment     |  -  |  -  | Github link in tracker  |
-| [Habitual App]            | -   |  -   | Github link in tracker  |
+| [Tip Calculator Tutorial] |  -   |  -  | Github link in Gradescope  |
+| [Bot Shop]                |  -   |  -  | Github link in Gradescope  |
+| [Habitual App]            |  -   |  -  | Github link in Gradescope  |
+| [Subscription Box]        |  -   |  -  | Github link in Gradescope  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
+[Bot Shop](https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs)
 [Habitual App](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
 ### Tutorials
@@ -87,7 +89,7 @@ To pass this course you must meet the following requirements:
 
 - Complete 80% of all required assignments
 - Pass all projects according to the associated project rubric
-- Pass the final summative assessment according to the rubric as specified in this class
+- Pass the final summative assessment > 70
     - This will be further explained in the [study guide](StudyGuide.md)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
