@@ -128,32 +128,6 @@ Some views have a natural size given their current context. This is called **int
 <aside class = "notes">
 The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
 </aside>
-</script></section></section><section  data-markdown><script type="text/template">
-### CH & CR
-
-Auto Layout represents a view’s intrinsic content size using a pair of constraints for each dimension. The **content hugging** pulls the view inward so that it fits snugly around the content. The **compression resistance** pushes the view outward so that it does not clip the content.
-
-![contentHugging](assets/contentHugging.png)
-</script></section><section ><section data-markdown><script type="text/template">
-### Priorities
-
-Each of these constraints can have its own priority. By default, views use a 250 priority for their content hugging, and a 750 priority for their compression resistance.
-
-Therefore, it’s easier to stretch a view than it is to shrink it.
-
-![chcp](assets/chcp.png)
-
-<aside class = "notes">
-For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
-</aside>
-</script></section><section data-markdown><script type="text/template">
-## Constraint Priority
-
-For all other constraints, they have on their horizontal and vertical axis, a priority attached to them (1000 initially).
-
-The constraint priority determines how important a constraint is in relation to other constraints; 1000 is a required constraint. 100 is considered low priority.
-
-When there are AutoLayout conflicts,  these values are used to resolve them.
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## More Tools for AutoLayout
 
@@ -205,6 +179,32 @@ When you select a constraint either in the canvas or in the document outline, th
 The constraint’s identifier property lets you provide a descriptive name so that you can more easily identify the constraint in console logs and other debugging tasks.
 </aside>
 </script></section><section  data-markdown><script type="text/template">
+### CH & CR
+
+Auto Layout represents a view’s intrinsic content size using a pair of constraints for each dimension. The **content hugging** pulls the view inward so that it fits snugly around the content. The **compression resistance** pushes the view outward so that it does not clip the content.
+
+![contentHugging](assets/contentHugging.png)
+</script></section><section ><section data-markdown><script type="text/template">
+### Priorities
+
+Each of these constraints can have its own priority. By default, views use a 250 priority for their content hugging, and a 750 priority for their compression resistance.
+
+Therefore, it’s easier to stretch a view than it is to shrink it.
+
+![chcp](assets/chcp.png)
+
+<aside class = "notes">
+For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
+</aside>
+</script></section><section data-markdown><script type="text/template">
+## Constraint Priority
+
+For all other constraints, they have on their horizontal and vertical axis, a priority attached to them (1000 initially).
+
+The constraint priority determines how important a constraint is in relation to other constraints; 1000 is a required constraint. 100 is considered low priority.
+
+When there are AutoLayout conflicts,  these values are used to resolve them.
+</script></section></section><section  data-markdown><script type="text/template">
 ## StackView
 
 Powerful tool to create interfaces very quickly.
@@ -221,24 +221,33 @@ Now you try it, do the same as the example. You can use a regular view instead o
 </script></section><section ><section data-markdown><script type="text/template">
 ![stackDetails](assets/stackDetails.png)
 </script></section><section data-markdown><script type="text/template">
+Article to cover Axis, Alignment and Distribution
+
+[Link to Article](https://nshipster.com/uistackview/)
+</script></section></section><section  data-markdown><script type="text/template">
+<!--
 ### Axis
 
 Indicates whether the arranged views should be layout vertically or horizontally.
 
 ![axis](assets/axis.png)
-</script></section><section data-markdown><script type="text/template">
+
+
 ### Alignment
 
 Controls how the arranged views are aligned.
 
 ![alignment](assets/alignment.png)
-</script></section><section data-markdown><script type="text/template">
+
+
 ### Distribution
 
 Defines the size and position of the arranged views. For example, if it's set to fill, the stack view tries to fit all the content in the available space.
 
 ![distribution](assets/distribution.png)
-</script></section></section><section  data-markdown><script type="text/template">
+
+-->
+
 ## In Class Activity
 
 - 30 minutes to finish the layout specified [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/01-Autolayout/assignments/assignment2.md)
@@ -253,6 +262,8 @@ Read about the type of errors you can encounter while working with constraints.
 - [Logical errors](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LogicalErrors.html#//apple_ref/doc/uid/TP40010853-CH20-SW1)
 
 Then read about how you can debug them with these [tips & tricks](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1). Identify the tip that you think will be the most useful to you. We'll share them during the next class.
+</script></section><section  data-markdown><script type="text/template">
+Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 </script></section><section ><section data-markdown><script type="text/template">
 ## Additional Resources
 

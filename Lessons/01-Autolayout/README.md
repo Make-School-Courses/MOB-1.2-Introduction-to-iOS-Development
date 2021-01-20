@@ -136,38 +136,6 @@ The intrinsic content size is based on the view’s current content. A label or 
 
 <!-- > -->
 
-### CH & CR
-
-Auto Layout represents a view’s intrinsic content size using a pair of constraints for each dimension. The **content hugging** pulls the view inward so that it fits snugly around the content. The **compression resistance** pushes the view outward so that it does not clip the content.
-
-![contentHugging](assets/contentHugging.png)
-
-<!-- > -->
-
-### Priorities
-
-Each of these constraints can have its own priority. By default, views use a 250 priority for their content hugging, and a 750 priority for their compression resistance.
-
-Therefore, it’s easier to stretch a view than it is to shrink it.
-
-![chcp](assets/chcp.png)
-
-<aside class = "notes">
-For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
-</aside>
-
-<!-- v -->
-
-## Constraint Priority
-
-For all other constraints, they have on their horizontal and vertical axis, a priority attached to them (1000 initially).
-
-The constraint priority determines how important a constraint is in relation to other constraints; 1000 is a required constraint. 100 is considered low priority.
-
-When there are AutoLayout conflicts,  these values are used to resolve them.
-
-<!-- > -->
-
 ## More Tools for AutoLayout
 
 ![tools](assets/moreTools.png)
@@ -230,6 +198,38 @@ The constraint’s identifier property lets you provide a descriptive name so th
 
 <!-- > -->
 
+### CH & CR
+
+Auto Layout represents a view’s intrinsic content size using a pair of constraints for each dimension. The **content hugging** pulls the view inward so that it fits snugly around the content. The **compression resistance** pushes the view outward so that it does not clip the content.
+
+![contentHugging](assets/contentHugging.png)
+
+<!-- > -->
+
+### Priorities
+
+Each of these constraints can have its own priority. By default, views use a 250 priority for their content hugging, and a 750 priority for their compression resistance.
+
+Therefore, it’s easier to stretch a view than it is to shrink it.
+
+![chcp](assets/chcp.png)
+
+<aside class = "notes">
+For most controls, this is the desired behavior. For example, you can safely stretch a button larger than its intrinsic content size; however, if you shrink it, its content may become clipped.
+</aside>
+
+<!-- v -->
+
+## Constraint Priority
+
+For all other constraints, they have on their horizontal and vertical axis, a priority attached to them (1000 initially).
+
+The constraint priority determines how important a constraint is in relation to other constraints; 1000 is a required constraint. 100 is considered low priority.
+
+When there are AutoLayout conflicts,  these values are used to resolve them.
+
+<!-- > -->
+
 ## StackView
 
 Powerful tool to create interfaces very quickly.
@@ -252,13 +252,19 @@ Now you try it, do the same as the example. You can use a regular view instead o
 
 <!-- v -->
 
+Article to cover Axis, Alignment and Distribution
+
+[Link to Article](https://nshipster.com/uistackview/)
+
+<!-- > -->
+
+<!--
 ### Axis
 
 Indicates whether the arranged views should be layout vertically or horizontally.
 
 ![axis](assets/axis.png)
 
-<!-- v -->
 
 ### Alignment
 
@@ -266,7 +272,6 @@ Controls how the arranged views are aligned.
 
 ![alignment](assets/alignment.png)
 
-<!-- v -->
 
 ### Distribution
 
@@ -274,7 +279,7 @@ Defines the size and position of the arranged views. For example, if it's set to
 
 ![distribution](assets/distribution.png)
 
-<!-- > -->
+-->
 
 ## In Class Activity
 
@@ -292,6 +297,10 @@ Read about the type of errors you can encounter while working with constraints.
 - [Logical errors](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LogicalErrors.html#//apple_ref/doc/uid/TP40010853-CH20-SW1)
 
 Then read about how you can debug them with these [tips & tricks](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1). Identify the tip that you think will be the most useful to you. We'll share them during the next class.
+
+<!-- > -->
+
+Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 
 <!-- > -->
 

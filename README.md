@@ -63,10 +63,10 @@ By the end of the course, you will be able to ...
 
 |    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| [Tip Calculator Tutorial] |  -   |  -  | Github link in Gradescope  |
-| [Bot Shop]                |  -   |  -  | Github link in Gradescope  |
-| [Habitual App]            |  -   |  -  | Github link in Gradescope  |
-| [Subscription Box]        |  -   |  -  | Github link in Gradescope  |
+| [Tip Calculator Tutorial] |  Jan 20       | Jan 27  | Github link in Gradescope  |
+| [Bot Shop]                |  Jan 27       |  Feb 8  | Github link in Gradescope  |
+| [Habitual App]            |  Feb 8        |  Feb 22 | Github link in Gradescope  |
+| [Subscription Box]        |  -            |  Mar 3  | Github link in Gradescope  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
@@ -111,4 +111,3 @@ Any additional resources you may need (online books, etc.) can be found here. Yo
 - [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
 - [Online Learning Tutorial](https://make.sc/online-learning-tutorial) - How to succeed in online learning at Make School
 - [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students
-
