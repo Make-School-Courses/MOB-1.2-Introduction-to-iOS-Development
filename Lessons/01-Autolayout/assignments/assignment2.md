@@ -1,10 +1,10 @@
 ## In Class Activity
 
-You can complete the following practice in a new Xcode project. Using the storyboard, have 2 different view controllers and just change the initial view controller each time to the one you are working on.
+You can complete the following practice in a new Xcode project. Make sure you select working with Storyboard.
 
-### StackView Distribution Types
+### Part 1: StackView Distribution Types
 
-In an empty ViewController, create a StackView with three views, assign them different colors. The examples will use images of fruits, but you don't need to.
+In an empty ViewController, create a StackView with three views, assign them different images. 
 
 Then practice matching each of the distribution types.
 
@@ -66,8 +66,8 @@ hidden or added! Try hiding an element in the stack and see what happens.
 explicit constraints only when necessary
 
 
-## Practice building a Layout
+## PArt 2: Practice building a Layout
 
-Using the interface builder and a new ViewController, recreate the following design. Take into consideration that since you are going to be using AutoLayout it should look good both in portrait and landscape mode. To change between orientation modes in the simulator app you can rotate right (command + right arrow) and rotate left (command + left arrow).
+Using the interface builder and a new ViewController, recreate the following design. Take into consideration that since you are going to be using AutoLayout it should look good both in portrait and landscape mode. To change between orientation modes in the simulator app you can rotate right (command + right arrow) and rotate left (command + left arrow). Treat the long text as UILabel.
 
 ![dogchallenge](assets/dogchallenge.png)
