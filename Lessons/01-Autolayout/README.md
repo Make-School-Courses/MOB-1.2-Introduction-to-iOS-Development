@@ -115,6 +115,8 @@ Attributes define a feature that can be constrained. In general, this includes t
 2. [Watch this video](https://youtu.be/WsJXbfTdYJI) with common constraints and try them out yourself.
 3. If you get blocked, ask the instructor to help out 😀
 
+<!-- > -->
+
 <!--
 - 20 minutes to finish the layout specified [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/01-Autolayout/assignments/assignment1.md)
 - 5 minutes to go over questions
