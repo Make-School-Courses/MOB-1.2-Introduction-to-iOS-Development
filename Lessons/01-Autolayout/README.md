@@ -98,10 +98,9 @@ Attributes define a feature that can be constrained. In general, this includes t
 
 ## Demo
 
-<iframe src="https://youtube.com/embed/D0SbUZbD80A" data-autoplay  width="700" height="500"></iframe>
+<iframe src="https://youtu.be/5QRes2qrNIU" data-autoplay  width="700" height="500"></iframe>
 
 <aside class="notes">
-Now you try it, do the same as the example.
 </aside>
 
 <!-- v -->
@@ -110,12 +109,16 @@ Now you try it, do the same as the example.
 
 <!-- > -->
 
-## In Class Activity
+## In Class Activity (30 min)
 
+1. Now you try it, do the same layout as the demo.
+2. [Watch this video](https://youtu.be/WsJXbfTdYJI) with common constraints and try them out yourself.
+3. If you get blocked, ask the instructor to help out 😀
+
+<!--
 - 20 minutes to finish the layout specified [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/01-Autolayout/assignments/assignment1.md)
 - 5 minutes to go over questions
-
-<!-- > -->
+-->
 
 ## Intrinsic Content Size
 
@@ -240,7 +243,7 @@ It groups views together and automatically applies constraints for you. As a res
 
 ## Demo
 
-<iframe src="https://youtube.com/embed/GbOqyswp398" data-autoplay  width="700" height="500"></iframe>
+<iframe src="https://youtu.be/0ti3y2lQi-8" data-autoplay  width="700" height="500"></iframe>
 
 <aside class="notes">
 Now you try it, do the same as the example. You can use a regular view instead of an image, if you are trying live in class.
@@ -255,6 +258,10 @@ Now you try it, do the same as the example. You can use a regular view instead o
 Article to cover Axis, Alignment and Distribution
 
 [Link to Article](https://nshipster.com/uistackview/)
+
+<!-- v -->
+
+[Video Exploring changes in CHP & CCRP](https://youtu.be/H-BuHXsdzHQ)
 
 <!-- > -->
 
