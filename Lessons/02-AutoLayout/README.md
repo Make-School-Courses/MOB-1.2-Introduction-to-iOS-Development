@@ -122,15 +122,17 @@ Setting a scroll view can be quite a headache, because there are guidelines, saf
 
 <!-- v -->
 
-## Activity
+## Demo
 
-35 min - Replicate the following layout.<br>
-
-![scroll](assets/scroll.gif)
+<iframe src="https://www.youtube.com/embed/nggWBNBgavg" data-autoplay  width="700" height="500"></iframe>
 
 <!-- v -->
 
-![hierarchy](assets/viewHierarchy.png)
+## Activity
+
+Watch [this other approach using StackViews](https://youtu.be/7JssLdbg01U) and then try to replicate the following layout.<br>
+
+![scroll](assets/scroll.gif)
 
 <!-- v -->
 
@@ -194,10 +196,21 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
 <!-- v -->
 
-5. Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are. Can you figure out a way to print out the message "You've reached the end" when you scroll to the bottom of the content?
+### Demo
 
-6. At the end of the same article you used above, you can find more methods available, experiment with them while you think how you could find them useful in your projects.
+<iframe src="https://www.youtube.com/embed/HuJiSpbY3to" data-autoplay  width="700" height="500"></iframe>
 
+<!-- v -->
+
+### Challenge
+
+Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are.
+
+Can you figure out the way to change the background color of the View Controller when you've reached the end of the content? Or when you reach the top?
+
+<!-- v -->
+
+[Compare your solution](https://youtu.be/fVJo1P-ha-Q).
 
 <!-- > -->
 

@@ -115,13 +115,15 @@ Setting a scroll view can be quite a headache, because there are guidelines, saf
 1. Look for missing constraints inside the **content view**.
 1. If all is correct, the scroll view will set its content size automatically 🤩 based on the components inside the content view.
 </script></section><section data-markdown><script type="text/template">
+## Demo
+
+<iframe src="https://www.youtube.com/embed/nggWBNBgavg" data-autoplay  width="700" height="500"></iframe>
+</script></section><section data-markdown><script type="text/template">
 ## Activity
 
-35 min - Replicate the following layout.<br>
+Watch [this other approach using StackViews](https://youtu.be/7JssLdbg01U) and then try to replicate the following layout.<br>
 
 ![scroll](assets/scroll.gif)
-</script></section><section data-markdown><script type="text/template">
-![hierarchy](assets/viewHierarchy.png)
 </script></section><section data-markdown><script type="text/template">
 <aside class="notes">
 You can change the size of the screen you see in the interface builder to be as long as you need to see the elements you are adding to the scroll view. And not having to be restricted to the real screen size.
@@ -169,10 +171,17 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 }
 ```
 </script></section><section data-markdown><script type="text/template">
-5. Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are. Can you figure out a way to print out the message "You've reached the end" when you scroll to the bottom of the content?
+### Demo
 
-6. At the end of the same article you used above, you can find more methods available, experiment with them while you think how you could find them useful in your projects.
+<iframe src="https://www.youtube.com/embed/HuJiSpbY3to" data-autoplay  width="700" height="500"></iframe>
+</script></section><section data-markdown><script type="text/template">
+### Challenge
 
+Read [this article](https://medium.com/swift-india/a-little-story-about-uiscrollview-in-ios-d2fd50091367) and look up what `contentOffset` and `contentSize` are.
+
+Can you figure out the way to change the background color of the View Controller when you've reached the end of the content? Or when you reach the top?
+</script></section><section data-markdown><script type="text/template">
+[Compare your solution](https://youtu.be/fVJo1P-ha-Q).
 </script></section></section><section  data-markdown><script type="text/template">
 ## After Class/Lab
 
