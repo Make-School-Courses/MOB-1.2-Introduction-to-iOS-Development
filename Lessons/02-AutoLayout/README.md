@@ -21,13 +21,13 @@
 
 By the end of this lesson, students should be able to:
 
-1. Identify various layout guide lines in a screen.
-1. Implement a scroll view using the interface builder.
-1. Differentiate between the frame and bounds of a view.
+1. **Differentiate** between the frame and bounds of a view.
+1. **Identify** various layout guide lines in a screen.
+1. **Implement** a scroll view using the interface builder.
 
 <!-- > -->
 
-## Review
+## Review/Warm Up (5 min)
 
 Pair up to discuss the following:
   - Why do we need AutoLayout? What problems does it solve.
@@ -45,9 +45,9 @@ Before we continue, it's important to know the difference between the frame and 
 
 This concept might come up during an interview and we should be able to tell the difference.
 
-**Individually** read [this article](https://medium.com/@suragch/frame-vs-bounds-in-ios-107990ad53ee)
+**8 min** read [this article](https://medium.com/@suragch/frame-vs-bounds-in-ios-107990ad53ee)
 
-Then go to [Gradescope](www.gradescope.com) to submit answers to 3 questions from the article.
+**5 min** Then go to [Gradescope](www.gradescope.com) to submit answers to 3 questions from the article.
 
 <!-- > -->
 
@@ -102,7 +102,9 @@ Adhere to the safe area and layout margins defined by UIKit. The safe area also 
 
 ## Scroll Views
 
-Sometimes we need for content to be scrolled because it won't fit in the space of the screen. This is even harder to achieve given iPhones have different screen sizes.
+Sometimes content won't fit in the available space. This is particularly harder to achieve given iPhones have different screen sizes. Here's where the need for content that scroll originates.
+
+The class in iOS that creates them is called `ScrollView`.
 
 Setting a scroll view can be quite a headache, because there are guidelines, safe areas and content sizes we need to pay attention to.
 
@@ -138,27 +140,29 @@ You can change the size of the screen you see in the interface builder to be as 
 do this by selecting the view controller with the scroll view, then go to the attributes inspector and choose the ruler icon. Change the simulated size from Fixed to Freeform and make it as large as you need.
 </aside>
 
-<!-- v -->
-
 If you get stuck ask for help first 😀
 
 Then you can compare your implementation with [this solution](https://github.com/amelinagzz/scrollview-demo)
 
 <!-- v -->
 
-You now have a working scrollview. And it works great to show content to your users. Many times we'll need to make our apps react according to what a user does with the scrollview
+You now have a working scrollview. 🎉
 
-For example...
+It works great to show content to your user, in this case, **regardless of the height of their screen**.
 
-<!-- v -->
+<!-- > -->
 
-As they scroll, animating views, resizing objects.
+Sometimes we'll need to make our apps react according to what a user does with the scrollview.
+
+<!-- > -->
+
+For example: Animating views or resizing objects as they scroll.
 
 ![airbnb](assets/airbnb.gif)
 
 <!-- v -->
 
-Detecting when they are scrolling to reveal a button.
+Detecting when they reach specific content to reveal a button.
 
 ![store](assets/store.gif)
 
@@ -194,6 +198,21 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
 6. At the end of the same article you used above, you can find more methods available, experiment with them while you think how you could find them useful in your projects.
 
+
+<!-- > -->
+
+## After Class/Lab
+
+<!--Install [SwiftLint](https://github.com/realm/SwiftLint) in a project.
+
+For this activity you will need to have [Cocoapods](https://cocoapods.org). If you are not familiar with it. Go to their site to read about what it is and follow the instructions to install it.
+-->
+
+1. Submit today's ScrollView activity to Gradescope.
+
+2. Finish the [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+
+
 <!-- > -->
 
 ## Size Classes - Extra topic (optional)
@@ -225,16 +244,6 @@ Full list of combinations [here](https://developer.apple.com/design/human-interf
 
 - Follow the instructions [here](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/02-AutoLayout/assignments/sizeclasses.md) to create a layout that works in portrait and landscape orientations.
 - If you get stuck feel free to debug with a partner or raise your hand to ask questions.
-
-<!-- > -->
-
-## After Class
-
-Install [SwiftLint](https://github.com/realm/SwiftLint) in a project.
-
-For this activity you will need to have [Cocoapods](https://cocoapods.org). If you are not familiar with it. Go to their site to read about what it is and follow the instructions to install it.
-
-Finish the [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator), due on Monday by submitting the link to the repo in our [tracker](make.sc/mob1.2-tracker).
 
 <!-- > -->
 
