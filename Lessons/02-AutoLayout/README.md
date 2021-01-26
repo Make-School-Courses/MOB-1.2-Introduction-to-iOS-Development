@@ -217,7 +217,9 @@ For this activity you will need to have [Cocoapods](https://cocoapods.org). If y
 
 ## Size Classes - Extra topic (optional)
 
-Are traits that are automatically assigned to content areas based on their size.
+This topic is not covered in class. It's an approach that's used less and less every time and it's not widely used in industry. It doesn't hurt to know what it is so you can reference the following content.
+
+Size Classes  are traits that are automatically assigned to content areas based on their size.
 
 The system defines two size classes:
  - **regular** - denotes a bigger space
