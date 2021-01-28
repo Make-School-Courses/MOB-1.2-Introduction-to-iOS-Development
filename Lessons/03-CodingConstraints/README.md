@@ -29,6 +29,12 @@ By the end of this lesson, students should be able to:
 
 ## Constraints
 
+<!-- > -->
+
+<iframe src="https://www.youtube.com/embed/D4G-QuhpDT4" data-autoplay  width="700" height="500"></iframe>
+
+<!-- > -->
+
 Layout anchors let us create constraints that are easy to read and in a compact format.
 
 ```swift
@@ -58,12 +64,12 @@ class ViewController: UIViewController {
         exampleView = UIView(frame: .zero)
         exampleView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(exampleView)
-        NSLayoutConstraint.activate([
-            exampleView.widthAnchor.constraint(equalToConstant: 80),
-            exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1),
-            exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-        ])
+
+        exampleView.widthAnchor.constraint(equalToConstant: 80).isActive = true
+        exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1).isActive = true
+        exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+
     }
 
     override func viewDidLoad() {
@@ -92,7 +98,7 @@ In this example we have several common constraints we will need to use at some p
 Another common constraint that is not shown is setting a proportional width/height.
 
 ```swift
-exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/2)
+exampleView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5)
 ```
 
 <!-- > -->
@@ -121,7 +127,7 @@ If you want to read more on **why** this conflicting error happens, you can find
 
 ## Activating constraints in a group
 
-In the example, we used a method to activate many constraints at once.
+To activate them all 😎
 
 ```swift
 NSLayoutConstraint.activate([
@@ -132,17 +138,6 @@ NSLayoutConstraint.activate([
 <aside class="notes">
 "Convenience method that activates each constraint in the contained array, in the same manner as setting active=YES. This is often more efficient than activating each constraint individually." - Apple Docs
 </aside>
-
-<!-- > -->
-
-## Activating individually
-
-```swift
-exampleView.widthAnchor.constraint(equalToConstant: 80).isActive = true
-exampleView.heightAnchor.constraint(equalTo: exampleView.widthAnchor, multiplier: 1/1).isActive = true
-exampleView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-```
 
 <!-- > -->
 
@@ -157,6 +152,10 @@ exampleView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive 
 
 ## In Class Activity
 
+<iframe src="https://www.youtube.com/embed/W7nj-fkH0VY" data-autoplay  width="700" height="500"></iframe>
+
+<!-- v -->
+
 Using the anchors approach, code the following:
 
 ![squares](assets/squares.png)
@@ -170,6 +169,10 @@ Using the anchors approach, code the following:
 <!-- > -->
 
 ## NSLayoutConstraint class
+
+<iframe src="https://www.youtube.com/embed/fQlEaJxHfcc" data-autoplay  width="700" height="500"></iframe>
+
+<!-- v -->
 
 ![init](assets/init.png)
 
@@ -236,14 +239,18 @@ PlaygroundPage.current.liveView = ViewController()
 
 <!-- > -->
 
-## In Class Activity
+## Lab & HW
+
+<iframe src="https://www.youtube.com/embed/fFg3poVPX3I" data-autoplay  width="700" height="500"></iframe>
+
+<!-- v -->
 
 [Onboarding](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md)
 
 
 <!-- > -->
 
-## After Class or Stretch Challenge
+## Stretch Challenge
 
 Look up [constraints with visual format](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html). It's another way to add constraints to views. We won't cover it since it's very verbose and not really necessary, but you might see them in the wild, or when working in an old project.
 
