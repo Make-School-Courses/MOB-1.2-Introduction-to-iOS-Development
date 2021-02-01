@@ -237,16 +237,18 @@ PlaygroundPage.current.liveView = ViewController()
 
 ```
 
-<!-- > -->
+<!--
 
 ## Lab & HW
 
 <iframe src="https://www.youtube.com/embed/fFg3poVPX3I" data-autoplay  width="700" height="500"></iframe>
 
-<!-- v -->
+
 
 [Onboarding](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md)
 
+
+-->
 
 <!-- > -->
 
