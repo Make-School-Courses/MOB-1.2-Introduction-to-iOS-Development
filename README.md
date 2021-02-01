@@ -35,15 +35,15 @@ By the end of the course, you will be able to ...
 |  1 |  Wed, Jan 20	             | [Autolayout Pt.1]                  |
 |  2 |  Mon, Jan 25              | [Autolayout Pt.2]                  |
 |  3 |  Wed, Jan 27              | [Coding Constraints]               |
-|  4 |  Mon, Feb 1               | [Custom Views]                     |
-|  5 |  Wed, Feb 3               | [MVC & Navigation]                 |
-|  6 |  Mon, Feb 8               | [Table views]                      |
-|  7 |  Wed, Feb 10	             | [Collection views]                 |
-|  8 |  Mon, Feb 15              | [Compositional Layouts]            |
-|  9 |  Wed, Feb 17              | Lab - Breakout sessions            |
-| 10 |  Mon, Feb 22              | [UITabBarController]               |
-| 11 |  Wed, Feb 24              | [Animations]                       |
-| 12 |  Mon, Mar 1               | [Exploring SwiftUI]                |
+|  4 |  Mon, Feb 1               | Lab - Coding Constraints           |
+|  5 |  Wed, Feb 3               | [Custom Views]                     |
+|  6 |  Mon, Feb 8               | [MVC & Navigation]                 |
+|  7 |  Wed, Feb 10	             | [UITabBarController]               |
+|  8 |  Mon, Feb 15              | [Table views]                      |
+|  9 |  Wed, Feb 17              | [Collection views]                 |
+| 10 |  Mon, Feb 22              | [Compositional Layouts]            |
+| 11 |  Wed, Feb 24              | Lab - Breakout sessions            |
+| 12 |  Mon, Mar 1               | [Animations]                       |
 | 13 |  Wed, Mar 3               | Final Exam                         |
 
 
@@ -57,21 +57,21 @@ By the end of the course, you will be able to ...
 [Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
 [UITabBarController]: Lessons/09-TabBarController/README.md
 [Animations]: Lessons/10-Animations/README.md
-[Exploring SwiftUI]: Lessons/11-SwiftUI/README.md
+[Lab - Coding Constraints]: Lessons/Lab-CodingConstraints/README.md
 
 ## Assignment Schedule
 
 |    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| [Tip Calculator Tutorial] |  Jan 20       | Jan 27  | Github link in Gradescope  |
-| [Bot Shop]                |  Jan 27       |  Feb 8  | Github link in Gradescope  |
-| [Habitual App]            |  Feb 8        |  Feb 22 | Github link in Gradescope  |
+| [Tip Calculator Tutorial] |  Jan 20       |  Jan 27  | Github link in Gradescope  |
+| [Bot Shop]                |  Jan 27       |  Feb 10  | Github link in Gradescope  |
+| [Habitual App]            |  Feb 10       |  Feb 22 | Github link in Gradescope  |
 | [Subscription Box]        |  -            |  Mar 3  | Github link in Gradescope  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
-[Bot Shop](https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs)
-[Habitual App](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
+[Bot Shop]: https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs
+[Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4
 
 ### Tutorials
 
@@ -87,7 +87,7 @@ Rubric ["MOB 1.2- Final Project"](https://www.makeschool.com/rubrics/UnVicmljLTE
 
 To pass this course you must meet the following requirements:
 
-- Complete 80% of all required assignments
+- Complete 80% of in-class assignments
 - Pass all projects according to the associated project rubric
 - Pass the final summative assessment > 70
     - This will be further explained in the [study guide](StudyGuide.md)
