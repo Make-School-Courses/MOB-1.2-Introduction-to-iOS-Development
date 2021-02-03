@@ -14,7 +14,6 @@
 
 - Review Onboarding assignment
 - Creating custom views
-- Refactor session
 - xib files
 
 <!-- > -->
@@ -24,8 +23,7 @@
 By the end of this lesson, students should be able to:
 
 - Create custom views programmatically
-- Refactor an Xcode project
-- Implement views with xib files
+- Implement custom views using xib files
 
 <!-- > -->
 
@@ -34,28 +32,20 @@ By the end of this lesson, students should be able to:
 - 👯 Get in pairs or groups of 3.
 - 🕵🏻 Review each other's code.
 - 🙌🏼 See if you can get unblocked with tips from your classmates.
-- 💭 Remember what you said was the most challenging thing about constraints? Were you able to improve to some extent with the practice?
 - 📝 Keep a list of the things you are still missing or would like to change after reviewing your code in groups.
-
-<!-- v -->
-
-**Demo of a possible solution.**
-
-- Does it look like yours?
-- What is similar and different?
-- Do you have suggestions for improvements?
 
 <!-- v -->
 
 ### 🤔
 
-You probably noticed that the first solution has too much going on and have a feeling that it's not entirely right.
+Have you noticed that our current solution for the Onboarding has too much going on in the same file?
 
 Facts:
-- It sure works.
-- It's not very readable.
-- It takes time to find where things are.
-- Can definitely be improved.
+- It works
+- It takes time to find where things are
+- Can definitely be improved
+
+How?
 
 <!-- > -->
 
@@ -67,49 +57,115 @@ Creating custom views will help with:
 - Making code more **readable**.
 - Sometimes **reduce** the amount of code.
 - **Separation** of concerns.
-- Help with the **structure** of files in the project.
+- Help with the file **structure** in the project.
 
-We can create them 2 ways: **programmatically** & **xib** files.
+<!-- > -->
+
+We can create them 2 ways:
+- **programmatically**
+- **xib** files
 
 <!-- > -->
 
 ## Programmatically
 
+We need a new file to get started.
+
+File → New → File → Cocoa Touch Class
+
+Name: `MyCustomView`<br>
+Subclass of `UIView`
+
+<!-- v -->
+
 ```swift
-class MyCustomView: UIView {
-    override init(frame: CGRect) {
+class MyCustomView: UIView{
+
+
+}
+
+```
+
+<aside class = "notes">
+This is the empty class we get.
+</aside>
+
+<!-- v -->
+
+```swift
+class MyCustomView: UIView{
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+}
+```
+
+<aside class = "notes">
+We add custom functionality to the view by overriding the init method and still call it in the base class to set the frame.
+</aside>
+
+<!-- v -->
+
+```swift
+class MyCustomView: UIView{
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+
+    required init?(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+    }
+}
+```
+
+<aside class = "notes">
+Xcode will ask for this other required init. Which is needed in all subclasses of UIView
+</aside>
+
+<!-- v -->
+
+```swift
+class MyCustomView: UIView{
+    override init(frame: CGRect){
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         setup()
     }
 
-    func setup() {
+    private func setup(){
         self.backgroundColor = UIColor.purple
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 ```
+
+<aside class = "notes">
+Any custom behavior can live in a separate method and make sure to call it in the initializers if applicable.
+</aside>
 
 <!-- v -->
 
 ```swift
 class ViewController: UIViewController {
 
+    let topView: MyCustomView = {
+        let view = MyCustomView()
+        return view
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let myView = MyCustomView()
-        myView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(myView)
-
-        myView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        myView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        myView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        myView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
+        self.view.addSubview(topView)
+        NSLayoutConstraint.activate([
+        topView.widthAnchor.constraint(equalToConstant: 100),
+        topView.heightAnchor.constraint(equalToConstant: 100),
+        topView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        topView.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
     }
 }
 ```
@@ -118,23 +174,19 @@ class ViewController: UIViewController {
 
 ## The true value of reusing
 
-We now have a custom class for a view that's a purple square. We can create as many as we want in our project. That's useful, but we are not exploiting the most out of our custom class.
+We now have a custom class for a view that's purple. We can create as many as we want in our project.
 
-What if I want to make squares of different colors?
+That's useful, but we are not exploiting the most out of our custom class.
+
+What if I want to make squares of **different colors**?
 
 <!-- v -->
 
-## Here comes the custom initializer
+## Custom initializer
 
 ```swift
 class MyCustomView: UIView {
-    var color: UIColor!
-
-    required init(color: UIColor) {
-        super.init(frame: .zero)
-        self.color = color
-        self.setup()
-    }
+    var color: UIColor? = .purple
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -146,7 +198,14 @@ class MyCustomView: UIView {
         setup()
     }
 
-    func setup() {
+    convenience init(color:UIColor){
+        self.init(frame: .zero)
+        self.color = color
+        setup()
+    }
+
+    private func setup(){
+        self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = color
     }
 }
@@ -154,46 +213,67 @@ class MyCustomView: UIView {
 
 <!-- v -->
 
-```swift
-let myView = MyCustomView(color: UIColor.orange)
-myView.translatesAutoresizingMaskIntoConstraints = false
-self.view.addSubview(myView)
-```
-
-<!-- v -->
-
-A small change but now we can customize the properties of our custom view.
-
-This is useful when we are working with a design that reuses the same elements in all of the screens. Or when we notice that some views are very similar with subtle differences.
-
-<!-- v -->
-
-With this approach we can make as many changes in the properties of our views as we need. See what happens when we add this:
+## Usage
 
 ```swift
-func setup() {
-    self.backgroundColor = color
-    self.layer.cornerRadius = 10
-    self.layer.masksToBounds = true
+class ViewController: UIViewController {
+
+    let topView: MyCustomView = {
+        let view = MyCustomView(color: .systemPink)
+        return view
+    }()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.view.addSubview(topView)
+        NSLayoutConstraint.activate([
+        topView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        topView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        topView.widthAnchor.constraint(equalToConstant: 100),
+        topView.heightAnchor.constraint(equalToConstant: 100)
+        ])
+    }
 }
 ```
 
+<!-- v -->
+
+A small change but now we can customize the properties of our custom view. 😎
+
+This is useful when we are working with a design that reuses the same elements in more than one screen. Or when we notice that some views are very similar with subtle differences.
+
+[Review on Initializers]()
+
 <!-- > -->
 
-## In Class Activity
+## In Class Activity - 20 min
 
 Recreate the example to make a custom view.
 
-Choose any color you want and give the view rounded corners.
+Your custom view should:
+
+- Specify background color
+- Include a corner radius property
+
+```swift
+self.layer.masksToBounds = true
+self.layer.cornerRadius = //value for the corner radius
+```
+
+Then create two instances of your custom view in the View Controller.
+
+<!-- v -->
+
+![sample](assets/sample.png)
 
 <!-- > -->
 
-
 ## xib files
 
-xib files are a great way to create custom views with all the benefits from the storyboard (regarding customization and setting constraints).
+xib files are a great way to create custom views with all some benefits from the storyboard.
 
-We can design in the interface builder and then use the view in a storyboard or programmatically.
+We can design in the Interface Builder and then use the view in a storyboard or programmatically.
 
 xib files reduce the need of having storyboards and because of this, reduce the amount of bugs too.
 
@@ -203,60 +283,33 @@ xib files reduce the need of having storyboards and because of this, reduce the 
 
 Both terms mean a custom view that you can reuse in your project.
 
-**XIB**  (XML Interface Builder) is a representation before the compiler turns it into **NIB** (NeXTSTEP Interface Builder). XIBs are easier for us to read while NIBs are easier for the computer to process.
+**XIB**  (XML Interface Builder) is a representation before the compiler turns it into **NIB** (NeXTSTEP Interface Builder).
+
+XIBs are easier for us to read while NIBs are easier for the computer to process.
 
 <!-- > -->
 
 ## xib files
 
-Demo Creating a xib file and using it in the storyboard.
+<iframe src="https://www.youtube.com/embed/ukuwrJmsMB4" data-autoplay  width="700" height="500"></iframe>
 
-[Tutorial](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
+[Demo Pt. 2](https://youtu.be/qV_j4RVfrvg)
 
-<!-- v -->
-
-## IBDesignable
-
-@IBDesignable can be applied to UIViews and the lets Interface Builder know that it should render the view directly in the canvas.
-
-In this way we can see our custom views, for example in a storyboard without having to run the app each time we make a change.
-
-<!-- > -->
-
-## In Class Activity
-
-Recreate the example of the square view, this time using a xib file. Up to you to then use the view programmatically or in the storyboard or both! 😀
-
-<!-- > -->
-
-## Refactoring our code
-
-- To make our code more readable.
-- To tidy up.
-- To remove redundant code or comments.
-- To make things reusable.
-- To keep our code DRY.
-- To split up long functions and files.
-
-Remember to focus on progress, not perfection 😌
+[Written Tutorial](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
 
 <!-- v -->
 
-## In Class Activity
+## Lab
 
-Demo of an example of the Onboarding flow refactored.
+Use Custom Views programmatically to refactor your current Onboarding solution. These will replace the content in the scroll view.
 
-Then it's time for you to try it out.
+Custom Views should have these properties:
+- backgroundColor → UIColor
+- imageName → String
+- message → String
+- isLastPage → Bool
 
-Take the list of things you wanted to improve from earlier and refactor your code to achieve those goals.
-
-This assignment will be graded by the instructor using [this code review rubric](https://docs.google.com/document/d/1SF9xCDK9qPnpu_Eu6DsgSgZl6D0InMvYG68k2-buUEQ/edit?usp=sharing).
-
-<!-- v -->
-
-## Lab & After Class
-
-- Review a possible solution to the onboarding flow and how to use custom views with [this video](https://youtu.be/kJQcn06uIiI).
+- A possible solution to the onboarding flow and how to use custom views: [video (early 2020)](https://youtu.be/kJQcn06uIiI).
 
 <!-- > -->
 
@@ -264,4 +317,4 @@ This assignment will be graded by the instructor using [this code review rubric]
 
 - [Xcode project without the main storyboard](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=2ahUKEwjFgpDr66vnAhX2CzQIHXEDDIoQwqsBMAV6BAgHEAQ&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHtn4h51BQsk&usg=AOvVaw0pv5o1FniYa4BdXjKqT8yT)
 - [Using xib files](https://medium.com/better-programming/swift-3-creating-a-custom-view-from-a-xib-ecdfe5b3a960)
-- [IBDesignable & IBInspectable](https://nshipster.com/ibinspectable-ibdesignable/)
+- [Guide to creating custom views](https://samwize.com/2017/11/01/guide-to-creating-custom-uiview/)

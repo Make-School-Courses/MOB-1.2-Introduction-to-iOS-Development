@@ -1,12 +1,12 @@
 - **[MOB 1.2](README.md)**
-- **[Day 1](Lessons/01-Autolayout/README.md)**
-- **[Day 2](Lessons/02-AutoLayout/README.md)**
-- **[Day 3](Lessons/03-CodingConstraints/README.md)**
-- **[Day 4](Lessons/04-CustomViews/README.md)**
-- **[Day 5](Lessons/05-Intro-to-MVC/README.md)**
-- **[Day 6](Lessons/06-TableViews/README.md)**
-- **[Day 7](Lessons/07-CollectionViews/README.md)**
-- **[Day 8](Lessons/08-CompositionalLayouts/README.md)**
-- **[Day 10](Lessons/09-TabBarController/README.md)**
-- **[Day 11](Lessons/10-Animations/README.md)**
-- **[Day 12](Lessons/11-SwiftUI/README.md)**
+- **[AutoLayout Pt. 1](Lessons/01-Autolayout/README.md)**
+- **[AutoLayout Pt. 2](Lessons/02-AutoLayout/README.md)**
+- **[Coding Constraints](Lessons/03-CodingConstraints/README.md)**
+- **[Lab](Lessons/Lab-CodingConstraints/README.md)**
+- **[Custom Views](Lessons/04-CustomViews/README.md)**
+- **[MVC & Navigation](Lessons/05-Intro-to-MVC/README.md)**
+- **[UITabBarController](Lessons/09-TabBarController/README.md)**
+- **[Table Views](Lessons/06-TableViews/README.md)**
+- **[Collection Views](Lessons/07-CollectionViews/README.md)**
+- **[Compositional Layout](Lessons/08-CompositionalLayouts/README.md)**
+- **[Animations](Lessons/10-Animations/README.md)**
