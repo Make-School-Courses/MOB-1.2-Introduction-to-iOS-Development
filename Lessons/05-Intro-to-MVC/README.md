@@ -246,7 +246,7 @@ nextVC.color = UIColor.red //The instance of ViewController has a property calle
 
 ## Lab Time
 
-[Activity Link](assignments/navigation.md)
+[Activity Link](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/05-Intro-to-MVC/assignments/navigation.md)
 
 <!-- > -->
 
