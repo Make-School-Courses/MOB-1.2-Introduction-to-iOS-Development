@@ -35,7 +35,7 @@ By the end of the course, you will be able to ...
 |  1 |  Wed, Jan 20	             | [Autolayout Pt.1]                  |
 |  2 |  Mon, Jan 25              | [Autolayout Pt.2]                  |
 |  3 |  Wed, Jan 27              | [Coding Constraints]               |
-|  4 |  Mon, Feb 1               | [Lab - Coding Constraints]           |
+|  4 |  Mon, Feb 1               | [Lab - Coding Constraints]         |
 |  5 |  Wed, Feb 3               | [Custom Views]                     |
 |  6 |  Mon, Feb 8               | [MVC & Navigation]                 |
 |  7 |  Wed, Feb 10	             | [UITabBarController]               |
