@@ -242,9 +242,13 @@ Find a color palette you like using [this app](https://mycolor.space) and use it
 
 ## Lab + After Class
 
-In our subscription box app we've been working with a temporary home page with buttons to go to the other sections of the app.
+Implement a tab bar controller in your Subscription Box.
 
-Replace the home screen with a tab bar controller.
+Add more View Controllers (empty for now) so that you have:
+
+- Home  Controller - Where the user can explore content in the app
+- New Box Controller - Where the user selects their preferences (what they would like to get in the next box)
+- History Controller - A log of boxes they have received
 
 You can see how it should look like in [the online design](https://zpl.io/bejlAMq). It's the "NewHome" screen.
 
