@@ -8,8 +8,9 @@
 
 By the end of this lesson, students should be able to:
 
-- Understand the view hierarchy when using a tab bar controller with a navigation controller
+- Understand the view hierarchy when using a UITabBarController + UINavigationController
 - Implement a TabBar Controller in an Xcode project
+- Use SF Symbols and Named colors
 
 <!-- > -->
 
@@ -18,16 +19,15 @@ By the end of this lesson, students should be able to:
 <p class="fragment fade-in">What is a UINavigationController?</p>
 <p class="fragment fade-in">What is a rootViewController?</p>
 <p class="fragment fade-in">How can I navigate to new scenes?</p>
-<p class="fragment fade-in">What's the relationship between the methods present, push, dismiss, pop?</p>
 
 <!-- > -->
 
 ## What's a tab bar controller?
 
-- `UITabBarController` is a `UIViewController` subclass.
-- While navigation controllers manage a stack of related view controllers, a tab bar controller manages an **array** of **view controllers** that may not have direct relation to one another.
-- The tab bar interface displays tabs at the bottom of the window for selecting between views.
-- This class is generally used as-is, but may also be subclassed.
+- `UITabBarController` is a `UIViewController` subclass
+- A tab bar controller manages an **array** of **view controllers**
+- The tab bar interface displays tabs at the bottom of the window for selecting between views
+- This class is generally used as-is, but may also be subclassed
 
 <!-- v -->
 
@@ -70,26 +70,30 @@ Explore the starter project and find out:
 
 <!-- v -->
 
-## Step 1
+## Step 1  
 
-Set the main view's `rootViewController` to be the `TabBarController`.
+In the SceneDelegate, change this line:
+
+```swift
+window?.rootViewController = viewController
+```
+
+to set the window's `rootViewController` to be an instance of `TabBarController`.
 
 <!-- v -->
 
 ## Step 2
 
-Here's how you would add a view controller to the tab bar controller:
+Add this inside `setupViewControllers` in the TabBarController class.
 
 ```swift
 let vc = ContinentVC()
-vc.imageName = "northAmerica"
-vc.title = "North America"
-vc.view.backgroundColor = UIColor.blue
+vc.currentContinent = Continent(name: "North America", imageName: "northAmerica", associatedColor: .cyan)
 vc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-
 viewControllers = [vc]
 ```
-Try this for two more continents. Then run the app and see the result.
+
+You created an instance of Continent VC and added it to the array in the tab bar. Try this for two more continents. Then run the app and see the result.
 
 <!-- v -->
 
@@ -108,7 +112,7 @@ Run the app and see if that works.
 
 <!-- v -->
 
-It worked. But we are not doing this using a navigation controller. A better way would be to have for each tab, its own navigation controller.
+It worked. But there's a better way to set the tab bar: Instead of having view controllers as the elements in the array for the tab bar controller, we'll use navigation controllers.
 
 Using a tab bar controller with a navigation controller makes for a powerful combination. You can use them to give the user access to the main interfaces of the app, and to provide left-to-right navigation into more detailed view controllers.
 
@@ -123,24 +127,20 @@ Using a tab bar controller with a navigation controller makes for a powerful com
 Go back to the setup of the tab bar controller and add a new instance of a UINavigationController, set its root view controller to be the `ContinentVC` instance you created before.
 
 ```swift
-let vc = ContinentVC()
-vc.imageName = "northAmerica"
-vc.title = "North America"
-vc.view.backgroundColor = UIColor.blue
 let navController = UINavigationController(rootViewController:vc)
 vc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
 viewControllers = [navController]
 ```
 
-Run the app and notice the major change.
+Run the app and notice the change.
 
 <!-- v -->
 
 ## Step 4
 
-We can now see the titles from each view controller, because we now get a navigation bar. This new addition will let us push view controllers into the stack and pop them as we please.
+We can now see the titles from each view controller in the navigation bar. This new addition will let us push view controllers into the stack and pop them as we please.
 
-Let's try that. Instead of presenting a view controller, use the push animation.
+Let's try that. Instead of presenting DetailVC, use the push animation.
 
 ```swift
 self.navigationController?.pushViewController(detailVC, animated: true)
@@ -150,19 +150,12 @@ Run the app and see how you can navigate in the stack of view controllers.
 
 <!-- v -->
 
-## Step 5 - challenge
+## Step 5
 
 We aren't seeing all the continents so far.
 
 - Add the remaining view controllers with their corresponding images and titles.
 - What happens when you have more than 6 items in the tab bar?
-- Avoid repeating yourself when creating the view controllers and navigation controllers. How can you optimize this?
-
-<!-- v -->
-
-Compare your implementation with a neighbor. Check for similarities, differences and make adjustments to your code if needed.
-
-*Instructors solution*
 
 <!-- > -->
 
@@ -186,28 +179,24 @@ There's a lot of properties we can modify in a tab bar:
 
 ## Step 6 - UITabBarItems
 
-Let's change the icons of the tab bar.
+Let's change the icons of the tab bar using [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/)
 
 ```swift
-vc.tabBarItem = UITabBarItem(title: vc.title, image: UIImage(named: "heart"), selectedImage: UIImage(named: "heart"))
-
-//variation without title
-vc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "heart"), selectedImage: UIImage(named: "heart"))
-vc.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: -3, right: 0)
+vc.tabBarItem = UITabBarItem(title: vc.title, image: UIImage(systemName: "staroflife"), selectedImage: UIImage.init(systemName: "staroflife.fill"))
 ```
 
 <!-- v -->
 
 ## Step 7
 
-Now let's change the tint color and the color of the items.
+You can also customize the tint color and the color of the items. Try this inside `videDidLoad` in TabBarController.
 
 ```swift
 self.tabBar.barTintColor = UIColor.black
 self.tabBar.tintColor = UIColor.white
 ```
 
-Run the app.
+Run the app. Try other colors you think would look good to.
 
 <!-- v -->
 
@@ -231,9 +220,23 @@ Implement the delegate to detect when we've selected a new tab.
 
 ```swift
 func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-    print("Selected a new view controller")
+    //print "\(name) continent selected"
 }
 ```
+
+<!-- > -->
+
+## Bonus Step 😀 - Named Colors
+
+Check out the Resources folder and look at **Colors.xcassets**
+
+You can organize the color palette you use in your project with a file like this. Create the colors you need and use them with this initializer:
+
+```swift
+UIColor(named: "PeriwinkleBlue")
+```
+
+Find a color palette you like using [this app](https://mycolor.space) and use it to give each Continent a better associatedColor.
 
 <!-- > -->
 
