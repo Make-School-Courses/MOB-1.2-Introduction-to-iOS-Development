@@ -41,11 +41,8 @@ When the user selects a specific tab, the tab bar controller **displays the root
 
 <!-- v -->
 
-<div>
-  <img src="assets/views.png" width="400" height="auto">
-</div>
 
-<!-- ![views](assets/views.png) -->
+![views](assets/views.png)
 
 You can use navigation controllers or custom view controllers as the root view controller for a tab.
 
@@ -250,7 +247,7 @@ Add more View Controllers (empty for now) so that you have:
 - New Box Controller - Where the user selects their preferences (what they would like to get in the next box)
 - History Controller - A log of boxes they have received
 
-You can see how it should look like in [the online design](https://zpl.io/bejlAMq). It's the "NewHome" screen.
+You can see how it should look like in [the online design](https://zpl.io/bejlAMq).
 
 <!-- > -->
 
