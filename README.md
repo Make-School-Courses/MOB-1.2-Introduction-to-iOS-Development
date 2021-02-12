@@ -63,9 +63,9 @@ By the end of the course, you will be able to ...
 
 |    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
 |:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| ScrollView Practice (class assignment)|  Jan 25       |  Feb 10  | Github link in Gradescope  |
-| Frame vs Bounds (class assignment)    |  Jan 25       |  Feb 10  | Github link in Gradescope  |
-| Continents Tab Bar (class assignment) |  Feb 10       |  Jan 17  | Github link in Gradescope  |
+| In-class: ScrollView Practice |  Jan 25       |  Feb 10  | Github link in Gradescope  |
+| In-class: Frame vs Bounds |  Jan 25       |  Feb 10  | Github link in Gradescope  |
+| In-class: Continents Tab Bar |  Feb 10       |  Jan 17  | Github link in Gradescope  |
 | [Tip Calculator Tutorial] |  Jan 20       |  Feb 10  | Github link in Gradescope  |
 | [Bot Shop]                |  Feb 3        |  Feb 17  | Github link in Gradescope  |
 | [Habitual App] (pending)         |  Feb 17       |  Mar 3 | Github link in Gradescope    |
@@ -73,7 +73,7 @@ By the end of the course, you will be able to ...
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
 [Bot Shop]: https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs
-<!--[Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4-->
+[Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4
 
 ### Projects
 
