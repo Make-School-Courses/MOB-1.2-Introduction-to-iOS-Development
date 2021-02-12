@@ -1,10 +1,4 @@
-## The Subscription Box
-
-Are you familiar with subscription boxes? Maybe you've subscribed to one before.
-
-There are subscription boxes for a lot of themes these days: wine, makeup, fishing, food, imported goods, pets and the list goes on.
-
-![boxes](assets/boxes.png)
+## The Subscription Box - Onboarding Flow
 
 You are going to create an onboarding flow for a subscription box app. The box contents are up to you. Get creative! 😯
 
@@ -12,7 +6,7 @@ You are going to create an onboarding flow for a subscription box app. The box c
 
 Is how we introduce users to an app, a service, product or feature.
 
-It's puropse is to get usersready to fulfill a specific action: make a purchase, create an account, use a feature, etc.
+It's purpose is to get usersready to fulfill a specific action: make a purchase, create an account, use a feature, etc.
 
 All onboarding flows rely heavily in a great design and key information being displayed, engaging the user in the process.
 

@@ -80,8 +80,7 @@ By the end of the course, you will be able to ...
 
 ### Projects
 
-- Subscription Box Project (In-Class iterations) - complete design [here](https://scene.zeplin.io/project/5e3b505d29276dd08ba41cc1)<br>
-Rubric ["MOB 1.2- Final Project"](https://www.makeschool.com/rubrics/UnVicmljLTE4Mg==)
+- [Subscription Box Project](Assignments/classProject.md)
 
 ## Evaluation
 
