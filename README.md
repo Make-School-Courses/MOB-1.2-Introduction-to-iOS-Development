@@ -66,17 +66,11 @@ By the end of the course, you will be able to ...
 | [Tip Calculator Tutorial] |  Jan 20       |  Jan 27  | Github link in Gradescope  |
 | [Bot Shop]                |  Feb 3        |  Feb 15  | Github link in Gradescope  |
 | [Habitual App]            |  Feb 15       |  Mar 1 | Github link in Gradescope    |
-| [Subscription Box]        |  -            |  Mar 3  | Github link in Gradescope   |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
 [Bot Shop]: https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs
 [Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4
-
-### Tutorials
-
-- [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
-- [Habitual App Tutorial](https://www.makeschool.com/academy/track/habitual-tutorial---swift-4)
 
 ### Projects
 
