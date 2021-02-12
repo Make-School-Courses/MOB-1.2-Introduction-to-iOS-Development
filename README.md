@@ -68,7 +68,7 @@ By the end of the course, you will be able to ...
 | Continents Tab Bar (class assignment) |  Feb 10       |  Jan 17  | Github link in Gradescope  |
 | [Tip Calculator Tutorial] |  Jan 20       |  Feb 10  | Github link in Gradescope  |
 | [Bot Shop]                |  Feb 3        |  Feb 17  | Github link in Gradescope  |
-| [Habitual App]            |  Feb 17       |  Mar 3 | Github link in Gradescope    |
+| [Habitual App] (pending)         |  Feb 17       |  Mar 3 | Github link in Gradescope    |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
@@ -84,6 +84,7 @@ By the end of the course, you will be able to ...
 To pass this course you must meet the following requirements:
 
 - Complete 80% of in-class assignments
+- Complete all course tutorials (graded on completion)
 - Pass the project according to the associated project rubric
 - Pass the final summative assessment > 70
     - This will be further explained in the [study guide](StudyGuide.md)
