@@ -12,8 +12,7 @@
 
 - What is UITableView?
 - How are cells created?
-- Extensions & Performance
-- Creating tables in the storyboard
+- Performance
 - Using custom cells
 - Extending the subscription box app
 
@@ -43,7 +42,7 @@ A view that presents data (a list of items) using **rows** arranged in a **singl
 
 ### Cells
 
-Each individual item of the table is a `UITableViewCell` object. A cell object has various parts but most of it is reserved for its content: text, image, or any other kind of distinctive identifier.
+Each individual item of the table is a `UITableViewCell` object.
 
 ![cell](assets/cell.jpg)
 
@@ -92,7 +91,7 @@ At runtime, the table view stores cell objects in an internal queue. When the ta
 
 ### Sections & Rows
 
-![anatomy](assets/anatomyTable.png)
+![anatomy](assets/tableAnatomy.png)
 
 <aside class="notes">
 A table view is made up of sections, each with its own rows. Sections are identified by their index number within the table view, and rows are identified by their index number within a section.
@@ -116,7 +115,10 @@ Sections have headers that appear at the top of each group and include a title. 
 
 A `UITableView` object must have an object that acts as a **data source** and an object that acts as a **delegate**.  
 
-The data source must adopt the `UITableViewDataSource` protocol and provides information needed to construct tables and manages the data model when rows of a table are inserted, deleted, or reordered. It manages **how many sections** the table has, **how many rows per section** and handles **how cells are created**.
+The data source must adopt the `UITableViewDataSource` protocol to:
+- Get **how many sections**
+- Get **how many rows per section**
+- Get **how cells are created**
 
 <!-- v -->
 
@@ -139,7 +141,11 @@ public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPat
 
 ### Delegate
 
-The delegate must adopt the `UITableViewDelegate protocol`. Manages table row configuration and **selection, row reordering, highlighting, accessory views, and editing operations**. It deals with how the table behaves and looks.
+The delegate must adopt the `UITableViewDelegate protocol`. To know what to do when:
+
+- Cells are **selected**
+- Cells are **reordered**
+- Cells are **edited** (height/views for headers, etc)
 
 <!-- v -->
 
@@ -161,7 +167,7 @@ optional public func tableView(_ tableView: UITableView, heightForRowAt indexPat
 
 ## IndexPath
 
-Many methods of `UITableView` take `NSIndexPath` objects as parameters and return values. They have properties we can access to manipulate objects in the table.
+Many methods of `UITableView` take `IndexPath` objects as parameters and return values. They have properties we can access to manipulate objects in the table.
 
 ```swift
 var section: Int
@@ -171,6 +177,8 @@ An index number identifying a section in a table view.
 var row: Int
 ```
 An index number identifying a row in a section of a table view.
+
+[Reference](https://developer.apple.com/documentation/foundation/indexpath)
 
 <!-- > -->
 
@@ -230,14 +238,14 @@ In pairs, answer the following questions?
 
 <!-- > -->
 
-## In Class Activity
+## Lab
 
 To our subscription box app:
 
+- Create models for the app - [example](assets/modelsExample.md)
 - Add a screen where users can see previous boxes they've received.
 - When they tap on one of the boxes they will see the contents for that month.
 
-You can use dummy data until now.
 
 <!-- v -->
 

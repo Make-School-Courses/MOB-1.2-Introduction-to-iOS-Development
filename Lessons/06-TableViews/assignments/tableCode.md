@@ -5,10 +5,10 @@
 1. Open ViewController.swift and add a UITableView variable.
 ```swift
 let table: UITableView = {
-   let table = UITableView()
-   table.translatesAutoresizingMaskIntoConstraints = false
-   table.rowHeight = 100
-   return table
+    let table = UITableView()
+    table.translatesAutoresizingMaskIntoConstraints = false
+    table.rowHeight = 100
+    return table
 }()
 ```
 
