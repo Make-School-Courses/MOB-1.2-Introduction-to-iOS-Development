@@ -2,36 +2,6 @@
 
 <!-- > -->
 
-## Creating Models
-
-- We've worked all the way until now using dummy data. Now is time to use Models to represent the objects in our app. Remember MVC and where these files need to live.
-
-Here is a basic example, tailor it to your own app:
-
-```swift
-struct Item{
-    let name: String
-    let image: String
-}
-
-struct Box{
-    let date: String
-    let items: [Item]
-}
-
-struct Category{
-    let name: String
-}
-
-struct User{
-
-}
-```
-
-Create the models for you app.
-
-<!-- > -->
-
 ## Learning Objectives
 By the end of this lesson, students should be able to:
 
@@ -45,19 +15,15 @@ By the end of this lesson, students should be able to:
 
 **An object that manages an ordered collection of data items and presents them using customizable layouts.**
 
-We find them in many Apple apps used to display a collection of items.
-
-Instagram/Pinterest - Items are Photos<br>
-Spotify - Items are genres, artists or songs
+We find them in many apps used to display a collection of items.
 
 ![collectionviews](assets/collectionviewexample.png)
 
 <!-- > -->
 
-## Layout
+## CollectionViews use Layouts
 
-Layout in a collection view is everything that deals with *where* the content is displayed.<br>
-Each individual item is specified by the UICollectionView's layout attributes (bounds, center, frame...). These properties are used to define the **items** in the collection view.
+A layout in a collection view is *how* the content is displayed.
 
 `UICollectionViewLayout` is a class that is meant to be subclassed, to let you customize it.
 
@@ -70,7 +36,7 @@ But just in case, there is one already called **UICollectionViewFlowLayout** tha
 Line based layout systems can adapts to many designs.
 
 **Vertical Scrolling**<br>
-Here we see what happens when the flow layout lays out the items in the collection view.
+
 ![vertical](assets/vertical.gif)
 
 <!-- > -->
@@ -86,7 +52,7 @@ Here we see what happens when the flow layout lays out the items in the collecti
 <!-- > -->
 
 **Horizontal Scrolling**<br>
-Here we see what happens when the flow layout lays out the items in the collection view.<br>
+
 ![horizontal](assets/horizontal.gif)<br><br>
 
 <!-- > -->
@@ -136,7 +102,7 @@ func collectionView(UICollectionView, didDeselectItemAt: IndexPath)
 var collectionView : UICollectionView!
 var emojis: [String] = Array(repeating: "😎", count: 100)
 ...
-collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
 ```
 
 <!-- > -->
@@ -151,23 +117,6 @@ collectionView.delegate = self
 <!-- > -->
 
 3. Create a cell and layout the contents inside
-
-```swift
-//Example with xib file
-
-class CustomCell: UICollectionViewCell {
-    static var identifier: String = "CustomCell"
-
-    @IBOutlet weak var label: UILabel!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        backgroundColor = UIColor.lightGray
-        layer.cornerRadius = 5
-        layer.masksToBounds = true
-    }
-}
-```
 
 <!-- > -->
 
