@@ -223,6 +223,11 @@ For example:
 
 Look for the example VC in [the design online](https://zpl.io/bejlAMq). It's the "New box" screen, where users select/deselect what items they would like to receive.
 
+Useful Links:
+
+- [allowsMultipleSelection](https://developer.apple.com/documentation/uikit/uicollectionview/1618024-allowsmultipleselection)
+- [cell selection](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/changing_the_appearance_of_selected_and_highlighted_cells)
+
 <!-- > -->
 
 ## Additional Resources
