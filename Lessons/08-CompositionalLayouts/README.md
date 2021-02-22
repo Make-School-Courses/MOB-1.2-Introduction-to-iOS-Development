@@ -6,8 +6,8 @@
 
 By the end of this lesson, students should be able to:
 
-- Understand the different elements of the new layout
-- Implement Compositional Layouts using different sections
+- **Identify** the different elements of a Compositional Layout
+- **Implement** Compositional Layouts using different sections
 
 <!-- > -->
 
@@ -33,9 +33,15 @@ By the end of this lesson, students should be able to:
 
 <!-- v -->
 
-When we need to create more complex layouts, we find ourselves in a situation where we need to play with combinations of table views and collection views. This is doable but definitely increases the level of complexity for the developer.
+When we need to create more complex layouts, we find ourselves in a situation where we need to play with combinations of table views and collection views. 
 
-In June 2019, Apple gave us an update for collection views called **compositional layout**. With this new API is easier than ever to create any layout you might need.
+This is doable but definitely increases the level of complexity. 🤯
+
+<!-- v -->
+
+In June 2019, Apple gave us an update for collection views: an API called **Compositional Layout**. 🧩
+
+With this new API is easier than ever to create any layout you might need.
 
 <!-- > -->
 
@@ -85,6 +91,14 @@ From this point, see if you can get 4 rows of items scrolling horizontally.
 
 ![challenge](assets/challenge.gif)
 
+<!--
+let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), 
+                                     heightDimension: .fractionalHeight(0.25))
+
+let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.25), 
+                                      heightDimension: .fractionalHeight(0.5))
+-->
+
 <!-- > -->
 
 ## Compositional Layout
@@ -130,10 +144,10 @@ A group with 3 items. Axis: vertical.
 
 Used to determine the size of an Item or a Group.
 
-- Fractional width: a fraction of its parent’s full width.
-- Fractional height: a fraction of its parent’s full height.
-- Absolute: a specific value for the size.
-- Estimate: a specific a value but the value can grow or shrink.
+- **Fractional width**: a fraction of its parent’s full width.
+- **Fractional height**: a fraction of its parent’s full height.
+- **Absolute**: a specific value for the size.
+- **Estimate**: a specific a value but the value can grow or shrink.
 
 <!-- v -->
 
@@ -183,7 +197,7 @@ configureCell() - called to create the cell for the section
 
 ## Creating the title section
 
-Work on TitleSection.swift
+Work on **TitleSection.swift**
 
 - Create the number of items.
 - Create the constant to hold the title
@@ -191,12 +205,19 @@ Work on TitleSection.swift
 
 <!-- v -->
 
-Step 1: Create an item size. Make it full width and height.<br>
-Step 2: Create an item and give it the item size we already have.<br>
-Step 3: Create the size of the group. Set it to the full width and make the height 70.<br>
-Step 4: Pass the group size and item to the group.<br>
-Step 5: Pass the group to the section.<br>
-Step 6: Create the cell and pass it to the collectionView
+**Step 1**: Create an item size. Make it full width and height.
+
+**Step 2**: Create an item and give it the item size we already have.
+
+**Step 3**: Create the size of the group. Set it to the full width and make the height 70.
+
+<!-- v -->
+
+**Step 4**: Pass the group size and item to the group.
+
+**Step 5**: Pass the group to the section.
+
+**Step 6** Create the cell and pass it to the collectionView
 
 <!-- v -->
 
@@ -243,9 +264,9 @@ Create a View Controller for the subscription box app to display several section
 - Featured categories
 - Last month's favorite items
 
-This view controller will become our home screen in the future, for now don't worry on how to get there. You can add it to one of your buttons in the main menu.
+This view controller will become our home screen :)
 
-You can see how it should look like in [the online design](https://zpl.io/bejlAMq). It's the "NewHome" screen.
+You can see how it should look like in [the online design](https://zpl.io/bejlAMq).
 
 <!-- > -->
 
