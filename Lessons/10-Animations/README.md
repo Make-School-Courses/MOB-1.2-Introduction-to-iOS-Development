@@ -8,11 +8,11 @@
 
 By the end of this lesson, students should be able to:
 
-- Explain the basics of UIKit animation and different options available to create special effects.
-- Identify properties that can be animated.
-- Animate views with the frame approach.
-- Animate views with Auto Layout.
-- Apply animations in a login screen.
+- Explain the basics of UIKit animation and different options available to create special effects
+- Identify properties that can be animated
+- Animate views with the frame approach
+- Animate views with Auto Layout
+- Apply animations in a login screen
 
 <!-- > -->
 
@@ -20,8 +20,8 @@ By the end of this lesson, students should be able to:
 
 UIKit not only lets us build the user interface of our apps, it also gives us different APIs to animate views on the screen.
 
-We can animate any object that inherits from UIView.<br>
-Its simple to transform a view and give it predefined actions:
+We can animate **any object that inherits from UIView**.<br>
+We can give predefined actions to views:
 - fade
 - move
 - resize
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        bottomView.frame = CGRect(x: self.view.frame.size.width/2-25, y: self.view.frame.size.height, width: 50, height: 50)
+        bottomView.frame = CGRect(x: self.view.frame.size.width/2-25, y: self.view.frame.size.height/2, width: 50, height: 50)
         self.view.addSubview(bottomView)
 
         topView.frame = CGRect(x: self.view.frame.size.width/2-25, y: -50, width: 50, height: 50)
@@ -80,7 +80,7 @@ Add the following after adding the view to the screen and then run the playgroun
 
 ```swift
 UIView.animate(withDuration: 1.5) {
-    self.bottomView.center.y -= 400
+    self.bottomView.center.y -= 200
 }
 ```
 
@@ -98,15 +98,32 @@ We can animate as many views as we want inside the animations closure.
 
 ![gif1](assets/gif1.gif)
 
+<!--
+UIView.animate(withDuration: 1.5) {
+    self.bottomView.center.y -= 200
+    self.topView.center.y += 200
+}
+-->
+
 <!-- > -->
 
 Now let's try to make them move independently, one after the other.
 
 ```swift
 UIView.animate(withDuration: 1.5, delay: 0.5, options: [], animations: {
-  self.bottomView.center.y -= 400
+  self.bottomView.center.y -= 200
 },completion: nil)
 ```
+
+<!--
+UIView.animate(withDuration: 1.5, delay: 0.5, options: [.curveEaseOut], animations: {
+    self.bottomView.center.y -= 200
+    },completion:  { (finished: Bool) in
+        UIView.animate(withDuration: 1.5, delay: 0.5, options: [.curveEaseOut], animations: {
+            self.topView.center.y += 200
+        },completion: nil)
+    })
+-->
 
 <!-- > -->
 
@@ -139,6 +156,19 @@ Here are more properties we can animate:
 
 **Animate the squares to change color or alpha as they move**
 
+<!--
+UIView.animate(withDuration: 1.5, delay: 0.5, options: [.curveEaseOut], animations: {
+    self.bottomView.center.y -= 200
+    self.bottomView.backgroundColor = UIColor.blue
+
+},completion:  { (finished: Bool) in
+    UIView.animate(withDuration: 1.5, delay: 0.5, options: [.curveEaseOut], animations: {
+        self.topView.center.y += 200
+        self.topView.backgroundColor = UIColor.gray
+    },completion: nil)
+})
+-->
+
 <!-- > -->
 
 ## The options parameter
@@ -164,6 +194,13 @@ To make animations more realistic we can apply an effect in which the object bui
 - `.curveEaseInOut`: acceleration in the start and end
 
 **Experiment with this options in your playground**
+
+<!--
+UIView.animate(withDuration: 1.5, delay: 0.3, options: [.repeat, .autoreverse, .curveEaseInOut], animations: {
+    self.topView.center.y += 300
+    self.topView.backgroundColor = UIColor.gray
+},completion: nil)
+-->
 
 <!-- > -->
 
