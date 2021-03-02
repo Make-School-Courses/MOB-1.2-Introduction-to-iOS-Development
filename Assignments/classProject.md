@@ -54,13 +54,13 @@ The project will cover most topics of the course and will serve as evidence and 
 - [ ] Handles selection/deselection of items
 
 ### Iteration No. 6 - by Mar 1
-[15 pts]
+[20 pts]
 
 - [ ] Implements a Compositional Layout with at least 2 different sections
 - [ ] Uses mock data from Model
 
 ### Iteration No. 7 - by Mar 3
-[5 pts]
+[5 EXTRA pts]
 
 - [ ] Includes one animation
 
