@@ -10,9 +10,9 @@ This course covers mobile application development in iOS using Swift. You will l
 
 ## Course Specifics
 
-**Course Delivery**: online | 7 weeks | 13 sessions
+**Course Dates:** Tuesday, March 30 – Thursday, May 13, 2021 (7 weeks)
 
-**Course Credits**: 3 units | 37.5 Seat Hours | 75 Total Hours
+**Class Times:** Tuesday and Thursday at 2:30–5:15pm (13 class sessions)
 
 ## Learning Outcomes
 
@@ -31,21 +31,20 @@ By the end of the course, you will be able to ...
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  - |  Mon, Jan 18              | No Class - MLK Day                 |
-|  1 |  Wed, Jan 20	             | [Autolayout Pt.1]                  |
-|  2 |  Mon, Jan 25              | [Autolayout Pt.2]                  |
-|  3 |  Wed, Jan 27              | [Coding Constraints]               |
-|  4 |  Mon, Feb 1               | [Lab - Coding Constraints]         |
-|  5 |  Wed, Feb 3               | [Custom Views]                     |
-|  6 |  Mon, Feb 8               | [MVC & Navigation]                 |
-|  7 |  Wed, Feb 10	             | [UITabBarController]               |
-|  8 |  Mon, Feb 15              | [Table views]                      |
-|  9 |  Wed, Feb 17              | [Collection views]                 |
-| 10 |  Mon, Feb 22              | [Compositional Layouts]            |
-| 11 |  Wed, Feb 24              | Lab - Breakout sessions            |
-| 12 |  Mon, Mar 1               | [Animations]                       |
-| 13 |  Wed, Mar 3               | Final Exam                         |
-
+|  1 |  Tue, Mar 30	             | [Autolayout Pt.1]                       |
+|  - |  Thu, Apr 1               |  **No Class - Cesar Chavez**            |
+|  2 |  Tue, Apr 6               | [Autolayout Pt.2]                       |
+|  3 |  Thu, Apr 8               | [Coding Constraints]                    |
+|  4 |  Tue, Apr 13              | [Lab - Coding Constraints]              |
+|  5 |  Thu, Apr 15              | [Custom Views]                          |
+|  6 |  Tue, Apr 20	             | [MVC & Navigation]                      |
+|  7 |  Thu, Apr 22              | [UITabBarController]                    |
+|  8 |  Tue, Apr 27              | [Table views]                           |
+|  9 |  Thu, Apr 29              | [Collection views]                 |
+| 10 |  Tue, May 4               | [Compositional Layouts]            |
+| 11 |  Thu, May 6               | Lab - Breakout sessions            |
+| 12 |  Tue, May 11              | [Animations]                       |
+| 13 |  Thu, May 13              | Final Exam                         |
 
 [Autolayout Pt.1]: Lessons/01-Autolayout/README.md
 [Autolayout Pt.2]: Lessons/02-AutoLayout/README.md
@@ -61,14 +60,14 @@ By the end of the course, you will be able to ...
 
 ## Assignment Schedule
 
-|    Assignment             | Date Assigned |   Due Date   |     Submission Form     |
-|:-------------------------:|:-------------:|:------------:|:-----------------------:|
-| In-class: ScrollView Practice |  Jan 25       |  Feb 10  | Github link in Gradescope  |
-| In-class: Frame vs Bounds |  Jan 25       |  Feb 10  | Github link in Gradescope  |
-| In-class: Continents Tab Bar |  Feb 10       |  Jan 17  | Github link in Gradescope  |
-| [Tip Calculator Tutorial] |  Jan 20       |  Feb 10  | Github link in Gradescope  |
-| [Bot Shop]                |  Feb 3        |  Feb 17  | Github link in Gradescope  |
-| [Habitual App] (pending)         |  Feb 17       |  Mar 3 | Github link in Gradescope    |
+|    Assignment       | Type     | Date Assigned |   Due Date   |     Submission Form     |
+|:--------------------|:--------:|--------------:|:------------:|:-----------------------:|
+| ScrollView Practice | In-Class |  Mar 30       |  Apr 6      | Github link in Gradescope  |
+| Frame vs Bounds     | In-Class |  Apr 6        |  Apr 6  | Github link in Gradescope  |
+| Continents Tab Bar  | In-Class |  Apr 22       |  Apr 27  | Github link in Gradescope  |
+| [Tip Calculator Tutorial]| Tutorial |  Apr 8       |  Apr 20  | Github link in Gradescope  |
+| [Bot Shop]               | Tutorial |  Apr 20      |  May 4   | Github link in Gradescope  |
+| [Habitual App] (pending) | Tutorial |  --           |  --      | --  |
 
 [Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
@@ -83,9 +82,9 @@ By the end of the course, you will be able to ...
 
 To pass this course you must meet the following requirements:
 
-- Complete 80% of in-class assignments
-- Complete all course tutorials (graded on completion)
-- Pass the project according to the associated project rubric
+- Complete all tutorials
+- Complete at least 80% of in-class assignments
+- Pass the final project with at least 70% on its rubric
 - Pass the final summative assessment > 70
     - This will be further explained in the [study guide](StudyGuide.md)
 - Actively participate in class and abide by the attendance policy
