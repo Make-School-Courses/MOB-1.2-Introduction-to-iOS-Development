@@ -10,9 +10,9 @@ This course covers mobile application development in iOS using Swift. You will l
 
 ## Course Specifics
 
-**Course Dates:** Tuesday, March 30 – Thursday, May 13, 2021 (7 weeks)
+**Course Delivery**: Synchronous | 7 weeks | 19 sessions
 
-**Class Times:** Tuesday and Thursday at 2:30–5:15pm (13 class sessions)
+**Course Credits**: 3 units | 37.5 Contact Hours/Term | 92 Non-Contact Hours/Term | 129.5 Total Hours/Term
 
 ## Learning Outcomes
 
@@ -25,54 +25,65 @@ By the end of the course, you will be able to ...
 
 ## Schedule
 
-**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2021 (7 weeks)
+**Course Dates:** Monday, May 31 – Friday, July 16, 2021 (7 weeks)
 
-**Class Times:** Monday, Wednesday at 2:45pm–5:30pm (13 class sessions)
+**Class Times:** Monday, Wednesday, Friday at 9:30am–11:15am (19 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tue, Mar 30	             | [Autolayout Pt.1]                       |
-|  - |  Thu, Apr 1               |  **No Class - Cesar Chavez**            |
-|  2 |  Tue, Apr 6               | [Autolayout Pt.2]                       |
-|  3 |  Thu, Apr 8               | [Coding Constraints]                    |
-|  4 |  Tue, Apr 13              | [Lab - Coding Constraints]              |
-|  5 |  Thu, Apr 15              | [Custom Views]                          |
-|  6 |  Tue, Apr 20	             | [MVC & Navigation]                      |
-|  7 |  Thu, Apr 22              | [UITabBarController]                    |
-|  8 |  Tue, Apr 27              | [Table views]                           |
-|  9 |  Thu, Apr 29              | [Collection views]                 |
-| 10 |  Tue, May 4               | [Compositional Layouts]            |
-| 11 |  Thu, May 6               | Lab - Breakout sessions            |
-| 12 |  Tue, May 11              | [Animations]                       |
-| 13 |  Thu, May 13              | Final Exam                         |
+|  - |  Mon, May 31         | **No Class - Memorial Day** |
+|  1 |  Wed, June 2         | [Swift Review]              |
+|  2 |  Fri, June 4         | [Constraints]               |
+|  3 |  Mon, June 7         | [UIStackView]               |
+|  4 |  Wed, June 9         | [UIScrollView]              |
+|  5 |  Fri, June 11        | [Coding Constraints]        |
+|  6 |  Mon, June 14        | [Lab - Coding Constraints]  |
+|  7 |  Wed, June 16        | [Custom Views]              |
+|  8 |  Fri, June 18        | [Lab - Custom Views]        |
+|  9 |  Mon, June 21        | [MVC & Navigation]          |
+| 10 |  Wed, June 23        | [UITabBarController]        |
+| 11 |  Fri, June 25        | [Lab - UITabBarController]    |
+| 12 |  Mon, June 28        | [UITableView]               |
+| 13 |  Wed, June 30        | [Lab - UITableView]         |
+| 14 |  Fri, July 2         | [UICollectionView]          |
+| -  |  Mon, July 5         | **No Class - Independence Day Observed** |
+| 15 |  Wed, July 7         | [Compositional Layouts]     |
+| 16 |  Fri, July 9         | [Animations]                |
+| 17 |  Mon, July 12        | Final lab                   |
+| 18 |  Wed, July 14        | Review Session              |
+| 19 |  Fri, July 16        | Final Exam                  |
 
-[Autolayout Pt.1]: Lessons/01-Autolayout/README.md
-[Autolayout Pt.2]: Lessons/02-AutoLayout/README.md
+
+[Constraints]: Lessons/01-Autolayout/README.md
+[UIStackView]: Lessons/01-Autolayout/README.md
+[UIScrollView]: Lessons/02-AutoLayout/README.md
 [Coding Constraints]: Lessons/03-CodingConstraints/README.md
-[Custom Views]: Lessons/04-CustomViews/README.md
-[MVC & Navigation]: Lessons/05-Intro-to-MVC/README.md
-[Table views]: Lessons/06-TableViews/README.md
-[Collection views]: Lessons/07-CollectionViews/README.md
-[Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
-[UITabBarController]: Lessons/09-TabBarController/README.md
-[Animations]: Lessons/10-Animations/README.md
 [Lab - Coding Constraints]: Lessons/Lab-CodingConstraints/README.md
+[Custom Views]: Lessons/04-CustomViews/README.md
+[Lab - Custom Views]: Lessons/04-CustomViews/README.md
+[MVC & Navigation]: Lessons/05-Intro-to-MVC/README.md
+[UITabBarController]: Lessons/09-TabBarController/README.md
+[Lab - UITabBarController]: Lessons/09-TabBarController/README.md
+[UITableView]: Lessons/06-TableViews/README.md
+[Lab - UITableView]: Lessons/06-TableViews/README.md
+[UICollectionView]: Lessons/07-CollectionViews/README.md
+[Compositional Layouts]: Lessons/08-CompositionalLayouts/README.md
+[Animations]: Lessons/10-Animations/README.md
 
 ## Assignment Schedule
 
 |    Assignment       | Type     | Date Assigned |   Due Date   |     Submission Form     |
 |:--------------------|:--------:|--------------:|:------------:|:-----------------------:|
-| ScrollView Practice | In-Class |  Mar 30       |  Apr 6      | Github link in Gradescope  |
-| Frame vs Bounds     | In-Class |  Apr 6        |  Apr 6  | Github link in Gradescope  |
-| Continents Tab Bar  | In-Class |  Apr 22       |  Apr 27  | Github link in Gradescope  |
-| [Tip Calculator Tutorial]| Tutorial |  Apr 8       |  Apr 20  | Github link in Gradescope  |
-| [Bot Shop]               | Tutorial |  Apr 20      |  May 4   | Github link in Gradescope  |
-| [Habitual App] (pending) | Tutorial |  --           |  --      | --  |
+| [Tip Calculator Tutorial]| Tutorial |  Jun 2  |  Jun 8   | Github link in Gradescope  |
+| ScrollView Practice | In-Class |  Jun 9       |  Jun 14  | Github link in Gradescope  |
+| [Bot Shop]          | Tutorial |  Jun 18      |  Jul 5   | Github link in Gradescope  |
+| Continents Tab Bar  | In-Class |  Jun 23      |  Jun 25  | Github link in Gradescope  |
+| [Course Project]    | Project  |  Jun 14      |  Jul 16  | Github link in Gradescope  |
 
-[Onboarding assignment]: https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/03-CodingConstraints/assignments/onboarding.md
 [Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
 [Bot Shop]: https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs
 [Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4
+[Course Project]: Assignments/classProject.md
 
 ### Projects
 
