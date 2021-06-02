@@ -53,7 +53,7 @@ By the end of the course, you will be able to ...
 | 18 |  Wed, July 14        | Review Session              |
 | 19 |  Fri, July 16        | Final Exam                  |
 
-[Swift Review]: Lessons/Swift-Review
+[Swift Review]: Lessons/Swift-Review/README.md
 [Constraints]: Lessons/01-Autolayout/README.md
 [UIStackView]: Lessons/01-Autolayout/README.md
 [UIScrollView]: Lessons/02-AutoLayout/README.md
