@@ -93,11 +93,10 @@ By the end of the course, you will be able to ...
 
 To pass this course you must meet the following requirements:
 
-- Complete all tutorials
-- Complete at least 80% of in-class assignments
-- Pass the final project with at least 70% on its rubric
-- Pass the final summative assessment > 70
-    - This will be further explained in the [study guide](StudyGuide.md)
+- Score a passing grade in the [Course Rubric](https://docs.google.com/document/d/1gLRYwJFzJdnkVoCVweombI2LCDxuM7pv4q4atuKPXDg/edit?usp=sharing)
+- Pass the final summative assessment with at least 70%
+    - [Study guide](StudyGuide.md)
+- Get a score of at least 70% in the Course Project
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
