@@ -19,9 +19,9 @@ This course covers mobile application development in iOS using Swift. You will l
 By the end of the course, you will be able to ...
 
 1. Build an app using UIKit components including: UIViews, UIViewControllers, UITableViews, UICollectionViews and custom classes.
-1.  Apply AutoLayout to achieve a good distribution of elements in different screen sizes and orientations.
+1. Apply AutoLayout to achieve a good distribution of elements in different screen sizes and orientations.
 1. Implement MVC and understand the separation of concerns for each component.
-1. Pass information between view controllers & handling navigation.
+1. Pass information between view controllers & handle navigation.
 
 ## Schedule
 
@@ -53,7 +53,7 @@ By the end of the course, you will be able to ...
 | 18 |  Wed, July 14        | Review Session              |
 | 19 |  Fri, July 16        | Final Exam                  |
 
-
+[Swift Review]: Lessons/Swift-Review
 [Constraints]: Lessons/01-Autolayout/README.md
 [UIStackView]: Lessons/01-Autolayout/README.md
 [UIScrollView]: Lessons/02-AutoLayout/README.md

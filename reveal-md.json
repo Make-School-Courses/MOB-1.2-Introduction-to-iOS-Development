@@ -1,7 +1,7 @@
 {
   "separator": "^\n<!-- > -->\n",
   "verticalSeparator": "^\n<!-- v -->\n",
-  "theme": "black",
+  "theme": "white",
   "watch": true,
   "title": "Syllabus Template Slides",
   "static": "Slides",
