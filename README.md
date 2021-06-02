@@ -80,8 +80,8 @@ By the end of the course, you will be able to ...
 | Continents Tab Bar  | In-Class |  Jun 23      |  Jun 25  | Github link in Gradescope  |
 | [Course Project]    | Project  |  Jun 14      |  Jul 16  | Github link in Gradescope  |
 
-[Tip Calculator Tutorial]: https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator
-[Bot Shop]: https://www.makeschool.com/academy/track/bot-shop-ios-app-ihs
+[Tip Calculator Tutorial]: https://www.makeschool.com/mediabook/oa/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator/
+[Bot Shop]: https://www.makeschool.com/mediabook/oa/tutorials/bot-shop-ios-app-ihs/overview-of-bot-shop/
 [Habitual App]: https://www.makeschool.com/academy/track/habitual-tutorial---swift-4
 [Course Project]: Assignments/classProject.md
 
