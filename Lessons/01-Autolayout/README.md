@@ -122,25 +122,6 @@ Attributes define a feature that can be constrained. In general, this includes t
 - 5 minutes to go over questions
 -->
 
-## Intrinsic Content Size
-
-In the previous example we applied constraints that defined width and height of the views.
-
-Some views have a natural size given their current context. This is called **intrinsic content size**. This is information that a view has about how big it should be based on what it displays.
-
-- A `UIImageView` knows how big it should be based on the image it contains.
-- A `UILabel` knows what size it should be based on the text it contains.
-
-<!-- v -->
-
-![intrinsic](assets/intrinsicTable.png)
-
-<aside class = "notes">
-The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
-</aside>
-
-<!-- > -->
-
 ## More Tools for AutoLayout
 
 ![tools](assets/moreTools.png)
@@ -171,16 +152,6 @@ You typically select two or more views before using the Align tool. However, the
 The Pin tool lets you quickly define a view’s position relative to its neighbors or quickly define its size. Select the item whose position or size you want to pin, and click the Pin tool.
 </aside>
 
-<!-- v -->
-
-## Resolve Tool
-
-![resolve](assets/resolve.png)
-
-<aside class = "notes">
-You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
-</aside>
-
 <!-- > -->
 
 ## Finding constraints
@@ -199,6 +170,35 @@ You can use this tool to update the views’ frames based on the current constra
 When you select a constraint either in the canvas or in the document outline, the Attribute inspector shows all of the constraint’s attributes. This includes all the values from the constraint equation: the first item, the relation, the second item, the constant, and the multiplier. The Attribute inspector also shows the constraint’s priority and its identifier.
 
 The constraint’s identifier property lets you provide a descriptive name so that you can more easily identify the constraint in console logs and other debugging tasks.
+</aside>
+
+<!-- > -->
+
+## Resolve Tool
+
+![resolve](assets/resolve.png)
+
+<aside class = "notes">
+You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
+</aside>
+
+<!-- > -->
+
+## Intrinsic Content Size
+
+In the previous example we applied constraints that defined width and height of the views.
+
+Some views have a natural size given their current context. This is called **intrinsic content size**. This is information that a view has about how big it should be based on what it displays.
+
+- A `UIImageView` knows how big it should be based on the image it contains.
+- A `UILabel` knows what size it should be based on the text it contains.
+
+<!-- v -->
+
+![intrinsic](assets/intrinsicTable.png)
+
+<aside class = "notes">
+The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
 </aside>
 
 <!-- > -->
@@ -309,7 +309,7 @@ Then read about how you can debug them with these [tips & tricks](https://develo
 
 <!-- > -->
 
-Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+Finish [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 
 <!-- > -->
 
