@@ -1,7 +1,3 @@
-<!-- Run this slideshow via the following command: -->
-<!-- reveal-md README.md -w -->
-
-<!-- .slide: class="header" -->
 # MOB 1.2
 
 ## [Slides](https://make-school-courses.github.io/MOB-1.2-Introduction-to-iOS-Development/Slides/Swift-Review/README.html ':ignore')
