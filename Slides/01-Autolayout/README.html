@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Syllabus Template Slides</title>
-    <link rel="stylesheet" href="./../css/reveal.css" />
-    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
+    <link rel="shortcut icon" href="./../favicon.ico"/>
+    <link rel="stylesheet" href="./../dist/reveal.css" />
+    <link rel="stylesheet" href="./../dist/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
-    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
     <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
 
     <script>
@@ -119,21 +119,6 @@ Attributes define a feature that can be constrained. In general, this includes t
 - 5 minutes to go over questions
 -->
 
-## Intrinsic Content Size
-
-In the previous example we applied constraints that defined width and height of the views.
-
-Some views have a natural size given their current context. This is called **intrinsic content size**. This is information that a view has about how big it should be based on what it displays.
-
-- A `UIImageView` knows how big it should be based on the image it contains.
-- A `UILabel` knows what size it should be based on the text it contains.
-</script></section><section data-markdown><script type="text/template">
-![intrinsic](assets/intrinsicTable.png)
-
-<aside class = "notes">
-The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
-</aside>
-</script></section></section><section ><section data-markdown><script type="text/template">
 ## More Tools for AutoLayout
 
 ![tools](assets/moreTools.png)
@@ -159,14 +144,6 @@ You typically select two or more views before using the Align tool. However, the
 <aside class = "notes">
 The Pin tool lets you quickly define a view’s position relative to its neighbors or quickly define its size. Select the item whose position or size you want to pin, and click the Pin tool.
 </aside>
-</script></section><section data-markdown><script type="text/template">
-## Resolve Tool
-
-![resolve](assets/resolve.png)
-
-<aside class = "notes">
-You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
-</aside>
 </script></section></section><section  data-markdown><script type="text/template">
 ## Finding constraints
 
@@ -184,6 +161,29 @@ When you select a constraint either in the canvas or in the document outline, th
 The constraint’s identifier property lets you provide a descriptive name so that you can more easily identify the constraint in console logs and other debugging tasks.
 </aside>
 </script></section><section  data-markdown><script type="text/template">
+## Resolve Tool
+
+![resolve](assets/resolve.png)
+
+<aside class = "notes">
+You can use this tool to update the views’ frames based on the current constraints, or you can update the constraints based on the views’ current location in the canvas. You can also add missing constraints, clear constraints, or reset the views to a set of constraints recommended by Interface Builder.
+</aside>
+</script></section><section ><section data-markdown><script type="text/template">
+## Intrinsic Content Size
+
+In the previous example we applied constraints that defined width and height of the views.
+
+Some views have a natural size given their current context. This is called **intrinsic content size**. This is information that a view has about how big it should be based on what it displays.
+
+- A `UIImageView` knows how big it should be based on the image it contains.
+- A `UILabel` knows what size it should be based on the text it contains.
+</script></section><section data-markdown><script type="text/template">
+![intrinsic](assets/intrinsicTable.png)
+
+<aside class = "notes">
+The intrinsic content size is based on the view’s current content. A label or button’s intrinsic content size is based on the amount of text shown and the font used. For other views, the intrinsic content size is even more complex. For example, an empty image view does not have an intrinsic content size. As soon as you add an image, though, its intrinsic content size is set to the image’s size.
+</aside>
+</script></section></section><section  data-markdown><script type="text/template">
 ### CH & CR
 
 Auto Layout represents a view’s intrinsic content size using a pair of constraints for each dimension. The **content hugging** pulls the view inward so that it fits snugly around the content. The **compression resistance** pushes the view outward so that it does not clip the content.
@@ -270,7 +270,7 @@ Read about the type of errors you can encounter while working with constraints.
 
 Then read about how you can debug them with these [tips & tricks](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/DebuggingTricksandTips.html#//apple_ref/doc/uid/TP40010853-CH21-SW1). Identify the tip that you think will be the most useful to you. We'll share them during the next class.
 </script></section><section  data-markdown><script type="text/template">
-Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+Finish [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
 </script></section><section ><section data-markdown><script type="text/template">
 ## Additional Resources
 
@@ -292,8 +292,13 @@ Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutori
 </script></section></section></div>
     </div>
 
-    <script src="./../js/reveal.js"></script>
+    <script src="./../dist/reveal.js"></script>
 
+    <script src="./../plugin/markdown/markdown.js"></script>
+    <script src="./../plugin/highlight/highlight.js"></script>
+    <script src="./../plugin/zoom/zoom.js"></script>
+    <script src="./../plugin/notes/notes.js"></script>
+    <script src="./../plugin/math/math.js"></script>
     <script>
       function extend() {
         var target = {};
@@ -308,16 +313,6 @@ Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutori
         return target;
       }
 
-      // Optional libraries used to extend on reveal.js
-      var deps = [
-        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: './../plugin/zoom-js/zoom.js', async: true },
-        { src: './../plugin/notes/notes.js', async: true },
-        { src: './../plugin/math/math.js', async: true }
-      ];
-
       // default options to init reveal.js
       var defaultOptions = {
         controls: true,
@@ -325,11 +320,17 @@ Start [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutori
         history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
-        dependencies: deps
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
       };
 
       // options from URL query string
-      var queryOptions = Reveal.getQueryHash() || {};
+      var queryOptions = Reveal().getQueryHash() || {};
 
       var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
     </script>

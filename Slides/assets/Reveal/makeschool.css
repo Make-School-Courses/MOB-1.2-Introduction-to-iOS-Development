@@ -397,16 +397,16 @@ body {
 
 .reveal .controls button {
     font-size: 0.5em;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent; 
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
     top: auto !important;
     left: auto !important;
 }
-.reveal .controls .controls-arrow:before, 
+.reveal .controls .controls-arrow:before,
 .reveal .controls .controls-arrow:after {
     display: none;
 }
@@ -416,7 +416,7 @@ body {
 }
 
 .reveal .controls .navigate-left {
-    border-right:15px solid #087CB8; 
+    border-right:15px solid #087CB8;
     right: 12.6em !important;
     bottom: 7.4em !important;
 }
