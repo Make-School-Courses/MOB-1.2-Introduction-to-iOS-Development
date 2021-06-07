@@ -4,7 +4,7 @@ You can complete the following practice in a new Xcode project. Make sure you se
 
 ### Part 1: Creating the StackView
 
-1. Add three UIImageView items to the stack view.
+1. Add three UIImageView items to the view.
 1. Embed them in a vertical UIStackView.
 1. Pin the stack view 20 points from the superview in all edges (leading, trailing, top, bottom).
 
