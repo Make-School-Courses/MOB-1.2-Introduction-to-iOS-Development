@@ -309,7 +309,7 @@ Then read about how you can debug them with these [tips & tricks](https://develo
 
 <!-- > -->
 
-Finish [Tip Calculator Tutorial](https://www.makeschool.com/online-courses/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator)
+Finish [Tip Calculator Tutorial](https://www.makeschool.com/mediabook/oa/tutorials/build-a-tip-calculator-in-swift-4/intro-tip-calculator/)
 
 <!-- > -->
 
