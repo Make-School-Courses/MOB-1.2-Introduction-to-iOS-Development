@@ -32,22 +32,10 @@ By the end of this lesson, students should be able to:
 Pair up to discuss the following:
   - Why do we need AutoLayout? What problems does it solve.
   - Can we layout views without using AutoLayout?
-  - The 4 Properties of AutoLayout.
+  - Name 4 Properties of views we can use with AutoLayout.
   - The most common issue you had while working with constraints.
 
 Post your answers in our slack channel for participation 🤓
-
-<!-- > -->
-
-## Frame vs Bounds
-
-Before we continue, it's important to know the difference between the frame and the bounds of a view.
-
-This concept might come up during an interview and we should be able to tell the difference.
-
-**8 min** read [this article](https://medium.com/@suragch/frame-vs-bounds-in-ios-107990ad53ee)
-
-**5 min** Then go to [Gradescope](www.gradescope.com) to submit answers to 3 questions from the article.
 
 <!-- > -->
 
@@ -97,6 +85,18 @@ Adhere to the safe area and layout margins defined by UIKit. The safe area also 
 ## Which option do you think is best?
 
 ![ex2](assets/ex2.png)
+
+<!-- > -->
+
+## Frame vs Bounds
+
+Before we continue, it's important to know the difference between the frame and the bounds of a view.
+
+This concept might come up during an interview and we should be able to tell the difference.
+
+**8 min** read [this article](https://medium.com/@suragch/frame-vs-bounds-in-ios-107990ad53ee)
+
+**5 min** Then go to [Gradescope](www.gradescope.com) to submit answers to 3 questions from the article.
 
 <!-- > -->
 

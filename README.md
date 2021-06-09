@@ -105,6 +105,7 @@ To pass this course you must meet the following requirements:
 Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
 
 - [make.sc/library](http://make.sc/library)
+- [Inclusive Design](https://developer.apple.com/design/human-interface-guidelines/inclusion/overview)
 
 ## Make School Course Policies
 
