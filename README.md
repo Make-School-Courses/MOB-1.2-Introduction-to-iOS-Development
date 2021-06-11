@@ -74,7 +74,7 @@ By the end of the course, you will be able to ...
 
 |    Assignment       | Type     | Date Assigned |   Due Date   |     Submission Form     |
 |:--------------------|:--------:|--------------:|:------------:|:-----------------------:|
-| [Tip Calculator Tutorial]| Tutorial |  Jun 2  |  Jun 8   | Github link in Gradescope  |
+| [Tip Calculator Tutorial]| Tutorial |  Jun 2  |  Jun 11   | Github link in Gradescope  |
 | ScrollView Practice | In-Class |  Jun 9       |  Jun 14  | Github link in Gradescope  |
 | [Bot Shop]          | Tutorial |  Jun 18      |  Jul 5   | Github link in Gradescope  |
 | Continents Tab Bar  | In-Class |  Jun 23      |  Jun 25  | Github link in Gradescope  |
