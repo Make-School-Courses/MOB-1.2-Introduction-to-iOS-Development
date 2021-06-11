@@ -36,13 +36,13 @@ By the end of the course, you will be able to ...
 |  2 |  Fri, June 4         | [Constraints]               |
 |  3 |  Mon, June 7         | [UIStackView]               |
 |  4 |  Wed, June 9         | [UIScrollView]              |
-|  5 |  Fri, June 11        | [Coding Constraints]        |
-|  6 |  Mon, June 14        | [Lab - Coding Constraints]  |
-|  7 |  Wed, June 16        | [Custom Views]              |
-|  8 |  Fri, June 18        | [Lab - Custom Views]        |
+|  5 |  Fri, June 11        | Lab - Tutorial              |
+|  6 |  Mon, June 14        | [Coding Constraints]        |
+|  7 |  Wed, June 16        | [Lab - Coding Constraints]  |
+|  8 |  Fri, June 18        | [Custom Views]              |
 |  9 |  Mon, June 21        | [MVC & Navigation]          |
 | 10 |  Wed, June 23        | [UITabBarController]        |
-| 11 |  Fri, June 25        | [Lab - UITabBarController]    |
+| 11 |  Fri, June 25        | [Lab - UITabBarController]  |
 | 12 |  Mon, June 28        | [UITableView]               |
 | 13 |  Wed, June 30        | [Lab - UITableView]         |
 | 14 |  Fri, July 2         | [UICollectionView]          |
