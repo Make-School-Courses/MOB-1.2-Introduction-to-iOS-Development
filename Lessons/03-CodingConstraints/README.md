@@ -13,7 +13,6 @@
 - Learning Objectives
 - Constraints programmatically
 - Anchors and Layout Constraints
-- Onboarding activity
 
 <!-- > -->
 
