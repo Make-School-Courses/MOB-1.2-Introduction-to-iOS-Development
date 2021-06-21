@@ -271,7 +271,7 @@ Then create two instances of your custom view in the View Controller.
 
 ## xib files
 
-xib files are a great way to create custom views with all some benefits from the storyboard.
+xib files are a great way to create custom views with some benefits from the storyboard.
 
 We can design in the Interface Builder and then use the view in a storyboard or programmatically.
 
