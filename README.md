@@ -41,10 +41,10 @@ By the end of the course, you will be able to ...
 |  7 |  Wed, June 16        | [Lab - Coding Constraints]  |
 |  8 |  Fri, June 18        | **No Class - Juneteenth**   |
 |  9 |  Mon, June 21        | [Custom Views]              |
-| 10 |  Wed, June 23        | [MVC & Navigation]          |
-| 11 |  Fri, June 25        | [UITabBarController]        |
-| 12 |  Mon, June 28        | [UITableView]               |
-| 13 |  Wed, June 30        | [Lab - UITableView]         |
+| 10 |  Wed, June 23        | Lab - Custom Views          |
+| 11 |  Fri, June 25        | [MVC & Navigation]          |
+| 12 |  Mon, June 28        | [UITabBarController]        |
+| 13 |  Wed, June 30        | [UITableView]               |
 | 14 |  Fri, July 2         | [UICollectionView]          |
 | -  |  Mon, July 5         | **No Class - Independence Day Observed** |
 | 15 |  Wed, July 7         | [Compositional Layouts]     |
