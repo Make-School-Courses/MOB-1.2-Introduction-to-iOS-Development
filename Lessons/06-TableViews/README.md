@@ -200,26 +200,6 @@ An index number identifying a row in a section of a table view.
 
 <!-- > -->
 
-### Extensions
-
-You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with **code readability**.
-
-You can read more about this approach and other use cases for extensions [here](https://cocoacasts.com/four-clever-uses-of-swift-extensions).
-
-<!-- > -->
-
-### Performance
-
-Here are some suggestions to ensure you are using `UITableView` the best way possible without affecting its performance:
-
-- Reuse cells.
-- Cache downloaded images.
-- If you are using different cell heights, be careful on how often the calculations are made.
-- If you can, make your views opaque, transparent objects make the system work much harder.
-- Avoid gradients (same idea as transparent objects).
-
-<!-- > -->
-
 ## TableViews Three Ways 🎈🌳👽
 
 - [TableView + Storyboard](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assignments/tableStoryboard.md)
@@ -240,6 +220,26 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
   self.present(alertController, animated: true, completion: nil)
 }
 ```
+
+<!-- > -->
+
+### Extensions
+
+You decide how to structure you code. When using UITableViews some people prefer to include both protocol implementations inside an extension. This helps a lot with **code readability**.
+
+You can read more about this approach and other use cases for extensions [here](https://cocoacasts.com/four-clever-uses-of-swift-extensions).
+
+<!-- > -->
+
+### Performance
+
+Here are some suggestions to ensure you are using `UITableView` the best way possible without affecting its performance:
+
+- Reuse cells.
+- Cache downloaded images.
+- If you are using different cell heights, be careful on how often the calculations are made.
+- If you can, make your views opaque, transparent objects make the system work much harder.
+- Avoid gradients (same idea as transparent objects).
 
 <!-- > -->
 
