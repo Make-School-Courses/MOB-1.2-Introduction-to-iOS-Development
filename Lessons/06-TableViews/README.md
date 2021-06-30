@@ -68,7 +68,8 @@ To solve this problem we can reuse cells with the `dequeueReusableCell(withIdent
 
 ```swift
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",
+               for: indexPath)
     cell.textLabel?.text = "Cell with index: \(indexPath.row)"
     return cell
 }
@@ -129,12 +130,20 @@ optional public func numberOfSections(in tableView: UITableView) -> Int
 // How many rows are there per section.
 public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 
+```
+
+<!-- v -->
+
+```swift
 // If using headers or footers. These use a fixed view, to do something different you need a custom view.
-optional public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
-optional public func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String?
+optional public func tableView(_ tableView: UITableView,
+  titleForHeaderInSection section: Int) -> String?
+optional public func tableView(_ tableView: UITableView,
+  titleForFooterInSection section: Int) -> String?
 
 //Displays rows, preferably reusing cells.
-public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+public func tableView(_ tableView: UITableView,
+  cellForRowAt indexPath: IndexPath) -> UITableViewCell
 ```
 
 <!-- > -->
@@ -151,16 +160,25 @@ The delegate must adopt the `UITableViewDelegate protocol`. To know what to do w
 
 ```swift
 // When selecting a cell
-optional public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+optional public func tableView(_ tableView: UITableView,
+  didSelectRowAt indexPath: IndexPath)
 
 // When deselecting a cell
-optional public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath)
+optional public func tableView(_ tableView: UITableView,
+  didDeselectRowAt indexPath: IndexPath)
 
+```
+
+<!-- v -->
+
+```swift
 // Changing the default header with a custom view
-optional public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+optional public func tableView(_ tableView: UITableView,
+  viewForHeaderInSection section: Int) -> UIView?
 
 // Defining the height of the rows (different cells can have different heights)
-optional public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+optional public func tableView(_ tableView: UITableView,
+  heightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 
 <!-- > -->
@@ -214,12 +232,12 @@ Here are some suggestions to ensure you are using `UITableView` the best way pos
 
 ```swift
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let alertController = UIAlertController(title: "Hello", message: "You've tapped in the \(indexPath.row) row, from section \(indexPath.section)", preferredStyle: .alert)
-    let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
-            UIAlertAction in
-    }
-    alertController.addAction(okAction)
-    self.present(alertController, animated: true, completion: nil)
+  let alertController = UIAlertController(title: "Hello", message: "You've tapped in the \(indexPath.row) row, from section \(indexPath.section)", preferredStyle: .alert)
+  let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { UIAlertAction in
+
+  }
+  alertController.addAction(okAction)
+  self.present(alertController, animated: true, completion: nil)
 }
 ```
 
@@ -242,7 +260,7 @@ In pairs, answer the following questions?
 
 To our subscription box app:
 
-- Create models for the app - [example](assets/modelsExample.md)
+- Create models for the app - [example](https://github.com/Make-School-Courses/MOB-1.2-Introduction-to-iOS-Development/blob/master/Lessons/06-TableViews/assets/modelsExample.md)
 - Add a screen where users can see previous boxes they've received.
 - When they tap on one of the boxes they will see the contents for that month.
 
