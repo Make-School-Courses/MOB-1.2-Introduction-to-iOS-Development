@@ -27,7 +27,7 @@ var titleConstraintStart: NSLayoutConstraint!
 var titleConstraintEnd: NSLayoutConstraint!
 ```
 
-Now find the code portion that sets the constraint of the title. We are doing to store the constraint for `centerYAnchor` in the variable `titleConstraintEnd` we declared before. This will be the final position after the animation completes.
+Now find the code portion that sets the constraint of the title. We are doing this to store the constraint for `centerYAnchor` in the variable `titleConstraintEnd` we declared before. This will be the final position after the animation completes.
 
 ```swift
 titleConstraintEnd = appNameLabel.centerYAnchor.constraint(equalTo: mainImage.topAnchor, constant: -60)
