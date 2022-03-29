@@ -27,7 +27,7 @@ You can see this blue indicator as your green flag to go and make the appropriat
 
 ![variations](assets/variations.png)
 
-9. Then chance the orientation for the variation you just created to horizontal. Notice how the layout changes in the interface builder. It starts to look better.
+9. Then change the orientation for the variation you just created to horizontal. Notice how the layout changes in the interface builder. It starts to look better.
 
 ![variations](assets/variations.png)
 
