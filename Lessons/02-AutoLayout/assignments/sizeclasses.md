@@ -17,6 +17,8 @@ You should have something similar to this:
 
 7. At the bottom, select the landscape orientation and click "vary for traits". Then select both width and height and the area will turn blue.
 
+Xcode 13 has removed the options shown below. Take a look at this article to see how Xcode 13 handles these: https://useyourloaf.com/blog/xcode-13-vary-for-traits/
+
 ![traits](assets/traits.png)
 
 You can see this blue indicator as your green flag to go and make the appropriate changes for landscape mode.
